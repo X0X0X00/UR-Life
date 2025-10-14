@@ -176,7 +176,7 @@ while(of2.poll() == None):
 					expression_cooldown = COOLDOWN_FRAMES
      
 		#Replace this line
-		print("time:", timestamp, "\tpitch:", pitch, "\tyaw:", yaw, "\troll:", roll)
+		# print("time:", timestamp, "\tpitch:", pitch, "\tyaw:", yaw, "\troll:", roll)
 		
 	else:
 		time.sleep(.01)
