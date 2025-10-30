@@ -1,0 +1,108 @@
+{
+  "users": {
+    "fox123": {
+      "password": "rochester2025",
+      "profile": {
+        "name": "Fox",
+        "fullName": "Fox Anderson",
+        "email": "fox123@rochester.edu",
+        "netId": "fox123",
+        "studentId": "12345678",
+        "avatar": "🦊",
+        "degree": "B.S. Computer Science",
+        "year": "Junior",
+        "major": "Computer Science"
+      },
+      "tasks": [
+        {
+          "text": "Oct 30 CSC 212",
+          "completed": false,
+          "date": "2025-10-31"
+        },
+        {
+          "id": 1,
+          "content": "测试任务",
+          "completed": false
+        }
+      ],
+      "history": [],
+      "mailingList": {},
+      "degreeProgress": {
+        "checkboxStates": {
+          "req1": true,
+          "req2": true,
+          "math2": true,
+          "req3": true,
+          "core6": false,
+          "adv2": false,
+          "req4": true
+        },
+        "preMajor": {
+          "completed": 4,
+          "total": 4,
+          "done": true
+        },
+        "math": {
+          "completed": 2,
+          "total": 2,
+          "done": true
+        },
+        "core": {
+          "completed": 0,
+          "total": 6,
+          "done": false
+        },
+        "advanced": {
+          "completed": 0,
+          "total": 4,
+          "done": false
+        }
+      },
+      "courses": []
+    },
+    "bear456": {
+      "password": "yellowjacket",
+      "profile": {
+        "name": "Bear",
+        "avatar": "🐻",
+        "email": "bear456@rochester.edu",
+        "studentId": "23456789",
+        "major": "Mathematics",
+        "year": "Senior"
+      },
+      "tasks": [],
+      "history": [],
+      "mailingList": {
+        "professors": [],
+        "ta": [],
+        "classmates": [],
+        "friends": [],
+        "club": [],
+        "research": []
+      },
+      "degreeProgress": {}
+    },
+    "cat789": {
+      "password": "meowmeow123",
+      "profile": {
+        "name": "Cat",
+        "avatar": "🐱",
+        "email": "cat789@rochester.edu",
+        "studentId": "34567890",
+        "major": "Biology",
+        "year": "Sophomore"
+      },
+      "tasks": [],
+      "history": [],
+      "mailingList": {
+        "professors": [],
+        "ta": [],
+        "classmates": [],
+        "friends": [],
+        "club": [],
+        "research": []
+      },
+      "degreeProgress": {}
+    }
+  }
+}

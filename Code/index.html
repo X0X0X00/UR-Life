@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Rochester - UR Life Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #5B9BD5 0%, #4A8BC2 50%, #3A7BAF 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-container {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 50px;
+            width: 90%;
+            max-width: 450px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 15px;
+        }
+
+        .ur-logo {
+            font-size: 14px;
+            color: #003B71;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            border-color: #5B9BD5;
+            box-shadow: 0 0 0 3px rgba(91, 155, 213, 0.1);
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #5B9BD5 0%, #4A8BC2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+
+        .login-button:hover {
+            background: linear-gradient(135deg, #4A8BC2 0%, #3A7BAF 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(91, 155, 213, 0.4);
+        }
+
+        .login-button:active {
+            transform: translateY(0);
+        }
+
+        .error-message {
+            background-color: #FEE;
+            color: #C33;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+            font-size: 14px;
+            border-left: 4px solid #C33;
+        }
+
+        .error-message.show {
+            display: block;
+            animation: shake 0.5s;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+
+        .demo-accounts {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #F8F9FA;
+            border-radius: 10px;
+            border-left: 4px solid #5B9BD5;
+        }
+
+        .demo-accounts h3 {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .demo-account {
+            margin-bottom: 12px;
+            font-size: 13px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .demo-account:hover {
+            background-color: #E8F0FA;
+            transform: translateX(5px);
+        }
+
+        .demo-account strong {
+            color: #5B9BD5;
+        }
+
+        .demo-account .avatar {
+            font-size: 18px;
+            margin-right: 8px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 25px;
+            color: #666;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo-section">
+            <img src="./image/symbol_only.svg?v=2" class="logo" alt="University of Rochester">
+            <div class="ur-logo">UNIVERSITY of ROCHESTER</div>
+        </div>
+
+        <h1>UR Life</h1>
+        <p class="subtitle">Sign in to access your dashboard</p>
+
+        <div class="error-message" id="errorMessage"></div>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="netid">Net ID</label>
+                <input type="text" id="netid" name="netid" placeholder="Enter your Net ID" required autocomplete="username">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required autocomplete="current-password">
+            </div>
+
+            <button type="submit" class="login-button">Sign In</button>
+        </form>
+
+        <div class="demo-accounts">
+            <h3>📝 Demo Accounts (Click to auto-fill)</h3>
+            <div class="demo-account" onclick="fillLogin('fox123', 'rochester2025')">
+                <span class="avatar">🦊</span>
+                <strong>fox123</strong> / rochester2025
+                <div style="font-size: 11px; color: #666; margin-top: 3px;">Computer Science Junior</div>
+            </div>
+            <div class="demo-account" onclick="fillLogin('bear456', 'yellowjacket')">
+                <span class="avatar">🐻</span>
+                <strong>bear456</strong> / yellowjacket
+                <div style="font-size: 11px; color: #666; margin-top: 3px;">Mathematics Senior</div>
+            </div>
+            <div class="demo-account" onclick="fillLogin('cat789', 'meowmeow123')">
+                <span class="avatar">🐱</span>
+                <strong>cat789</strong> / meowmeow123
+                <div style="font-size: 11px; color: #666; margin-top: 3px;">Biology Sophomore</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            University of Rochester UR Life &copy; 2025
+        </div>
+    </div>
+
+    <script src="users-database.js"></script>
+    <script>
+        // 自动填充登录信息
+        function fillLogin(username, password) {
+            document.getElementById('netid').value = username;
+            document.getElementById('password').value = password;
+            document.getElementById('netid').focus();
+        }
+
+        // 显示错误消息
+        function showError(message) {
+            const errorDiv = document.getElementById('errorMessage');
+            errorDiv.textContent = message;
+            errorDiv.classList.add('show');
+            setTimeout(() => {
+                errorDiv.classList.remove('show');
+            }, 3000);
+        }
+
+        // 处理登录表单提交
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const netid = document.getElementById('netid').value.trim();
+            const password = document.getElementById('password').value;
+
+            // 验证用户
+            if (USERS_DATABASE[netid]) {
+                if (USERS_DATABASE[netid].password === password) {
+                    // 登录成功,保存用户信息到 sessionStorage
+                    sessionStorage.setItem('currentUser', netid);
+                    sessionStorage.setItem('userData', JSON.stringify(USERS_DATABASE[netid]));
+
+                    // 跳转到主页
+                    window.location.href = 'campus-assistant.html';
+                } else {
+                    showError('Incorrect password. Please try again.');
+                }
+            } else {
+                showError('Net ID not found. Please check your credentials.');
+            }
+        });
+
+        // 检查是否已登录
+        window.addEventListener('load', function() {
+            if (sessionStorage.getItem('currentUser')) {
+                window.location.href = 'campus-assistant.html';
+            }
+        });
+    </script>
+</body>
+</html>

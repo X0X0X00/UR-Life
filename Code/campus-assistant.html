@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Rochester - UR Life</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Header */
+        .header {
+            background-color: white;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            background-color: #FF6B35;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .quick-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .quick-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+            font-size: 12px;
+        }
+
+        .gmail-icon {
+            font-size: 24px;
+            color: #EA4335;
+        }
+
+        .gradescope-icon {
+            font-size: 20px;
+            color: #4285F4;
+        }
+
+        .search-bar {
+            flex: 1;
+            max-width: 500px;
+            margin: 0 30px;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 12px 20px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            background-color: #f0f0f0;
+            font-size: 16px;
+        }
+
+        .university-logo {
+            height: 50px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .university-logo:hover {
+            opacity: 0.8;
+        }
+
+        /* Profile Popup */
+        .profile-popup {
+            display: none;
+            position: absolute;
+            top: 70px;
+            left: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            padding: 25px;
+            width: 350px;
+            z-index: 1000;
+        }
+
+        .profile-popup.show {
+            display: block;
+        }
+
+        .profile-popup-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .profile-popup-close {
+            font-size: 28px;
+            cursor: pointer;
+            color: #666;
+            background: none;
+            border: none;
+            padding: 0;
+            line-height: 1;
+        }
+
+        .profile-popup-user {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .profile-popup-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+        }
+
+        .profile-popup-info h3 {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        .profile-popup-info p {
+            font-size: 14px;
+            color: #666;
+            margin: 2px 0;
+        }
+
+        .profile-popup-btn {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 10px 0;
+            border: 2px solid #333;
+            border-radius: 25px;
+            background-color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .profile-popup-btn:hover {
+            background-color: #f5f5f5;
+        }
+
+        /* Main Container */
+        .container {
+            display: flex;
+            height: calc(100vh - 80px);
+        }
+
+        /* Sidebar Menu */
+        .sidebar {
+            width: 400px;
+            background: linear-gradient(180deg, #5B9BD5 0%, #4A8BC2 100%);
+            color: white;
+            padding: 30px 0;
+            overflow-y: auto;
+        }
+
+        .menu-title {
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+
+        .menu-divider {
+            width: 80%;
+            height: 3px;
+            background-color: white;
+            margin: 0 auto 30px;
+        }
+
+        .menu-item {
+            padding: 15px 40px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .menu-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .menu-item.active {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .submenu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .submenu.open {
+            max-height: 500px;
+        }
+
+        .submenu-item {
+            padding: 12px 60px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: block;
+        }
+
+        .submenu-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .submenu-item:before {
+            content: '├─ ';
+            margin-right: 8px;
+        }
+
+        /* Fix for link submenu items */
+        a.submenu-item {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .chevron {
+            transition: transform 0.3s;
+        }
+
+        .chevron.open {
+            transform: rotate(180deg);
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 40px;
+            overflow-y: auto;
+            background-color: white;
+        }
+
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        .section-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        /* Tasks Section */
+        .tasks-container {
+            margin-bottom: 50px;
+        }
+
+        .task-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .task-checkbox {
+            width: 24px;
+            height: 24px;
+            border: 3px solid #5B9BD5;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .task-checkbox:hover {
+            background-color: rgba(91, 155, 213, 0.1);
+        }
+
+        .task-checkbox.completed {
+            background-color: #5B9BD5;
+            position: relative;
+        }
+
+        .task-checkbox.completed:after {
+            content: '✓';
+            position: absolute;
+            color: white;
+            font-size: 16px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .task-text {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .task-text.completed {
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        .show-more {
+            text-align: center;
+            color: #5B9BD5;
+            cursor: pointer;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        .show-more:hover {
+            text-decoration: underline;
+        }
+
+        /* Profile Page */
+        .profile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
+        .profile-info {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .profile-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #333;
+            font-size: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-details h2 {
+            font-size: 20px;
+            margin: 8px 0;
+        }
+
+        .degree-progress {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: conic-gradient(#5B9BD5 0deg 300deg, #E8F0FA 300deg 360deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .degree-progress-inner {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .degree-progress-link {
+            position: absolute;
+            bottom: -30px;
+            font-size: 12px;
+            color: #5B9BD5;
+            cursor: pointer;
+        }
+
+        .degree-progress-link:hover {
+            text-decoration: underline;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        .calendar-section {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .calendar-section h3 {
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .calendar {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .calendar-header {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 10px 0;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .calendar-time-slot {
+            display: grid;
+            grid-template-columns: 80px repeat(7, 1fr);
+            border-bottom: 1px solid #f0f0f0;
+            min-height: 60px;
+        }
+
+        .time-label {
+            padding: 10px;
+            font-size: 12px;
+            color: #666;
+            border-right: 1px solid #f0f0f0;
+        }
+
+        .calendar-cell {
+            border-right: 1px solid #f0f0f0;
+            position: relative;
+            padding: 5px;
+        }
+
+        .class-event {
+            background-color: #E8F0FA;
+            border-left: 3px solid #5B9BD5;
+            padding: 5px;
+            font-size: 11px;
+            margin: 2px 0;
+        }
+
+        .mailing-list {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .mailing-list h3 {
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .mailing-category {
+            margin: 20px 0;
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .category-items {
+            padding-left: 30px;
+        }
+
+        .category-item {
+            margin: 8px 0;
+            font-size: 14px;
+        }
+
+        .email-link {
+            color: #5B9BD5;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Degree Tracker Page */
+        .tracker-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .tracker-user {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .tracker-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #333;
+            font-size: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tracker-summary {
+            background-color: #E8F0FA;
+            padding: 20px 30px;
+            border-radius: 15px;
+        }
+
+        .tracker-summary div {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .tracker-summary .complete {
+            color: #27AE60;
+        }
+
+        .requirements-section {
+            margin: 30px 0;
+        }
+
+        .requirements-section h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .requirement-item {
+            padding: 8px 0;
+            padding-left: 30px;
+            font-size: 16px;
+        }
+
+        .requirement-item input[type="checkbox"] {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+        }
+
+        .requirement-item label {
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        .requirement-item input:not(:checked) + label {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Add Task Button */
+        .add-task-btn {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            width: 70px;
+            height: 70px;
+            background-color: #4A63D9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(74, 99, 217, 0.4);
+            transition: all 0.3s;
+            border: none;
+            color: white;
+            font-size: 36px;
+            font-weight: 300;
+        }
+
+        .add-task-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(74, 99, 217, 0.5);
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #5B9BD5;
+        }
+
+        .modal-buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 10px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .btn-cancel {
+            background-color: #E74C3C;
+            color: white;
+        }
+
+        .btn-cancel:hover {
+            background-color: #C0392B;
+        }
+
+        .btn-add {
+            background-color: #7FD478;
+            color: white;
+        }
+
+        .btn-add:hover {
+            background-color: #5FB858;
+        }
+
+        /* Category chevron animation */
+        .category-chevron {
+            display: inline-block;
+            transition: transform 0.3s ease;
+            margin-right: 5px;
+        }
+
+        .category-chevron.open {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-left">
+            <div class="logo" onclick="toggleProfilePopup()" style="background-color: transparent; padding: 5px;">
+                <img src="./image/symbol_only.svg" style="width: 100%; height: 100%; object-fit: contain;" alt="UR">
+            </div>
+            <div class="quick-links">
+                <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank" class="quick-link">
+                    <span class="gmail-icon">📧</span>
+                    <span>Gmail</span>
+                </a>
+                <a href="https://www.gradescope.com/" target="_blank" class="quick-link">
+                    <span class="gradescope-icon">📊</span>
+                    <span>Gradescope</span>
+                </a>
+            </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+        <div>
+            <a href="https://learn.rochester.edu/ultra/institution-page" target="_blank">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='10' y='35' font-family='Arial' font-size='20' font-weight='bold' fill='%23003B71'%3EUNIVERSITY of ROCHESTER%3C/text%3E%3C/svg%3E" alt="University of Rochester" class="university-logo">
+            </a>
+        </div>
+    </div>
+
+    <!-- Profile Popup -->
+    <div class="profile-popup" id="profilePopup">
+        <div class="profile-popup-header">
+            <div class="profile-popup-user">
+                <div class="profile-popup-avatar">🦊</div>
+                <div class="profile-popup-info">
+                    <h3>Hi, <span data-user-name>Fox</span>!</h3>
+                    <p data-user-email>fox123@u.rochester.edu</p>
+                    <p>Student Id: <span data-user-studentid>12345678</span></p>
+                </div>
+            </div>
+            <button class="profile-popup-close" onclick="toggleProfilePopup()">×</button>
+        </div>
+        <button class="profile-popup-btn" onclick="showPage('profile')">Manage My Profile</button>
+        <button class="profile-popup-btn" onclick="signOut()">→ Sign Out</button>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar Menu -->
+        <div class="sidebar">
+            <div class="menu-title">MENU</div>
+            <div class="menu-divider"></div>
+
+            <div class="menu-item" onclick="showPage('home')">Home</div>
+
+            <div class="menu-item" onclick="toggleSubmenu('map')">
+                <span>Map & Locations</span>
+                <span class="chevron" id="chevron-map">▼</span>
+            </div>
+            <div class="submenu" id="submenu-map">
+                <a href="https://www.rochester.edu/college/campus-map/" target="_blank" class="submenu-item">River Campus</a>
+                <a href="https://www.urmc.rochester.edu/patients-families/maps-directions.aspx" target="_blank" class="submenu-item">Medical Center</a>
+                <a href="https://www.esm.rochester.edu/visit/" target="_blank" class="submenu-item">Eastman School of Music</a>
+                <a href="https://www.rochester.edu/working/hr/benefits/parking/maps.html" target="_blank" class="submenu-item">South Campus</a>
+            </div>
+
+            <div class="menu-item" onclick="toggleSubmenu('transport')">
+                <span>Transportation</span>
+                <span class="chevron" id="chevron-transport">▼</span>
+            </div>
+            <div class="submenu" id="submenu-transport">
+                <a href="https://www.rochester.edu/transportation/shuttle/" target="_blank" class="submenu-item">Shuttles</a>
+                <a href="https://www.rochester.edu/sustainability/get-involved/alternative-transportation/" target="_blank" class="submenu-item">Electric Vehicle</a>
+                <a href="https://www.safety.rochester.edu/publicsafety/services/safe-ride/" target="_blank" class="submenu-item">Safe Ride Service</a>
+                <a href="https://www.rochester.edu/transportation/" target="_blank" class="submenu-item">Event & Holiday Adjustments</a>
+            </div>
+
+            <div class="menu-item" onclick="toggleSubmenu('food')">
+                <span>Food & Dining</span>
+                <span class="chevron" id="chevron-food">▼</span>
+            </div>
+            <div class="submenu" id="submenu-food">
+                <a href="https://dining.rochester.edu/locations/" target="_blank" class="submenu-item">Dining Halls</a>
+                <a href="https://dining.rochester.edu/retail-dining/" target="_blank" class="submenu-item">Cafes & Coffee Shops</a>
+                <a href="https://dining.rochester.edu/meal-plans/" target="_blank" class="submenu-item">Meal Plans</a>
+            </div>
+
+            <div class="menu-item" onclick="toggleSubmenu('study')">
+                <span>Study Spaces</span>
+                <span class="chevron" id="chevron-study">▼</span>
+            </div>
+            <div class="submenu" id="submenu-study">
+                <a href="https://www.library.rochester.edu/hours" target="_blank" class="submenu-item">Library Hours & Locations</a>
+                <a href="https://www.library.rochester.edu/spaces" target="_blank" class="submenu-item">Room Reservations</a>
+                <a href="https://www.library.rochester.edu/rush-rhees" target="_blank" class="submenu-item">Quiet & Group Areas</a>
+                <a href="https://www.library.rochester.edu/printing" target="_blank" class="submenu-item">Printing</a>
+            </div>
+
+            <div class="menu-item" onclick="toggleSubmenu('campus')">
+                <span>Campus Life</span>
+                <span class="chevron" id="chevron-campus">▼</span>
+            </div>
+            <div class="submenu" id="submenu-campus">
+                <a href="https://www.rochester.edu/college/cce/" target="_blank" class="submenu-item">Events & Activities</a>
+                <a href="https://www.rochester.edu/college/cce/" target="_blank" class="submenu-item">UR CCC</a>
+                <a href="https://www.rochester.edu/uhs/" target="_blank" class="submenu-item">Health & Wellness</a>
+                <a href="https://www.rochester.edu/reslife/" target="_blank" class="submenu-item">Housing</a>
+                <a href="https://www.safety.rochester.edu/" target="_blank" class="submenu-item">Safety & Emergency</a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Home Page -->
+            <div class="page active" id="page-home">
+                <div class="section-title">My Tasks</div>
+                <div class="tasks-container" id="tasks-container">
+                    <div class="task-item">
+                        <div class="task-checkbox" onclick="toggleTask(this)"></div>
+                        <div class="task-text">do the laundry</div>
+                    </div>
+                    <div class="task-item">
+                        <div class="task-checkbox" onclick="toggleTask(this)"></div>
+                        <div class="task-text">Oct 2 CSC212: A4</div>
+                    </div>
+                </div>
+
+                <div class="show-more" onclick="toggleHistory()" style="cursor: pointer; user-select: none;">----- Select to Show More-----</div>
+
+                <div class="history-container" id="history-section" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                    <div class="section-title">History</div>
+                    <div class="task-item">
+                        <div class="task-checkbox completed"></div>
+                        <div class="task-text completed">Sep 25 CSC212: A3</div>
+                    </div>
+                    <div class="task-item">
+                        <div class="task-checkbox completed"></div>
+                        <div class="task-text completed">Sep 11 CSC212: A2</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Page -->
+            <div class="page" id="page-profile">
+                <div class="section-title">
+                    Manage My Profile
+                    <button style="float: right; background-color: #4A63D9; color: white; border: none; padding: 8px 20px; border-radius: 5px; cursor: pointer; font-size: 14px;" onclick="openEditProfileModal()">
+                        ✏️ Edit Profile
+                    </button>
+                </div>
+
+                <div class="profile-header">
+                    <div class="profile-info">
+                        <div class="profile-avatar" data-user-avatar>🦊</div>
+                        <div class="profile-details">
+                            <h2>Name: <span data-profile-name>Fox</span></h2>
+                            <h2>Email: <span data-profile-email>fox123@u.rochester.edu</span></h2>
+                            <h2>Net Id: <span data-profile-netid>fox123</span></h2>
+                            <h2>Student Id: <span data-profile-studentid>12345678</span></h2>
+                        </div>
+                    </div>
+                    <div style="position: relative; padding-bottom: 40px;">
+                        <div class="degree-progress">
+                            <div class="degree-progress-inner">
+                                <div style="font-size: 14px;">B.S.</div>
+                                <div style="font-size: 12px;">Computer Science</div>
+                                <div style="font-size: 12px;">Junior</div>
+                            </div>
+                        </div>
+                        <div class="degree-progress-link" onclick="showPage('tracker')">-----Degree Progress Tracker-----</div>
+                    </div>
+                </div>
+
+                <div class="content-grid">
+                    <div class="calendar-section">
+                        <h3>
+                            Course Calendar
+                            <button style="float: right; background-color: #4A63D9; color: white; border: none; padding: 5px 15px; border-radius: 5px; cursor: pointer; font-size: 12px; margin-left: 10px;" onclick="openAddCourseModal()">
+                                ➕ Add Course
+                            </button>
+                        </h3>
+                        <div class="calendar" id="courseCalendar">
+                            <!-- Calendar will be dynamically generated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="mailing-list">
+                        <h3>Frequent Mailing List</h3>
+                        <div style="text-align: right; margin-bottom: 10px;">
+                            <button style="background-color: #4A63D9; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 18px;" onclick="openAddContactModal()">+</button>
+                        </div>
+
+                        <div class="mailing-category">
+                            <div class="category-header" data-category="professors" onclick="toggleCategory('professors')" style="cursor: pointer;">
+                                <span class="category-chevron">▼</span> ├─ Professors
+                            </div>
+                            <div class="category-items" style="max-height: 500px; overflow: hidden; transition: max-height 0.3s ease;">
+                                <div class="category-item">
+                                    CSC254&nbsp;&nbsp;&nbsp;&nbsp;Michael Scott&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:mscott@acm.org" class="email-link">mscott@acm.org</a>
+                                </div>
+                                <div class="category-item">
+                                    CSC212&nbsp;&nbsp;&nbsp;&nbsp;Yukang Yan&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:yukang.yan@rochester.edu" class="email-link">yukang.yan@rochester.edu</a>
+                                </div>
+                                <div class="category-item">
+                                    CSC245&nbsp;&nbsp;&nbsp;&nbsp;Chenliang Xu&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:chenliang.xu@rochester.edu" class="email-link">chenliang.xu@rochester.edu</a>
+                                </div>
+                                <div class="category-item">
+                                    EESC213W&nbsp;&nbsp;&nbsp;&nbsp;Karen Berger&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:karen.berger@rochester.edu" class="email-link">karen.berger@rochester.edu</a>
+                                </div>
+                                <div class="category-item">
+                                    JPNS229&nbsp;&nbsp;&nbsp;&nbsp;William Bridges&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:bridges@u.rochester.edu" class="email-link">bridges@u.rochester.edu</a>
+                                </div>
+                                <div class="category-item" style="margin-bottom: 15px;">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Keiko Nishioka&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:knishiok@ur.rochester.edu" class="email-link">knishiok@ur.rochester.edu</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mailing-category">
+                            <div class="category-header" data-category="ta" onclick="toggleCategory('ta')" style="cursor: pointer;">
+                                <span class="category-chevron">▼</span> ├─ TA
+                            </div>
+                            <div class="category-items" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;"></div>
+                        </div>
+
+                        <div class="mailing-category">
+                            <div class="category-header" data-category="classmates" onclick="toggleCategory('classmates')" style="cursor: pointer;">
+                                <span class="category-chevron">▼</span> ├─ Classmates
+                            </div>
+                            <div class="category-items" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;"></div>
+                        </div>
+
+                        <div class="mailing-category">
+                            <div class="category-header" data-category="friends" onclick="toggleCategory('friends')" style="cursor: pointer;">
+                                <span class="category-chevron">▼</span> ├─ Friends
+                            </div>
+                            <div class="category-items" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;"></div>
+                        </div>
+
+                        <div class="mailing-category">
+                            <div class="category-header" data-category="club" onclick="toggleCategory('club')" style="cursor: pointer;">
+                                <span class="category-chevron">▼</span> ├─ Club
+                            </div>
+                            <div class="category-items" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;"></div>
+                        </div>
+
+                        <div class="mailing-category">
+                            <div class="category-header" data-category="research" onclick="toggleCategory('research')" style="cursor: pointer;">
+                                <span class="category-chevron">▼</span> ├─ Research
+                            </div>
+                            <div class="category-items" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Degree Tracker Page -->
+            <div class="page" id="page-tracker">
+                <div class="section-title">Manage My Profile >> Degree Progress Tracker</div>
+
+                <div class="tracker-header">
+                    <div class="tracker-user">
+                        <div class="tracker-avatar">🦊</div>
+                        <div>
+                            <h2 style="font-size: 24px; margin-bottom: 5px;">fox123@u.rochester.edu</h2>
+                            <h3 style="font-size: 18px; font-weight: normal;">Computer Science B.S.</h3>
+                        </div>
+                    </div>
+                    <div class="tracker-summary">
+                        <div><strong>Pre-major requirements</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data-progress="premajor">0/0</span></div>
+                        <div><strong>Core courses</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data-progress="core">0/0</span></div>
+                        <div><strong>Math requirements</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data-progress="math">0/0</span></div>
+                        <div><strong>Advanced Requirements</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span data-progress="advanced">0/0</span></div>
+                        <div><strong>Upper-level writing courses</strong>&nbsp;&nbsp;&nbsp;&nbsp;<span data-progress="writing">0/0</span></div>
+                    </div>
+                </div>
+
+                <div class="requirements-section" data-category-type="premajor">
+                    <h3><em>Pre-major requirements:</em></h3>
+                    <div class="requirement-item">
+                        <input type="checkbox" id="req1" onchange="updateCourseProgress(this, 'premajor')">
+                        <label for="req1">CSC 171: Introduction to Computer Science</label>
+                    </div>
+                    <div class="requirement-item">
+                        <input type="checkbox" id="req2" onchange="updateCourseProgress(this, 'premajor')">
+                        <label for="req2">MATH 150: Discrete Mathematics</label>
+                    </div>
+                    <div class="requirement-item">
+                        <input type="checkbox" id="req3" onchange="updateCourseProgress(this, 'premajor')">
+                        <label for="req3">CSC 172: Data Structures and Algorithms</label>
+                    </div>
+                    <div class="requirement-item">
+                        <input type="checkbox" id="req4" onchange="updateCourseProgress(this, 'premajor')">
+                        <label for="req4">Calculus: MATH 16x</label>
+                    </div>
+                </div>
+
+                <div class="requirements-section" data-category-type="math">
+                    <h3><em>Math Requirements:</em></h3>
+                    <div class="requirement-item">
+                        <input type="checkbox" id="math1" onchange="updateCourseProgress(this, 'math')">
+                        <label for="math1">STAT 190: Introduction to Statistical Methodology</label>
+                    </div>
+                    <div class="requirement-item">
+                        <input type="checkbox" id="math2" onchange="updateCourseProgress(this, 'math')">
+                        <label for="math2">MATH 165: Linear Algebra with Differential Equations</label>
+                    </div>
+                </div>
+
+                <div class="requirements-section" data-category-type="core">
+                    <h3><em>Core Requirements:</em></h3>
+                    <div class="requirement-item">
+                        <input type="checkbox" id="core1" onchange="updateCourseProgress(this, 'core')">
+                        <label for="core1">CSC 173: Computation and Formal Systems</label>
+                    </div>
+                    <div class="requirement-item">
+                        <input type="checkbox" id="core2" onchange="updateCourseProgress(this, 'core')">
+                        <label for="core2">CSC 242: Introduction to Artificial Intelligence</label>
+                    </div>
+                    <div class="requirement-item">
+                        <input type="checkbox" id="core3" onchange="updateCourseProgress(this, 'core')">
+                        <label for="core3">CSC 252: Computer Organization</label>
+                    </div>
+                    <div class="requirement-item">
+                        <input type="checkbox" id="core4" onchange="updateCourseProgress(this, 'core')">
+                        <label for="core4">CSC 254: Programming Language Design and Implementation</label>
+                    </div>
+                    <div class="requirement-item">
+                        <input type="checkbox" id="core5" onchange="updateCourseProgress(this, 'core')">
+                        <label for="core5">CSC 280: Computer Models and Limitations</label>
+                    </div>
+                    <div class="requirement-item">
+                        <input type="checkbox" id="core6" onchange="updateCourseProgress(this, 'core')">
+                        <label for="core6">CSC 282: Design and Analysis of Efficient Algorithms</label>
+                    </div>
+                </div>
+
+                <div class="requirements-section" data-category-type="advanced">
+                    <h3><em>Advanced Requirements(4*4.0, CSC2xx):</em></h3>
+                    <div class="requirement-item">
+                        <input type="checkbox" id="adv1" onchange="updateCourseProgress(this, 'advanced')">
+                        <label for="adv1">CSC 212: Introduction to HCI</label>
+                    </div>
+                    <div class="requirement-item">
+                        <input type="checkbox" id="adv2" onchange="updateCourseProgress(this, 'advanced')">
+                        <label for="adv2">CSC 245: Deep Learning</label>
+                    </div>
+                    <div class="requirement-item">
+                        <input type="checkbox" id="adv3" onchange="updateCourseProgress(this, 'advanced')">
+                        <label for="adv3">CSC 256: Operating Systems</label>
+                    </div>
+                    <div class="requirement-item">
+                        <input type="checkbox" id="adv4" onchange="updateCourseProgress(this, 'advanced')">
+                        <label for="adv4">CSC 260: Technology & Climate Change</label>
+                    </div>
+                </div>
+
+                <div class="requirements-section" data-category-type="writing">
+                    <h3><em>Upper-level Writing Courses:</em></h3>
+                    <div class="requirement-item">
+                        <input type="checkbox" id="writing1" onchange="updateCourseProgress(this, 'writing')">
+                        <label for="writing1">EESC 213W: Writing About Planet Earth</label>
+                    </div>
+                    <div class="requirement-item">
+                        <input type="checkbox" id="writing2" onchange="updateCourseProgress(this, 'writing')">
+                        <label for="writing2">Upper-level Writing Course (to be selected)</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Task Button -->
+    <button class="add-task-btn" onclick="openModal()">+</button>
+
+    <!-- Add Task Modal -->
+    <div class="modal" id="taskModal">
+        <div class="modal-content">
+            <div class="modal-title">Add a To-do Item:</div>
+            <div class="form-group">
+                <input type="date" id="taskDate" placeholder="Date">
+            </div>
+            <div class="form-group">
+                <input type="text" id="taskName" placeholder="Task Name">
+            </div>
+            <div class="modal-buttons">
+                <button class="btn btn-cancel" onclick="closeModal()">Cancel</button>
+                <button class="btn btn-add" onclick="addTask()">Add</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Contact Modal -->
+    <div class="modal" id="addContactModal">
+        <div class="modal-content">
+            <div class="modal-title">Add Contact</div>
+            <div class="form-group">
+                <select id="contactCategory" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                    <option value="professors">Professors</option>
+                    <option value="ta">TA</option>
+                    <option value="classmates">Classmates</option>
+                    <option value="friends">Friends</option>
+                    <option value="club">Club</option>
+                    <option value="research">Research</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="text" id="contactName" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="email" id="contactEmail" placeholder="Email">
+            </div>
+            <div class="form-group" id="courseFieldGroup" style="display: none;">
+                <input type="text" id="contactCourse" placeholder="Course (optional)">
+            </div>
+            <div class="modal-buttons">
+                <button class="btn btn-cancel" onclick="closeAddContactModal()">Cancel</button>
+                <button class="btn btn-add" onclick="addContact()">Add</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Profile Modal -->
+    <div class="modal" id="editProfileModal">
+        <div class="modal-content" style="max-width: 500px;">
+            <div class="modal-title">Edit Profile</div>
+
+            <!-- Avatar Selection -->
+            <div class="form-group">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Choose Avatar:</label>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <button class="avatar-option" data-avatar="🦊" onclick="selectAvatar('🦊')">🦊</button>
+                    <button class="avatar-option" data-avatar="🐻" onclick="selectAvatar('🐻')">🐻</button>
+                    <button class="avatar-option" data-avatar="🐱" onclick="selectAvatar('🐱')">🐱</button>
+                    <button class="avatar-option" data-avatar="🐶" onclick="selectAvatar('🐶')">🐶</button>
+                    <button class="avatar-option" data-avatar="🐼" onclick="selectAvatar('🐼')">🐼</button>
+                    <button class="avatar-option" data-avatar="🐯" onclick="selectAvatar('🐯')">🐯</button>
+                    <button class="avatar-option" data-avatar="🦁" onclick="selectAvatar('🦁')">🦁</button>
+                    <button class="avatar-option" data-avatar="🐷" onclick="selectAvatar('🐷')">🐷</button>
+                    <button class="avatar-option" data-avatar="🐸" onclick="selectAvatar('🐸')">🐸</button>
+                    <button class="avatar-option" data-avatar="🐵" onclick="selectAvatar('🐵')">🐵</button>
+                    <button class="avatar-option" data-avatar="🦄" onclick="selectAvatar('🦄')">🦄</button>
+                    <button class="avatar-option" data-avatar="🐰" onclick="selectAvatar('🐰')">🐰</button>
+                </div>
+                <style>
+                    .avatar-option {
+                        width: 50px;
+                        height: 50px;
+                        font-size: 30px;
+                        border: 2px solid #ddd;
+                        border-radius: 10px;
+                        background: white;
+                        cursor: pointer;
+                        transition: all 0.2s;
+                    }
+                    .avatar-option:hover {
+                        border-color: #4A63D9;
+                        transform: scale(1.1);
+                    }
+                    .avatar-option.selected {
+                        border-color: #4A63D9;
+                        background-color: #E8ECFF;
+                        box-shadow: 0 0 10px rgba(74, 99, 217, 0.3);
+                    }
+                </style>
+            </div>
+
+            <!-- Name -->
+            <div class="form-group">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Display Name:</label>
+                <input type="text" id="editProfileName" placeholder="Your Name" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Email:</label>
+                <input type="email" id="editProfileEmail" placeholder="Email" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+            </div>
+
+            <!-- Change Password Section -->
+            <div class="form-group">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Change Password:</label>
+                <input type="password" id="editCurrentPassword" placeholder="Current Password" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 10px;">
+                <input type="password" id="editNewPassword" placeholder="New Password" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 10px;">
+                <input type="password" id="editConfirmPassword" placeholder="Confirm New Password" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                <small style="color: #666; font-size: 12px;">Leave blank if you don't want to change password</small>
+            </div>
+
+            <div class="modal-buttons">
+                <button class="btn btn-cancel" onclick="closeEditProfileModal()">Cancel</button>
+                <button class="btn btn-add" onclick="saveProfileChanges()">Save Changes</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Course Modal -->
+    <div class="modal" id="addCourseModal">
+        <div class="modal-content" style="max-width: 450px;">
+            <div class="modal-title">Add Course</div>
+
+            <div class="form-group">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Course Name:</label>
+                <input type="text" id="courseName" placeholder="e.g., CSC 212" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+            </div>
+
+            <div class="form-group">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Location:</label>
+                <input type="text" id="courseLocation" placeholder="e.g., Hutchison Hall Room 473" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+            </div>
+
+            <div class="form-group">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Day of Week:</label>
+                <select id="courseDay" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                    <option value="0">Sunday</option>
+                    <option value="1">Monday</option>
+                    <option value="2">Tuesday</option>
+                    <option value="3">Wednesday</option>
+                    <option value="4">Thursday</option>
+                    <option value="5">Friday</option>
+                    <option value="6">Saturday</option>
+                </select>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <div class="form-group">
+                    <label style="display: block; margin-bottom: 5px; font-weight: bold;">Start Time:</label>
+                    <select id="courseStartTime" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                        <!-- Options will be generated by JavaScript -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label style="display: block; margin-bottom: 5px; font-weight: bold;">End Time:</label>
+                    <select id="courseEndTime" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                        <!-- Options will be generated by JavaScript -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="modal-buttons">
+                <button class="btn btn-cancel" onclick="closeAddCourseModal()">Cancel</button>
+                <button class="btn btn-add" onclick="saveCourse()">Add Course</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="users-database.js?v=8"></script>
+    <script src="api.js?v=8"></script>
+    <script src="app.js?v=8"></script>
+    <script>
+        console.log('Campus Assistant loaded - Version 8 (Calendar with Time Span)');
+
+        // Show/hide course field based on category
+        document.getElementById('contactCategory').addEventListener('change', function() {
+            const courseField = document.getElementById('courseFieldGroup');
+            if (this.value === 'professors') {
+                courseField.style.display = 'block';
+            } else {
+                courseField.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

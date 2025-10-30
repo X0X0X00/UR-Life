@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据库同步测试</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .success { color: green; }
+        .error { color: red; }
+        pre {
+            background: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>UR Life 数据库同步测试</h1>
+
+    <div class="test-section">
+        <h2>测试 1: 保存 Degree Progress 数据</h2>
+        <button onclick="testSaveDegreeProgress()">保存测试数据</button>
+        <div id="save-result"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>测试 2: 读取 Degree Progress 数据</h2>
+        <button onclick="testLoadDegreeProgress()">读取数据</button>
+        <div id="load-result"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>测试 3: 模拟多设备同步</h2>
+        <p>1. 在设备 A 保存数据</p>
+        <button onclick="testDeviceA()">设备 A - 勾选课程</button>
+        <p>2. 在设备 B 读取数据</p>
+        <button onclick="testDeviceB()">设备 B - 读取进度</button>
+        <div id="sync-result"></div>
+    </div>
+
+    <script src="api.js"></script>
+    <script>
+        const API_BASE_URL = 'http://localhost:8000/api';
+
+        async function testSaveDegreeProgress() {
+            const resultDiv = document.getElementById('save-result');
+            resultDiv.innerHTML = '<p>保存中...</p>';
+
+            const testData = {
+                netId: 'fox123',
+                data: {
+                    tasks: [],
+                    history: [],
+                    mailingList: {},
+                    degreeProgress: {
+                        checkboxStates: {
+                            'course-csc171': true,
+                            'course-csc172': true,
+                            'course-csc173': false
+                        },
+                        preMajor: {
+                            completed: 2,
+                            total: 3,
+                            done: false
+                        }
+                    }
+                }
+            };
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/user/save`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(testData)
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    resultDiv.innerHTML = '<p class="success">✅ 保存成功！</p><pre>' +
+                        JSON.stringify(testData.data.degreeProgress, null, 2) + '</pre>';
+                } else {
+                    resultDiv.innerHTML = '<p class="error">❌ 保存失败</p>';
+                }
+            } catch (error) {
+                resultDiv.innerHTML = '<p class="error">❌ 错误: ' + error.message + '</p>';
+            }
+        }
+
+        async function testLoadDegreeProgress() {
+            const resultDiv = document.getElementById('load-result');
+            resultDiv.innerHTML = '<p>读取中...</p>';
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/user?netId=fox123`);
+                const data = await response.json();
+
+                if (data.degreeProgress) {
+                    resultDiv.innerHTML = '<p class="success">✅ 读取成功！</p><pre>' +
+                        JSON.stringify(data.degreeProgress, null, 2) + '</pre>';
+                } else {
+                    resultDiv.innerHTML = '<p class="error">❌ 没有数据</p>';
+                }
+            } catch (error) {
+                resultDiv.innerHTML = '<p class="error">❌ 错误: ' + error.message + '</p>';
+            }
+        }
+
+        async function testDeviceA() {
+            const resultDiv = document.getElementById('sync-result');
+            resultDiv.innerHTML = '<p>设备 A: 保存数据中...</p>';
+
+            const deviceAData = {
+                netId: 'fox123',
+                data: {
+                    tasks: [],
+                    history: [],
+                    mailingList: {},
+                    degreeProgress: {
+                        checkboxStates: {
+                            'course-premajor-1': true,
+                            'course-premajor-2': true,
+                            'course-premajor-3': true,
+                            'course-premajor-4': true
+                        },
+                        preMajor: {
+                            completed: 4,
+                            total: 4,
+                            done: true
+                        },
+                        core: {
+                            completed: 3,
+                            total: 6,
+                            done: false
+                        }
+                    }
+                }
+            };
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/user/save`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(deviceAData)
+                });
+
+                const result = await response.json();
+                if (result.success) {
+                    resultDiv.innerHTML = '<p class="success">✅ 设备 A 保存成功！Pre-major: ✓ (4/4)</p>';
+                }
+            } catch (error) {
+                resultDiv.innerHTML = '<p class="error">❌ 设备 A 错误: ' + error.message + '</p>';
+            }
+        }
+
+        async function testDeviceB() {
+            const resultDiv = document.getElementById('sync-result');
+            const currentHTML = resultDiv.innerHTML;
+            resultDiv.innerHTML = currentHTML + '<p>设备 B: 读取数据中...</p>';
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/user?netId=fox123`);
+                const data = await response.json();
+
+                if (data.degreeProgress && data.degreeProgress.preMajor) {
+                    const pm = data.degreeProgress.preMajor;
+                    const status = pm.done ? '✓' : `${pm.completed}/${pm.total}`;
+
+                    resultDiv.innerHTML = currentHTML +
+                        `<p class="success">✅ 设备 B 读取成功！</p>` +
+                        `<p>Pre-major requirements: ${status}</p>` +
+                        `<pre>${JSON.stringify(data.degreeProgress, null, 2)}</pre>`;
+                } else {
+                    resultDiv.innerHTML = currentHTML + '<p class="error">❌ 设备 B 没有读取到数据</p>';
+                }
+            } catch (error) {
+                resultDiv.innerHTML = currentHTML + '<p class="error">❌ 设备 B 错误: ' + error.message + '</p>';
+            }
+        }
+    </script>
+</body>
+</html>
