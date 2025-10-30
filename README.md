@@ -1,7 +1,7 @@
 # UR Life
 
 <div align="center">
-  <img src="./image/symbol_only.svg" width="120" alt="University of Rochester Logo">
+  <img src="./Code/image/symbol_only.svg" width="120" alt="University of Rochester Logo">
 
   ### University of Rochester Campus Life Assistant
 
