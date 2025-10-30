@@ -1,13 +1,1 @@
-::1 - - [30/Oct/2025 10:45:09] "GET /app.js HTTP/1.1" 200 -
-::1 - - [30/Oct/2025 10:48:52] "HEAD /campus-assistant.html HTTP/1.1" 200 -
-::1 - - [30/Oct/2025 10:49:21] "GET /campus-assistant.html HTTP/1.1" 200 -
-::1 - - [30/Oct/2025 10:49:21] "GET /users-database.js?v=2 HTTP/1.1" 200 -
-::1 - - [30/Oct/2025 10:49:21] "GET /app.js?v=2 HTTP/1.1" 200 -
-::1 - - [30/Oct/2025 10:51:35] "GET /index.html HTTP/1.1" 200 -
-::1 - - [30/Oct/2025 10:51:35] "GET /users-database.js HTTP/1.1" 304 -
-::1 - - [30/Oct/2025 10:51:41] "GET /campus-assistant.html HTTP/1.1" 304 -
-::1 - - [30/Oct/2025 10:51:41] "GET /app.js?v=2 HTTP/1.1" 304 -
-::1 - - [30/Oct/2025 10:54:41] "GET / HTTP/1.1" 304 -
-::1 - - [30/Oct/2025 10:54:44] "GET /campus-assistant.html HTTP/1.1" 200 -
-::1 - - [30/Oct/2025 10:54:44] "GET /app.js?v=3 HTTP/1.1" 200 -
-::1 - - [30/Oct/2025 10:54:44] "GET /users-database.js?v=3 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Oct/2025 15:12:15] "GET /index.html HTTP/1.1" 200 -
