@@ -103,6 +103,73 @@
         "research": []
       },
       "degreeProgress": {}
+    },
+    "test999": {
+      "password": "test123",
+      "profile": {
+        "name": "Test",
+        "fullName": "Test User",
+        "email": "test999@u.rochester.edu",
+        "netId": "test999",
+        "avatar": "👤",
+        "degree": "Computer Science",
+        "year": "Junior"
+      },
+      "tasks": [],
+      "history": [],
+      "courses": [],
+      "mailingList": {},
+      "degreeProgress": {}
+    },
+    "zzh": {
+      "password": "111111",
+      "profile": {
+        "name": "Zhenhao",
+        "fullName": "Zhenhao Zhang",
+        "email": "zzh@u.rochester.edu",
+        "netId": "zzh",
+        "avatar": "👤",
+        "degree": "CS",
+        "year": "Junior"
+      },
+      "tasks": [],
+      "history": [],
+      "courses": [],
+      "mailingList": {
+        "professors": [],
+        "tas": [],
+        "classmates": [],
+        "friends": [],
+        "clubs": [],
+        "research": []
+      },
+      "degreeProgress": {
+        "preMajor": {
+          "completed": 0,
+          "total": 0,
+          "done": false
+        },
+        "core": {
+          "completed": 0,
+          "total": 0,
+          "done": false
+        },
+        "math": {
+          "completed": 0,
+          "total": 0,
+          "done": false
+        },
+        "advanced": {
+          "completed": 0,
+          "total": 0,
+          "done": false
+        },
+        "writing": {
+          "completed": 0,
+          "total": 0,
+          "done": false
+        }
+      }
     }
   }
 }

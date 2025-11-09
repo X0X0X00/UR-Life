@@ -61,9 +61,17 @@
 - Profile synchronization across devices
 
 ### 🔐 User Authentication
-- Secure login system
-- Session-based authentication
-- Multiple demo accounts for testing
+- **Secure login system** with password validation
+- **Create Account** - New users can register their own accounts
+  - Real-time input validation
+  - Duplicate Net ID detection
+  - Password strength requirements (min 6 characters)
+  - Password confirmation matching
+  - **Persistent storage** - New accounts saved to backend database
+  - Auto-fill login after successful registration
+- **Session-based authentication** for secure access
+- **Multiple demo accounts** for quick testing
+- **All data persists** - Tasks, courses, profile updates saved to server
 
 ---
 
@@ -71,58 +79,95 @@
 
 ### Prerequisites
 
-- **Python 3.8+**
+- **Python 3.8+** (already installed on URCS servers)
 - **ngrok** (optional, for public access)
 
-### Installation
+### 方式 1：快速启动（推荐）
 
-1. **Clone the repository**
-   ```bash
-   cd "/Users/zzh/Pychram/CSC 212/UR Life"
-   ```
+```bash
+# 进入项目目录
+cd "CSC 212/UR-Life/Code"
 
-2. **Navigate to Code directory**
-   ```bash
-   cd Code
-   ```
+# 一键启动所有服务（服务器 + ngrok + 保活）
+./scripts/start-all.sh
+```
 
-3. **Start the server**
-   ```bash
-   python3 server.py
-   ```
+**启动后会显示：**
+- ✅ 本地访问地址：`http://localhost:8000/index.html`
+- ✅ 公网访问地址：`https://xxxx.ngrok-free.dev/index.html`
+- ✅ 演示账号和管理命令
 
-4. **Access the application**
-   - Local: [http://localhost:8000/index.html](http://localhost:8000/index.html)
-   - Or use ngrok for public access (see below)
+### 方式 2：仅启动服务器（本地测试）
+
+```bash
+# 进入项目目录
+cd "CSC 212/UR-Life/Code"
+
+# 启动服务器
+python3 server.py
+```
+
+然后访问：[http://localhost:8000/index.html](http://localhost:8000/index.html)
+
+### 管理命令
+
+```bash
+# 查看服务状态
+./scripts/status-all.sh
+
+# 停止所有服务
+./scripts/stop-all.sh
+
+# 查看服务器日志
+tail -f logs/server.log
+
+# 查看 ngrok 日志
+tail -f logs/ngrok.log
+```
 
 ---
 
 ## 🌐 Public Access with ngrok
 
-### Setup ngrok
+### 自动方式（推荐）
 
-1. **Install ngrok** (if not already installed)
-   ```bash
-   brew install ngrok
-   ```
+使用 `./start-all.sh` 脚本会自动启动 ngrok 并显示公网地址！
 
-2. **Start ngrok tunnel**
-   ```bash
-   ngrok http 8000
-   ```
+### 手动方式
 
-3. **Get your public URL**
-   - ngrok will display a forwarding URL like: `https://xxxx-yyyy.ngrok-free.app`
-   - Share this URL to access from anywhere!
+如果需要手动启动 ngrok：
 
-### Current Public URL
+```bash
+# 启动 ngrok 隧道
+~/bin/ngrok http 8000
 ```
-https://hegemonic-ontogenetically-forest.ngrok-free.dev
+
+ngrok 会显示一个公网 URL，例如：
+- `https://xxxx-yyyy.ngrok-free.app`
+
+### 访问 ngrok 管理界面
+
+```bash
+# 在浏览器中访问
+http://localhost:4040
 ```
+
+可以查看：
+- 实时请求日志
+- 流量统计
+- 连接状态
+
+### 注意事项
+
+- ngrok 免费版 URL 每次重启会变化
+- 使用 `./start-all.sh` 会自动启动保活服务，保持连接稳定
+- 断开 SSH 后服务继续运行（使用 nohup）
 
 ---
 
-## 👥 Demo Accounts
+## 👥 Demo Accounts & Registration
+
+### Quick Login (Demo Accounts)
 
 | User | Net ID | Password | Major |
 |------|--------|----------|-------|
@@ -132,6 +177,19 @@ https://hegemonic-ontogenetically-forest.ngrok-free.dev
 
 **Tip:** Click on demo account cards on the login page to auto-fill credentials!
 
+### Create Your Own Account
+
+Don't want to use demo accounts? **Create your own!**
+
+1. Click "**Create one**" link on the login page
+2. Fill in your information:
+   - First Name & Last Name
+   - Choose a unique Net ID (lowercase letters & numbers only)
+   - Create a password (min 6 characters)
+   - Major and Year
+3. Click "**Create Account**"
+4. You'll be automatically redirected to login with your new account!
+
 ---
 
 ## 📁 Project Structure
@@ -139,17 +197,30 @@ https://hegemonic-ontogenetically-forest.ngrok-free.dev
 ```
 UR Life/
 ├── Code/
-│   ├── index.html              # Login page
-│   ├── campus-assistant.html   # Main application
+│   ├── index.html              # Login page (v9.0 - User Registration)
+│   ├── campus-assistant.html   # Main application dashboard
 │   ├── app.js                  # Application logic
 │   ├── api.js                  # API helper functions
 │   ├── server.py               # Backend server with REST API
-│   ├── database.json           # User data storage
 │   ├── users-database.js       # Demo user data
-│   └── image/
+│   ├── test-sync.html          # Database sync testing
+│   ├── scripts/                # Shell scripts for deployment
+│   │   ├── start-all.sh        # Start all services (server + ngrok + keep-alive)
+│   │   ├── start-server.sh     # Start Python server only
+│   │   ├── stop-all.sh         # Stop all services
+│   │   ├── status-all.sh       # Check service status
+│   │   ├── keep-alive.sh       # Keep ngrok connection alive
+│   │   └── ...                 # Other management scripts
+│   ├── logs/                   # Runtime logs and PID files
+│   │   ├── server.log          # Server output log
+│   │   ├── ngrok.log           # ngrok tunnel log
+│   │   ├── keep-alive.log      # Keep-alive script log
+│   │   └── *.pid               # Process ID files
+│   ├── data/                   # Application data
+│   │   └── database.json       # User data storage
+│   └── image/                  # Static assets
 │       └── symbol_only.svg     # UR official logo
 ├── Prototype/                  # Design mockups and screenshots
-├── image/                      # Original image assets
 ├── README.md                   # This file
 └── USER_GUIDE.md              # Detailed user guide
 ```
@@ -211,15 +282,35 @@ Available on all devices ✅
 
 ### Authentication
 - `GET /api/login?netId=xxx&password=xxx` - User login
+- `POST /api/user/register` - Register new user account
 
 ### User Data
 - `GET /api/user?netId=xxx` - Fetch user data
 - `POST /api/user/save` - Save user data (tasks, courses, profile, etc.)
 - `POST /api/user/password` - Change user password
 
-### Example Request
+### Example Requests
+
+**Register New User:**
 ```javascript
-// Save user data
+fetch('http://localhost:8000/api/user/register', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    netId: 'newuser123',
+    password: 'securepass',
+    userData: {
+      profile: { name: 'John', fullName: 'John Doe', ... },
+      tasks: [],
+      courses: [],
+      ...
+    }
+  })
+});
+```
+
+**Save User Data:**
+```javascript
 fetch('http://localhost:8000/api/user/save', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
@@ -321,7 +412,14 @@ ngrok http 8000
 
 ### Version History
 
-- **v8.0** (Current) - 5-minute course time intervals
+- **v9.0** (Current) - User registration system with persistent storage
+  - Create Account feature on login page
+  - Real-time validation (Net ID format, password strength, duplicate check)
+  - **Backend persistence** - New users saved to database.json
+  - Auto-login after registration
+  - Form toggle between login/register
+  - New API endpoint: POST /api/user/register
+- **v8.0** - 5-minute course time intervals
 - **v7.0** - Course calendar with start/end times
 - **v6.0** - Editable course calendar
 - **v5.0** - Profile editing and password management

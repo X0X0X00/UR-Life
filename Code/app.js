@@ -20,13 +20,17 @@ async function saveUserData() {
             const success = await saveUserDataToDatabase(currentUserNetId, currentUserData);
             if (success) {
                 console.log('✅ 数据已同步到云端数据库');
+                return true;
             } else {
                 console.log('⚠️ 云端同步失败，已保存到本地');
+                return false;
             }
         } catch (e) {
             console.log('⚠️ 数据库不可用，已保存到本地');
+            return false;
         }
     }
+    return false;
 }
 
 // 从数据库或 localStorage 加载用户数据
@@ -89,17 +93,62 @@ async function checkAuthAndLoadUser() {
     }
 
     currentUserNetId = userNetId;
-    currentUserData = JSON.parse(JSON.stringify(USERS_DATABASE[userNetId]));
 
+    // 直接从后端 API 加载用户数据
+    try {
+        const userData = await getUserData(currentUserNetId);
+
+        if (userData && userData.profile) {
+            // 成功从服务器加载数据，确保所有字段存在
+            currentUserData = {
+                profile: userData.profile,
+                tasks: userData.tasks || [],
+                history: userData.history || [],
+                courses: userData.courses || [],
+                mailingList: userData.mailingList || {},
+                degreeProgress: userData.degreeProgress || {}
+            };
+            console.log('✅ 从服务器加载用户数据', currentUserData);
+        } else {
+            // 如果服务器没有数据，尝试从 localStorage 加载
+            const storageKey = `campus_assistant_${currentUserNetId}`;
+            const savedData = localStorage.getItem(storageKey);
+
+            if (savedData) {
+                currentUserData = JSON.parse(savedData);
+                console.log('⚠️ 从本地缓存加载数据');
+            } else {
+                // 如果都没有，显示错误并返回登录页
+                alert('User data not found. Please log in again.');
+                sessionStorage.clear();
+                window.location.href = 'index.html';
+                return false;
+            }
+        }
+    } catch (error) {
+        console.error('Error loading user data:', error);
+        // 如果 API 失败，尝试从 localStorage 加载
+        const storageKey = `campus_assistant_${currentUserNetId}`;
+        const savedData = localStorage.getItem(storageKey);
+
+        if (savedData) {
+            currentUserData = JSON.parse(savedData);
+            console.log('⚠️ API 失败，从本地缓存加载数据');
+        } else {
+            alert('Cannot load user data. Please check your connection and try again.');
+            sessionStorage.clear();
+            window.location.href = 'index.html';
+            return false;
+        }
+    }
+
+    // 确保 currentUserData 不为 null
     if (!currentUserData) {
-        alert('User data not found!');
+        alert('Failed to load user data. Please try again.');
         sessionStorage.clear();
         window.location.href = 'index.html';
         return false;
     }
-
-    // 从数据库或 localStorage 加载保存的数据
-    await loadUserDataFromStorage();
 
     // 更新页面上的用户信息
     updateUserInterface();
@@ -629,6 +678,12 @@ function openEditProfileModal() {
     const modal = document.getElementById('editProfileModal');
     if (!modal) return;
 
+    // 检查 currentUserData 是否存在
+    if (!currentUserData || !currentUserData.profile) {
+        alert('User data not loaded. Please refresh the page.');
+        return;
+    }
+
     // 填充当前信息
     const profile = currentUserData.profile;
     document.getElementById('editProfileName').value = profile.name || '';
@@ -698,13 +753,6 @@ async function saveProfileChanges() {
 
     // 如果要修改密码，验证密码字段
     if (currentPassword || newPassword || confirmPassword) {
-        // 验证当前密码
-        const userData = USERS_DATABASE[currentUserNetId];
-        if (currentPassword !== userData.password) {
-            alert('Current password is incorrect');
-            return;
-        }
-
         // 验证新密码
         if (!newPassword) {
             alert('Please enter new password');
@@ -721,7 +769,12 @@ async function saveProfileChanges() {
             return;
         }
 
-        // 更新密码到数据库
+        if (!currentPassword) {
+            alert('Please enter your current password to change password');
+            return;
+        }
+
+        // 通过后端 API 更新密码
         try {
             const response = await fetch('http://localhost:8000/api/user/password', {
                 method: 'POST',
@@ -739,23 +792,29 @@ async function saveProfileChanges() {
                 return;
             }
 
-            // 更新本地缓存
-            USERS_DATABASE[currentUserNetId].password = newPassword;
+            alert('Password updated successfully!');
         } catch (error) {
             console.error('Password update error:', error);
-            // 继续更新其他信息
+            alert('Failed to update password. Please try again.');
+            return;
         }
     }
 
     // 更新个人资料
     currentUserData.profile.name = newName;
+    currentUserData.profile.fullName = newName; // 同时更新 fullName
     currentUserData.profile.email = newEmail;
     if (selectedAvatar) {
         currentUserData.profile.avatar = selectedAvatar;
     }
 
     // 保存到数据库
-    await saveUserData();
+    const saved = await saveUserData();
+
+    if (!saved) {
+        alert('Failed to save profile. Please try again.');
+        return;
+    }
 
     // 更新界面显示
     updateUserInterface();
@@ -787,11 +846,6 @@ function updateProfilePageDisplay() {
 // ============================================
 // 课程日历功能
 // ============================================
-
-// 初始化课程数据
-if (!currentUserData.courses) {
-    currentUserData.courses = [];
-}
 
 // 生成日历
 function renderCourseCalendar() {

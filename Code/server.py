@@ -10,7 +10,7 @@ import os
 from urllib.parse import urlparse, parse_qs
 import threading
 
-DATABASE_FILE = 'database.json'
+DATABASE_FILE = 'data/database.json'
 
 class URLifeHandler(SimpleHTTPRequestHandler):
     """自定义请求处理器"""
@@ -167,6 +167,50 @@ class URLifeHandler(SimpleHTTPRequestHandler):
                 self._set_headers(500)
                 self.wfile.write(json.dumps({'success': False, 'error': str(e)}).encode())
 
+        elif self.path == '/api/user/register':
+            # 注册新用户
+            content_length = int(self.headers['Content-Length'])
+            post_data = self.rfile.read(content_length)
+
+            try:
+                payload = json.loads(post_data.decode('utf-8'))
+                net_id = payload.get('netId')
+                password = payload.get('password')
+                user_data = payload.get('userData')
+
+                if not net_id or not password or not user_data:
+                    self._set_headers(400)
+                    self.wfile.write(json.dumps({'success': False, 'error': 'Missing required fields'}).encode())
+                    return
+
+                data = self.load_database()
+
+                # 检查用户是否已存在
+                if net_id in data['users']:
+                    self._set_headers(409)
+                    self.wfile.write(json.dumps({'success': False, 'error': 'User already exists'}).encode())
+                    return
+
+                # 创建新用户
+                data['users'][net_id] = {
+                    'password': password,
+                    'profile': user_data.get('profile', {}),
+                    'tasks': user_data.get('tasks', []),
+                    'history': user_data.get('history', []),
+                    'courses': user_data.get('courses', []),
+                    'mailingList': user_data.get('mailingList', {}),
+                    'degreeProgress': user_data.get('degreeProgress', {})
+                }
+
+                self.save_database(data)
+
+                self._set_headers(201)
+                self.wfile.write(json.dumps({'success': True, 'message': 'User created successfully'}).encode())
+
+            except Exception as e:
+                self._set_headers(500)
+                self.wfile.write(json.dumps({'success': False, 'error': str(e)}).encode())
+
         else:
             self._set_headers(404)
             self.wfile.write(json.dumps({'error': 'Not found'}).encode())
@@ -192,7 +236,9 @@ def run_server(port=8000):
     print(f'🌐 API Endpoints:')
     print(f'   - GET  /api/login?netId=xxx&password=xxx')
     print(f'   - GET  /api/user?netId=xxx')
+    print(f'   - POST /api/user/register')
     print(f'   - POST /api/user/save')
+    print(f'   - POST /api/user/password')
     print(f'\n按 Ctrl+C 停止服务器\n')
     httpd.serve_forever()
 

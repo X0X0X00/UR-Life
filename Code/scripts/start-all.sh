@@ -14,13 +14,13 @@ YELLOW='\033[1;33m'
 RED='\033[0;31m'
 NC='\033[0m' # No Color
 
-# 获取脚本所在目录
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+# 获取脚本所在目录的父目录（Code 目录）
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
 cd "$SCRIPT_DIR"
 
 # 1. 启动 Python 服务器
 echo -e "${BLUE}[1/2] 启动 Python 服务器...${NC}"
-./start-server.sh
+./scripts/start-server.sh
 
 # 检查服务器是否启动成功
 if [ $? -ne 0 ]; then
@@ -38,9 +38,9 @@ pkill ngrok 2>/dev/null
 sleep 1
 
 # 启动 ngrok（使用 nohup 让它持久运行）
-nohup ~/bin/ngrok http 8000 > ngrok.log 2>&1 &
+nohup ~/bin/ngrok http 8000 > logs/ngrok.log 2>&1 &
 NGROK_PID=$!
-echo $NGROK_PID > ngrok.pid
+echo $NGROK_PID > logs/ngrok.pid
 
 # 等待 ngrok 启动
 sleep 5
@@ -59,6 +59,7 @@ if [ -n "$PUBLIC_URL" ]; then
     echo -e "   ${BLUE}$PUBLIC_URL/index.html${NC}"
     echo ""
     echo -e "${YELLOW}📋 复制这个地址分享给其他人！${NC}"
+    echo -e "${YELLOW}💡 提示: 如果看不到更新，请使用 Ctrl+Shift+R 强制刷新${NC}"
     echo ""
     echo "======================================"
     echo -e "${GREEN}演示账号:${NC}"
@@ -68,26 +69,26 @@ if [ -n "$PUBLIC_URL" ]; then
     echo ""
     echo "======================================"
     echo -e "${BLUE}服务信息:${NC}"
-    echo -e "  Python 服务器 PID: $(cat server.pid)"
+    echo -e "  Python 服务器 PID: $(cat logs/server.pid)"
     echo -e "  ngrok PID: $NGROK_PID"
     echo -e "  ngrok 管理界面: ${BLUE}http://localhost:4040${NC}"
     echo ""
     echo "======================================"
     echo -e "${YELLOW}管理命令:${NC}"
-    echo -e "  查看服务状态: ${BLUE}./status-all.sh${NC}"
-    echo -e "  停止所有服务: ${BLUE}./stop-all.sh${NC}"
-    echo -e "  查看服务器日志: ${BLUE}tail -f server.log${NC}"
-    echo -e "  查看 ngrok 日志: ${BLUE}tail -f ngrok.log${NC}"
+    echo -e "  查看服务状态: ${BLUE}./scripts/status-all.sh${NC}"
+    echo -e "  停止所有服务: ${BLUE}./scripts/stop-all.sh${NC}"
+    echo -e "  查看服务器日志: ${BLUE}tail -f logs/server.log${NC}"
+    echo -e "  查看 ngrok 日志: ${BLUE}tail -f logs/ngrok.log${NC}"
     echo "======================================"
     echo ""
 
     # 3. 启动保活服务
     echo -e "${BLUE}[3/3] 启动保活服务...${NC}"
-    nohup ./keep-alive.sh > /dev/null 2>&1 &
+    nohup ./scripts/keep-alive.sh > /dev/null 2>&1 &
     sleep 1
 
-    if [ -f "keep-alive.pid" ]; then
-        KEEPALIVE_PID=$(cat keep-alive.pid)
+    if [ -f "logs/keep-alive.pid" ]; then
+        KEEPALIVE_PID=$(cat logs/keep-alive.pid)
         echo -e "${GREEN}✓ 保活服务启动成功${NC} (PID: $KEEPALIVE_PID)"
         echo -e "   每 5 分钟自动访问一次，保持 ngrok 连接"
     fi

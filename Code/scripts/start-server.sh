@@ -15,14 +15,14 @@ YELLOW='\033[1;33m'
 RED='\033[0;31m'
 NC='\033[0m' # No Color
 
-# 获取脚本所在目录
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+# 获取脚本所在目录的父目录（Code 目录）
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
 cd "$SCRIPT_DIR"
 
 # 配置
 PORT=8000
-LOG_FILE="server.log"
-PID_FILE="server.pid"
+LOG_FILE="logs/server.log"
+PID_FILE="logs/server.pid"
 
 # 检查端口是否被占用
 if lsof -Pi :$PORT -sTCP:LISTEN -t >/dev/null 2>&1 ; then
@@ -84,8 +84,8 @@ if ps -p $SERVER_PID > /dev/null 2>&1; then
     echo "======================================"
     echo -e "${YELLOW}管理命令:${NC}"
     echo -e "  查看日志: ${BLUE}tail -f $LOG_FILE${NC}"
-    echo -e "  停止服务: ${BLUE}./stop-server.sh${NC}"
-    echo -e "  查看状态: ${BLUE}./status-server.sh${NC}"
+    echo -e "  停止服务: ${BLUE}./scripts/stop-server.sh${NC}"
+    echo -e "  查看状态: ${BLUE}./scripts/status-server.sh${NC}"
     echo "======================================"
     echo ""
 else

@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>University of Rochester - UR Life Login</title>
     <style>
         * {
@@ -193,6 +196,50 @@
             color: #666;
             font-size: 12px;
         }
+
+        .switch-form {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .switch-form a {
+            color: #5B9BD5;
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .switch-form a:hover {
+            text-decoration: underline;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .success-message {
+            background-color: #E8F5E9;
+            color: #2E7D32;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+            font-size: 14px;
+            border-left: 4px solid #4CAF50;
+        }
+
+        .success-message.show {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
     </style>
 </head>
 <body>
@@ -202,10 +249,11 @@
             <div class="ur-logo">UNIVERSITY of ROCHESTER</div>
         </div>
 
-        <h1>UR Life</h1>
-        <p class="subtitle">Sign in to access your dashboard</p>
+        <h1 id="formTitle">UR Life</h1>
+        <p class="subtitle" id="formSubtitle">Sign in to access your dashboard</p>
 
         <div class="error-message" id="errorMessage"></div>
+        <div class="success-message" id="successMessage"></div>
 
         <form id="loginForm">
             <div class="form-group">
@@ -220,6 +268,50 @@
 
             <button type="submit" class="login-button">Sign In</button>
         </form>
+
+        <form id="registerForm" class="hidden">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="reg-firstname">First Name</label>
+                    <input type="text" id="reg-firstname" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-lastname">Last Name</label>
+                    <input type="text" id="reg-lastname" placeholder="Last Name" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="reg-netid">Net ID</label>
+                <input type="text" id="reg-netid" placeholder="Choose a Net ID" required>
+            </div>
+
+            <div class="form-group">
+                <label for="reg-password">Password</label>
+                <input type="password" id="reg-password" placeholder="Create a password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="reg-confirm-password">Confirm Password</label>
+                <input type="password" id="reg-confirm-password" placeholder="Confirm your password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="reg-major">Major</label>
+                <input type="text" id="reg-major" placeholder="Your major" required>
+            </div>
+
+            <div class="form-group">
+                <label for="reg-year">Year</label>
+                <input type="text" id="reg-year" placeholder="e.g., Sophomore, Junior" required>
+            </div>
+
+            <button type="submit" class="login-button">Create Account</button>
+        </form>
+
+        <div class="switch-form">
+            <span id="switchText">Don't have an account? <a id="switchLink">Create one</a></span>
+        </div>
 
         <div class="demo-accounts">
             <h3>📝 Demo Accounts (Click to auto-fill)</h3>
@@ -241,11 +333,12 @@
         </div>
 
         <div class="footer">
-            University of Rochester UR Life &copy; 2025
+            University of Rochester UR Life &copy; 2025<br>
+            <span style="font-size: 10px; color: #999;">v9.0 - User Registration</span>
         </div>
     </div>
 
-    <script src="users-database.js"></script>
+    <script src="users-database.js?v=9.0"></script>
     <script>
         // 自动填充登录信息
         function fillLogin(username, password) {
@@ -264,28 +357,218 @@
             }, 3000);
         }
 
+        // 显示成功消息
+        function showSuccess(message) {
+            const successDiv = document.getElementById('successMessage');
+            successDiv.textContent = message;
+            successDiv.classList.add('show');
+            setTimeout(() => {
+                successDiv.classList.remove('show');
+            }, 3000);
+        }
+
+        // 切换登录和注册表单
+        let isLoginMode = true;
+        document.getElementById('switchLink').addEventListener('click', function(e) {
+            e.preventDefault();
+            isLoginMode = !isLoginMode;
+
+            const loginForm = document.getElementById('loginForm');
+            const registerForm = document.getElementById('registerForm');
+            const demoAccounts = document.querySelector('.demo-accounts');
+            const formTitle = document.getElementById('formTitle');
+            const formSubtitle = document.getElementById('formSubtitle');
+            const switchText = document.getElementById('switchText');
+
+            if (isLoginMode) {
+                // 切换到登录模式
+                loginForm.classList.remove('hidden');
+                registerForm.classList.add('hidden');
+                demoAccounts.style.display = 'block';
+                formTitle.textContent = 'UR Life';
+                formSubtitle.textContent = 'Sign in to access your dashboard';
+                switchText.innerHTML = 'Don\'t have an account? <a id="switchLink">Create one</a>';
+            } else {
+                // 切换到注册模式
+                loginForm.classList.add('hidden');
+                registerForm.classList.remove('hidden');
+                demoAccounts.style.display = 'none';
+                formTitle.textContent = 'Create Account';
+                formSubtitle.textContent = 'Join the UR Life community';
+                switchText.innerHTML = 'Already have an account? <a id="switchLink">Sign in</a>';
+            }
+
+            // 重新绑定切换链接事件
+            document.getElementById('switchLink').addEventListener('click', arguments.callee);
+        });
+
         // 处理登录表单提交
         document.getElementById('loginForm').addEventListener('submit', function(e) {
             e.preventDefault();
 
-            const netid = document.getElementById('netid').value.trim();
+            const netid = document.getElementById('netid').value.trim().toLowerCase();
             const password = document.getElementById('password').value;
 
-            // 验证用户
-            if (USERS_DATABASE[netid]) {
-                if (USERS_DATABASE[netid].password === password) {
-                    // 登录成功,保存用户信息到 sessionStorage
-                    sessionStorage.setItem('currentUser', netid);
-                    sessionStorage.setItem('userData', JSON.stringify(USERS_DATABASE[netid]));
+            // 调用后端 API 验证登录
+            fetch(`/api/login?netId=${netid}&password=${password}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        // 登录成功,保存用户信息到 sessionStorage
+                        sessionStorage.setItem('currentUser', netid);
 
-                    // 跳转到主页
-                    window.location.href = 'campus-assistant.html';
-                } else {
-                    showError('Incorrect password. Please try again.');
-                }
-            } else {
-                showError('Net ID not found. Please check your credentials.');
+                        // 获取完整的用户数据
+                        return fetch(`/api/user?netId=${netid}`);
+                    } else {
+                        showError(data.error || 'Invalid credentials. Please try again.');
+                        throw new Error('Login failed');
+                    }
+                })
+                .then(response => {
+                    if (response) {
+                        return response.json();
+                    }
+                })
+                .then(userData => {
+                    if (userData) {
+                        // 保存完整的用户数据
+                        sessionStorage.setItem('userData', JSON.stringify(userData));
+
+                        // 同时更新前端数据库（用于即时访问）
+                        USERS_DATABASE[netid] = {
+                            name: userData.profile.fullName || userData.profile.name,
+                            password: password,
+                            ...userData
+                        };
+
+                        // 跳转到主页
+                        window.location.href = 'campus-assistant.html';
+                    }
+                })
+                .catch(error => {
+                    if (error.message !== 'Login failed') {
+                        console.error('Login error:', error);
+                        showError('Unable to connect to server. Please check if the server is running.');
+                    }
+                });
+        });
+
+        // 处理注册表单提交
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const firstname = document.getElementById('reg-firstname').value.trim();
+            const lastname = document.getElementById('reg-lastname').value.trim();
+            const netid = document.getElementById('reg-netid').value.trim().toLowerCase();
+            const password = document.getElementById('reg-password').value;
+            const confirmPassword = document.getElementById('reg-confirm-password').value;
+            const major = document.getElementById('reg-major').value.trim();
+            const year = document.getElementById('reg-year').value.trim();
+
+            // 验证输入
+            if (!firstname || !lastname || !netid || !password || !major || !year) {
+                showError('Please fill in all fields.');
+                return;
             }
+
+            // 验证 NetID 格式（只能包含字母和数字）
+            if (!/^[a-z0-9]+$/.test(netid)) {
+                showError('Net ID can only contain lowercase letters and numbers.');
+                return;
+            }
+
+            // 检查 NetID 是否已存在
+            if (USERS_DATABASE[netid]) {
+                showError('This Net ID is already taken. Please choose another one.');
+                return;
+            }
+
+            // 验证密码长度
+            if (password.length < 6) {
+                showError('Password must be at least 6 characters long.');
+                return;
+            }
+
+            // 验证密码匹配
+            if (password !== confirmPassword) {
+                showError('Passwords do not match. Please try again.');
+                return;
+            }
+
+            // 创建新用户数据
+            const userData = {
+                profile: {
+                    name: firstname,
+                    fullName: `${firstname} ${lastname}`,
+                    email: `${netid}@u.rochester.edu`,
+                    netId: netid,
+                    avatar: '👤',
+                    degree: major,
+                    year: year
+                },
+                tasks: [],
+                history: [],
+                courses: [],
+                mailingList: {
+                    professors: [],
+                    tas: [],
+                    classmates: [],
+                    friends: [],
+                    clubs: [],
+                    research: []
+                },
+                degreeProgress: {
+                    preMajor: { completed: 0, total: 0, done: false },
+                    core: { completed: 0, total: 0, done: false },
+                    math: { completed: 0, total: 0, done: false },
+                    advanced: { completed: 0, total: 0, done: false },
+                    writing: { completed: 0, total: 0, done: false }
+                }
+            };
+
+            // 调用后端 API 注册用户
+            fetch('/api/user/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    netId: netid,
+                    password: password,
+                    userData: userData
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // 同时保存到前端数据库（用于即时访问）
+                    USERS_DATABASE[netid] = {
+                        name: `${firstname} ${lastname}`,
+                        password: password,
+                        ...userData
+                    };
+
+                    // 显示成功消息
+                    showSuccess('Account created successfully! You can now sign in.');
+
+                    // 清空表单
+                    document.getElementById('registerForm').reset();
+
+                    // 2秒后切换回登录表单
+                    setTimeout(() => {
+                        document.getElementById('switchLink').click();
+                        // 自动填充新创建的用户信息
+                        document.getElementById('netid').value = netid;
+                        document.getElementById('password').focus();
+                    }, 2000);
+                } else {
+                    showError(data.error || 'Registration failed. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Registration error:', error);
+                showError('Unable to connect to server. Please try again later.');
+            });
         });
 
         // 检查是否已登录
