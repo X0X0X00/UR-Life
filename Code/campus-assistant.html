@@ -718,7 +718,11 @@
         .category-chevron.open {
             transform: rotate(180deg);
         }
+        .submenu .nested .submenu-item {
+            padding-left: 90px;
+        }
     </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 <body>
     <!-- Header -->
@@ -779,10 +783,10 @@
                 <span class="chevron" id="chevron-map">▼</span>
             </div>
             <div class="submenu" id="submenu-map">
-                <a href="https://www.rochester.edu/college/campus-map/" target="_blank" class="submenu-item">River Campus</a>
-                <a href="https://www.urmc.rochester.edu/patients-families/maps-directions.aspx" target="_blank" class="submenu-item">Medical Center</a>
-                <a href="https://www.esm.rochester.edu/visit/" target="_blank" class="submenu-item">Eastman School of Music</a>
-                <a href="https://www.rochester.edu/working/hr/benefits/parking/maps.html" target="_blank" class="submenu-item">South Campus</a>
+                <a href="https://www.rochester.edu/maps/printable_maps/URmaps_RC.pdf" target="_blank" class="submenu-item">River Campus</a>
+                <a href="https://www.rochester.edu/maps/printable_maps/URmaps_URMC.pdf" target="_blank" class="submenu-item">Medical Center</a>
+                <a href="https://www.rochester.edu/maps/printable_maps/URmaps_ESM.pdf" target="_blank" class="submenu-item">Eastman School of Music</a>
+                <a href="https://www.rochester.edu/maps/printable_maps/URmaps_SouthCampus.pdf" target="_blank" class="submenu-item">South Campus</a>
             </div>
 
             <div class="menu-item" onclick="toggleSubmenu('transport')">
@@ -790,10 +794,54 @@
                 <span class="chevron" id="chevron-transport">▼</span>
             </div>
             <div class="submenu" id="submenu-transport">
-                <a href="https://www.rochester.edu/transportation/shuttle/" target="_blank" class="submenu-item">Shuttles</a>
-                <a href="https://www.rochester.edu/sustainability/get-involved/alternative-transportation/" target="_blank" class="submenu-item">Electric Vehicle</a>
-                <a href="https://www.safety.rochester.edu/publicsafety/services/safe-ride/" target="_blank" class="submenu-item">Safe Ride Service</a>
-                <a href="https://www.rochester.edu/transportation/" target="_blank" class="submenu-item">Event & Holiday Adjustments</a>
+                <!-- Added -->
+                <div class="submenu-item" onclick="toggleSubmenu('shuttles')">
+                    Shuttles
+                    <span class="chevron" id="chevron-shuttles" style="float:right;">▼</span>
+                </div>
+
+                <div class="submenu nested" id="submenu-shuttles">
+                    <a href="https://www.rochester.edu/parking/shuttles/blue-line-fall-2025/" target="_blank" class="submenu-item nested-item">
+                        Blue Line
+                    </a>
+                    <a href="https://www.rochester.edu/parking/shuttles/silver-line-fall-2025/" target="_blank" class="submenu-item nested-item">
+                        Silver Line
+                    </a>
+                    <a href="https://www.rochester.edu/parking/shuttles/gold-line-fall-2025/" target="_blank" class="submenu-item nested-item">
+                        Gold Line
+                    </a>
+                    <a href="https://www.rochester.edu/parking/shuttles/orange-line-fall-2025/" target="_blank" class="submenu-item nested-item">
+                        Orange Line
+                    </a>
+                    <a href="https://www.rochester.edu/parking/shuttles/red-line-fall-2025/" target="_blank" class="submenu-item nested-item">
+                        Red Line
+                    </a>
+                    <a href="https://www.rochester.edu/parking/shuttles/green-line-fall-2025/" target="_blank" class="submenu-item nested-item">
+                        Green Line
+                    </a>
+                </div>
+        
+                <a href="https://www.rochester.edu/parking/wp-content/uploads/2021/11/Lets-Ride-2022-Bicycling-on-the-University-of-Rochester-Campuses-web-version.pdf" target="_blank" class="submenu-item">Bicycling Trails</a>
+                
+                <!-- Added -->
+                <div class="submenu-item" onclick="toggleSubmenu('trails')">
+                    Walking Trails
+                    <span class="chevron" id="chevron-trails" style="float:right;">▼</span>
+                </div>
+                
+                <div class="submenu nested" id="submenu-trails">
+                    <a href="https://www.monroecounty.gov/files/parks/LVT%20Brochure%202017.pdf"  target="_blank" class="submenu-item trails-subitem">Lehigh Valley Trail</a>
+                </div>
+
+                <!-- Added -->
+                <div class="submenu-item" onclick="toggleSubmenu('parking')">
+                    Parking
+                    <span class="chevron" id="chevron-parking" style="float:right;">▼</span>
+                </div>
+                
+                <div class="submenu nested" id="submenu-parking">
+                    <a href="https://www.rochester.edu/parking/wp-content/uploads/2021/10/parking_maps_oct_2021.pdf"  target="_blank" class="submenu-item parking-subitem">Parking Map</a>
+                </div>
             </div>
 
             <div class="menu-item" onclick="toggleSubmenu('food')">
@@ -801,8 +849,27 @@
                 <span class="chevron" id="chevron-food">▼</span>
             </div>
             <div class="submenu" id="submenu-food">
-                <a href="https://dining.rochester.edu/locations/" target="_blank" class="submenu-item">Dining Halls</a>
-                <a href="https://dining.rochester.edu/retail-dining/" target="_blank" class="submenu-item">Cafes & Coffee Shops</a>
+                <div class="submenu-item" onclick="toggleSubmenu('dining_halls')">
+                    Dining Halls
+                    <span class="chevron" id="chevron-dining_halls" style="float:right;">▼</span>
+                </div>
+                
+                <div class="submenu nested" id="submenu-dining_halls">
+                    <a href="https://dining.rochester.edu/locations/danforth-dining-center/"  target="_blank" class="submenu-item dining_halls-subitem">Danforth Dining Center</a>
+                    <a href="https://dining.rochester.edu/locations/douglass-dining/"  target="_blank" class="submenu-item dining_halls-subitem">Douglass Dining Center</a>
+                    <a href="https://dining.rochester.edu/locations/the-pit/"  target="_blank" class="submenu-item dining_halls-subitem">The Pit</a>
+                    <a href="https://dining.rochester.edu/locations/rockys-sub-shop/"  target="_blank" class="submenu-item dining_halls-subitem">Rocky’s Sub Shop</a>
+                    <a href="https://dining.rochester.edu/locations/grab-go/"  target="_blank" class="submenu-item dining_halls-subitem">Grab & Go</a>
+                    <a href="https://dining.rochester.edu/locations/roots_shoots/"  target="_blank" class="submenu-item dining_halls-subitem">California Rollin II</a>
+                    <a href="https://dining.rochester.edu/locations/connections/"  target="_blank" class="submenu-item dining_halls-subitem">Connections</a>
+                    <a href="https://dining.rochester.edu/locations/starbucks/"  target="_blank" class="submenu-item dining_halls-subitem">Starbucks</a>
+                    <a href="https://dining.rochester.edu/locations/peets-coffee-wegmans-hall/"  target="_blank" class="submenu-item dining_halls-subitem">Peet’s Coffee</a>
+                    <a href="https://dining.rochester.edu/locations/hillside-market/"  target="_blank" class="submenu-item dining_halls-subitem">Hillside Market</a>
+                    <a href="https://dining.rochester.edu/locations/1154/"  target="_blank" class="submenu-item dining_halls-subitem">The Brew</a>
+                    <a href="https://dining.rochester.edu/locations/eastman-dining-center/"  target="_blank" class="submenu-item dining_halls-subitem">Eastman Dining Center</a>
+                
+                
+                </div>
                 <a href="https://dining.rochester.edu/meal-plans/" target="_blank" class="submenu-item">Meal Plans</a>
             </div>
 
@@ -813,8 +880,7 @@
             <div class="submenu" id="submenu-study">
                 <a href="https://www.library.rochester.edu/hours" target="_blank" class="submenu-item">Library Hours & Locations</a>
                 <a href="https://www.library.rochester.edu/spaces" target="_blank" class="submenu-item">Room Reservations</a>
-                <a href="https://www.library.rochester.edu/rush-rhees" target="_blank" class="submenu-item">Quiet & Group Areas</a>
-                <a href="https://www.library.rochester.edu/printing" target="_blank" class="submenu-item">Printing</a>
+                <a href="https://www.rochester.edu/parking/mail-services/print-services/" target="_blank" class="submenu-item">Printing Services</a>
             </div>
 
             <div class="menu-item" onclick="toggleSubmenu('campus')">
@@ -822,8 +888,8 @@
                 <span class="chevron" id="chevron-campus">▼</span>
             </div>
             <div class="submenu" id="submenu-campus">
-                <a href="https://www.rochester.edu/college/cce/" target="_blank" class="submenu-item">Events & Activities</a>
-                <a href="https://www.rochester.edu/college/cce/" target="_blank" class="submenu-item">UR CCC</a>
+                <a href="https://www.rochester.edu/college/cce/events/index.html" target="_blank" class="submenu-item">Events & Activities</a>
+                <a href="https://ccc.rochester.edu/events" target="_blank" class="submenu-item">UR CCC</a>
                 <a href="https://www.rochester.edu/uhs/" target="_blank" class="submenu-item">Health & Wellness</a>
                 <a href="https://www.rochester.edu/reslife/" target="_blank" class="submenu-item">Housing</a>
                 <a href="https://www.safety.rochester.edu/" target="_blank" class="submenu-item">Safety & Emergency</a>
@@ -1088,6 +1154,16 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Added -->
+            <div class="page" id="page-webview">
+                <div class="section-title" id="webview-title">Embedded Page</div>
+                <iframe
+                    id="webview-frame"
+                    src=""
+                    style="width: 100%; height: calc(100vh - 180px); border: none;"
+                ></iframe>
+            </div>
         </div>
     </div>
 
@@ -1099,7 +1175,7 @@
         <div class="modal-content">
             <div class="modal-title">Add a To-do Item:</div>
             <div class="form-group">
-                <input type="date" id="taskDate" placeholder="Date">
+                <input type="text" id="taskDate" placeholder="Select Date">
             </div>
             <div class="form-group">
                 <input type="text" id="taskName" placeholder="Task Name">
@@ -1268,6 +1344,15 @@
     <script src="users-database.js?v=8"></script>
     <script src="api.js?v=8"></script>
     <script src="app.js?v=8"></script>
+    <!-- Added -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        flatpickr("#taskDate", {
+            dateFormat: "Y-m-d",
+            locale: "en",
+            allowInput: false,
+        });
+    </script>
     <script>
         console.log('Campus Assistant loaded - Version 8 (Calendar with Time Span)');
 

@@ -15,14 +15,14 @@
       },
       "tasks": [
         {
-          "text": "Oct 30 CSC 212",
-          "completed": false,
-          "date": "2025-10-31"
-        },
-        {
           "id": 1,
           "content": "测试任务",
           "completed": false
+        },
+        {
+          "text": "Oct 30 CSC 212",
+          "completed": false,
+          "date": "2025-10-31"
         }
       ],
       "history": [],

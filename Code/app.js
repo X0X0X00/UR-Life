@@ -324,11 +324,13 @@ function addTask() {
 
 // 格式化日期为英文
 function formatDate(dateString) {
-    const date = new Date(dateString);
+    // const date = new Date(dateString);
+    const parts = dateString.split('-');
+    const month = parseInt(parts[1]) - 1;
+    const day = parseInt(parts[2]);
+
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    const month = months[date.getMonth()];
-    const day = date.getDate();
-    return `${month} ${day}`;
+    return `${months[month]} ${day}`;
 }
 
 // ============================================
