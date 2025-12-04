@@ -1,29 +1,27 @@
-127.0.0.1 - - [01/Nov/2025 00:00:34] "GET /index.html HTTP/1.1" 200 -
-127.0.0.1 - - [01/Nov/2025 00:00:34] "GET /image/symbol_only.svg?v=2 HTTP/1.1" 200 -
-127.0.0.1 - - [01/Nov/2025 00:00:34] "GET /users-database.js HTTP/1.1" 200 -
-127.0.0.1 - - [01/Nov/2025 00:01:04] "GET /campus-assistant.html HTTP/1.1" 200 -
-127.0.0.1 - - [01/Nov/2025 00:01:04] "GET /image/symbol_only.svg HTTP/1.1" 200 -
-127.0.0.1 - - [01/Nov/2025 00:01:04] "GET /users-database.js?v=8 HTTP/1.1" 200 -
-127.0.0.1 - - [01/Nov/2025 00:01:04] "GET /api.js?v=8 HTTP/1.1" 200 -
-127.0.0.1 - - [01/Nov/2025 00:01:04] "GET /app.js?v=8 HTTP/1.1" 200 -
-127.0.0.1 - - [01/Nov/2025 00:04:38] "GET /index.html HTTP/1.1" 200 -
-127.0.0.1 - - [01/Nov/2025 00:04:38] "GET /users-database.js?v=9.0 HTTP/1.1" 200 -
-127.0.0.1 - - [01/Nov/2025 00:04:39] "GET /index.html HTTP/1.1" 200 -
-127.0.0.1 - - [01/Nov/2025 00:09:39] "GET /index.html HTTP/1.1" 200 -
-127.0.0.1 - - [01/Nov/2025 00:14:40] "GET /index.html HTTP/1.1" 200 -
-127.0.0.1 - - [01/Nov/2025 00:19:40] "GET /index.html HTTP/1.1" 200 -
-127.0.0.1 - - [01/Nov/2025 00:24:40] "GET /index.html HTTP/1.1" 200 -
-127.0.0.1 - - [01/Nov/2025 00:29:41] "GET /index.html HTTP/1.1" 200 -
-127.0.0.1 - - [01/Nov/2025 00:34:41] "GET /index.html HTTP/1.1" 200 -
-127.0.0.1 - - [01/Nov/2025 00:38:17] "GET /index.html HTTP/1.1" 200 -
-127.0.0.1 - - [01/Nov/2025 00:38:17] "GET /users-database.js?v=9.0 HTTP/1.1" 200 -
-127.0.0.1 - - [01/Nov/2025 00:39:42] "GET /index.html HTTP/1.1" 200 -
-127.0.0.1 - - [01/Nov/2025 00:40:15] "GET /index.html HTTP/1.1" 200 -
-127.0.0.1 - - [01/Nov/2025 00:40:31] "POST /api/user/register HTTP/1.1" 404 -
-127.0.0.1 - - [01/Nov/2025 00:40:40] "POST /api/user/register HTTP/1.1" 404 -
-127.0.0.1 - - [01/Nov/2025 00:40:43] "POST /api/user/register HTTP/1.1" 404 -
-127.0.0.1 - - [01/Nov/2025 00:40:43] "POST /api/user/register HTTP/1.1" 404 -
-127.0.0.1 - - [01/Nov/2025 00:40:43] "POST /api/user/register HTTP/1.1" 404 -
-127.0.0.1 - - [01/Nov/2025 00:40:44] "POST /api/user/register HTTP/1.1" 404 -
-127.0.0.1 - - [01/Nov/2025 00:40:49] "POST /api/user/register HTTP/1.1" 404 -
-127.0.0.1 - - [01/Nov/2025 00:41:05] "POST /api/user/register HTTP/1.1" 404 -
+127.0.0.1 - - [03/Dec/2025 22:30:35] code 404, message File not found
+127.0.0.1 - - [03/Dec/2025 22:30:35] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [03/Dec/2025 22:30:38] "GET /api/login?netId=fox123&password=rochester2025 HTTP/1.1" 200 -
+127.0.0.1 - - [03/Dec/2025 22:30:38] "GET /api/user?netId=fox123 HTTP/1.1" 200 -
+127.0.0.1 - - [03/Dec/2025 22:30:38] "GET /campus-assistant.html HTTP/1.1" 200 -
+127.0.0.1 - - [03/Dec/2025 22:30:39] "GET /app.js?v=15 HTTP/1.1" 200 -
+127.0.0.1 - - [03/Dec/2025 22:30:39] "GET /api.js?v=15 HTTP/1.1" 200 -
+127.0.0.1 - - [03/Dec/2025 22:30:39] "GET /users-database.js?v=15 HTTP/1.1" 200 -
+127.0.0.1 - - [03/Dec/2025 22:30:39] "GET /api/user?netId=fox123 HTTP/1.1" 200 -
+127.0.0.1 - - [03/Dec/2025 22:30:45] code 404, message File not found
+127.0.0.1 - - [03/Dec/2025 22:30:45] "GET /api/search?q=CSC%20212 HTTP/1.1" 404 -
+127.0.0.1 - - [03/Dec/2025 22:30:46] code 404, message File not found
+127.0.0.1 - - [03/Dec/2025 22:30:46] "GET /api/search?q=CSC%20 HTTP/1.1" 404 -
+127.0.0.1 - - [03/Dec/2025 22:30:47] code 404, message File not found
+127.0.0.1 - - [03/Dec/2025 22:30:47] "GET /api/search?q=CSC HTTP/1.1" 404 -
+127.0.0.1 - - [03/Dec/2025 22:30:49] code 404, message File not found
+127.0.0.1 - - [03/Dec/2025 22:30:49] "GET /api/search?q=CSC%2021 HTTP/1.1" 404 -
+127.0.0.1 - - [03/Dec/2025 22:30:52] code 404, message File not found
+127.0.0.1 - - [03/Dec/2025 22:30:52] "GET /api/search?q=Polak HTTP/1.1" 404 -
+127.0.0.1 - - [03/Dec/2025 22:31:09] "OPTIONS /api/user/save HTTP/1.1" 200 -
+127.0.0.1 - - [03/Dec/2025 22:31:09] "POST /api/user/save HTTP/1.1" 200 -
+127.0.0.1 - - [03/Dec/2025 22:31:14] code 404, message File not found
+127.0.0.1 - - [03/Dec/2025 22:31:14] "GET /api/search?q=CSC%20212 HTTP/1.1" 404 -
+127.0.0.1 - - [03/Dec/2025 22:31:39] "OPTIONS /api/user/save HTTP/1.1" 200 -
+127.0.0.1 - - [03/Dec/2025 22:31:39] "POST /api/user/save HTTP/1.1" 200 -
+127.0.0.1 - - [03/Dec/2025 22:32:09] "OPTIONS /api/user/save HTTP/1.1" 200 -
+127.0.0.1 - - [03/Dec/2025 22:32:09] "POST /api/user/save HTTP/1.1" 200 -

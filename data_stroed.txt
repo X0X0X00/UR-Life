@@ -1,0 +1,2531 @@
+Skip to main content
+Rochester shield
+Apply
+Visit
+Give
+Search Rochester.eduSearch text
+Search Rochester.edu
+Search
+Hajim School of Engineering & Applied Sciences
+Department of Computer Science
+About Us
+
+People
+
+Undergraduate
+
+Graduate
+
+Research
+
+News & Events
+
+Undergraduate Program
+Section Navigation
+Overview
+Advising
+Degree Requirements
+Major Declaration
+Resources
+Courses
+CS Lab Information
+Research Opportunities
+URCS Student Groups
+Teaching Assistantships
+Applying
+HomeCoursesFall Term Schedule
+Fall Term Schedule
+Sortable  |   Group by Weekday
+
+Fall 2025
+Number
+Title
+Instructor
+Time
+CSC 131-1Recreational GraphicsTed PawlickiTR 11:05AM - 12:20PM
+CSC 160-01AI for AllAdam PurteeTR 4:50PM - 6:05PM
+CSC 161-1Introduction to ProgrammingMonika PolakTR 11:05AM - 12:20PM
+CSC 161-10Introduction to ProgrammingMonika PolakR 2:00PM - 3:15PM
+CSC 161-11Introduction to ProgrammingMonika PolakR 4:50PM - 6:05PM
+CSC 161-12Introduction to ProgrammingMonika PolakR 7:40PM - 8:55PM
+CSC 161-13Introduction to ProgrammingMonika PolakT 3:25PM - 4:40PM
+CSC 161-14Introduction to ProgrammingMonika PolakT 6:15PM - 7:30PM
+CSC 161-15Introduction to ProgrammingMonika PolakTR 12:30PM - 1:45PM
+CSC 161-16Introduction to ProgrammingMonika PolakW 3:25PM - 4:40PM
+CSC 161-18Introduction to ProgrammingMonika PolakTR 4:50PM - 6:05PM
+CSC 161-22Introduction to ProgrammingMonika PolakM 9:00AM - 10:15AM
+CSC 161-23Introduction to ProgrammingMonika PolakW 2:00PM - 3:15PM
+CSC 161-3Introduction to ProgrammingMonika PolakU 1:30PM - 3:00PM
+CSC 161-5Introduction to ProgrammingMonika PolakM 10:25AM - 11:40AM
+CSC 161-8Introduction to ProgrammingMonika PolakMW 12:30PM - 1:45PM
+CSC 171-1Introduction to Computer ScienceEustrat ZhupaMW 10:25AM - 11:40AM
+CSC 171-10Introduction to Computer ScienceEustrat ZhupaM 7:40PM - 8:55PM
+CSC 171-13Introduction to Computer ScienceEustrat ZhupaMW 2:00PM - 3:15PM
+CSC 171-14Introduction to Computer ScienceEustrat ZhupaT 3:25PM - 4:40PM
+CSC 171-15Introduction to Computer ScienceEustrat ZhupaT 4:50PM - 6:05PM
+CSC 171-21Introduction to Computer ScienceEustrat ZhupaTR 9:40AM - 10:55AM
+CSC 171-22Introduction to Computer ScienceEustrat ZhupaTR 11:05AM - 12:20PM
+CSC 171-27Introduction to Computer ScienceEustrat ZhupaM 12:30PM - 1:45PM
+CSC 171-3Introduction to Computer ScienceEustrat ZhupaW 2:00PM - 3:15PM
+CSC 171-4Introduction to Computer ScienceEustrat ZhupaM 3:25PM - 4:40PM
+CSC 171-5Introduction to Computer ScienceEustrat ZhupaM 3:25PM - 4:40PM
+CSC 171-9Introduction to Computer ScienceEustrat ZhupaT 2:00PM - 3:15PM
+CSC 172-1Data Structures & AlgorithmsTed PawlickiTR 9:40AM - 10:55AM
+CSC 172-14Data Structures & AlgorithmsTed PawlickiMW 2:00PM - 3:15PM
+CSC 172-16Data Structures & AlgorithmsTed PawlickiMW 4:50PM - 6:05PM
+CSC 172-18Data Structures & AlgorithmsTed PawlickiR 2:00PM - 3:15PM
+CSC 172-19Data Structures & AlgorithmsTed PawlickiR 4:50PM - 6:05PM
+CSC 172-22Data Structures & AlgorithmsTed PawlickiT 7:40PM - 8:55PM
+CSC 172-25Data Structures & AlgorithmsTed PawlickiTR 2:00PM - 3:15PM
+CSC 172-5Data Structures & AlgorithmsTed PawlickiM 3:25PM - 4:40PM
+CSC 172-6Data Structures & AlgorithmsTed PawlickiM 4:50PM - 6:05PM
+CSC 172-7Data Structures & AlgorithmsTed PawlickiM 6:15PM - 7:30PM
+CSC 173-01Computation & Formal SystemsGeorge FergusonMW 2:00PM - 3:15PM
+CSC 212-1Human Computer InteractionYukang YanTR 11:05AM - 12:20PM
+CSC 214-1Mobile App DevelopmentArthur RoolfsTR 6:15PM - 7:30PM
+CSC 240-01Intro to Data MiningCantay CaliskanTR 3:25PM - 4:40PM
+CSC 241-01Intro to Computational NeuroscienceRalf HaefnerTR 12:30PM - 1:45PM
+CSC 242-01Artificial IntelligenceTed PawlickiTR 3:25PM - 4:40PM
+CSC 245-01Deep LearningChenliang XuTR 9:40AM - 10:55AM
+CSC 246-01Machine LearningAdam PurteeTR 11:05AM - 12:20PM
+CSC 252-01Computer OrganizationYanan GuoMW 3:25PM - 4:40PM
+CSC 253-01Collaborative Programming & Software DesignChen DingMW 3:25PM - 4:40PM
+CSC 254-01Prog Language Design & Imp.Michael ScottMW 10:25AM - 11:40AM
+CSC 254-03Prog Language Design & Imp.Michael ScottR 3:25PM - 4:40PM
+CSC 254-04Prog Language Design & Imp.Michael ScottR 6:15PM - 7:30PM
+CSC 254-08Prog Language Design & Imp.Michael ScottW 3:25PM - 4:40PM
+CSC 254-10Prog Language Design & Imp.Michael ScottW 6:15PM - 7:30PM
+CSC 254-12Prog Language Design & Imp.Michael ScottW 3:25PM - 4:40PM
+CSC 256-1Operating SystemsJohn CriswellTR 2:00PM - 3:15PM
+CSC 257-1Computer NetworksAndrew Read-McFarlandMW 4:50PM - 6:05PM
+CSC 259-1Computer Imaging & GraphicsYuhao ZhuWF 2:00PM - 3:15PM
+CSC 261-01Database SystemsEustrat ZhupaMW 12:30PM - 1:45PM
+CSC 264-1Computer AuditionZhiyao DuanTR 12:30PM - 1:45PM
+CSC 273W-01Writing for Computer ScienceJoseph LoporcaroT 2:00PM - 3:15PM
+CSC 273W-02Writing for Computer ScienceJoseph LoporcaroT 4:50PM - 6:05PM
+CSC 276-01Computer Architecture and SecurityYanan GuoMW 4:50PM - 6:05PM
+CSC 277-01End-To-End Deep LearningChristopher KananMW 3:25PM - 4:40PM
+CSC 280-01Computer Models &LimitationsMonika PolakMW 2:00PM - 3:15PM
+CSC 280-03Computer Models &LimitationsMonika PolakW 4:50PM - 6:05PM
+CSC 280-04Computer Models &LimitationsMonika PolakW 6:15PM - 7:30PM
+CSC 280-06Computer Models &LimitationsMonika PolakR 6:15PM - 7:30PM
+CSC 280-08Computer Models &LimitationsMonika PolakR 3:25PM - 4:15PM
+CSC 281-1Intro to CryptographyAndrew Read-McFarlandMW 9:00AM - 10:15AM
+CSC 282-01Design & Analysis of Efficient AlgorithmsDaniel StefankovicTR 11:05AM - 12:20PM
+CSC 282-02Design & Analysis of Efficient AlgorithmsDaniel StefankovicT 6:15PM - 7:30PM
+CSC 282-03Design & Analysis of Efficient AlgorithmsDaniel StefankovicW 6:15PM - 7:30PM
+CSC 282-04Design & Analysis of Efficient AlgorithmsDaniel StefankovicM 6:15PM - 7:30PM
+CSC 282-05Design & Analysis of Efficient AlgorithmsDaniel StefankovicW 7:40PM - 8:55PM
+CSC 284-1Advanced AlgorithmsDaniel StefankovicMW 4:50PM - 6:05PM
+CSC 289-01Algorithmic Game TheoryAnson KahngMW 4:50PM - 6:05PM
+CSC 290-1Machine Learning Systems for Efficient AISreepathi PaiMW 9:00AM - 10:15AM
+CSC 299W-1Social Implications of ComputingJoseph LoporcaroMW 3:25PM - 4:40PM
+CSC 386V-1Undergrad Visiting StudentChenliang Xu–
+CSC 391-1Independent Study––
+CSC 392-1Practicum––
+CSC 394-1InternshipAdam Purtee–
+CSC 395-1Independent ResearchZhen Bai–
+Report a Digital Accessibility Barrier
+Department of Computer Science
+Location
+University of Rochester
+2513 Wegmans Hall
+P.O. Box 270226
+Rochester, NY 14627
+Phone
+(585) 275-5671
+Resources for
+Prospective students
+Current students
+Parents & families
+Faculty & staff
+Alumni
+Helpful links
+Intranet
+Web Communications
+Contact
+Directory
+Human resources
+UR Mobile (app)
+Parking & shuttles
+Information technology
+Blackboard
+myURHR
+MyPath
+Schools & divisions
+School of Arts & Sciences
+Hajim School of Engineering
+Eastman School of Music
+School of Medicine & Dentistry
+School of Nursing
+Simon Business School
+Warner School of Education
+Laboratory for Laser Energetics
+Libraries & collections
+University Libraries
+Memorial Art Gallery
+Ever better
+Global engagement
+Accessibility
+Vision & Values
+Office of University Engagement and Enrichment
+Nondiscrimination & Title IX
+More Rochester
+News
+Events
+Athletics
+Arts
+Two University of Rochester students working on an experiment in a lab.
+Exterior profile of the University of Rochester’s Eastman School of Music. 
+University of Rochester student plays the violin during a concert.
+Facebook
+YouTube
+X / Twitter
+TikTok
+Instagram
+LinkedIn
+Threads
+Follow Rochester
+Three University of Rochester sophomores posed together while wearing University of Rochester hats. 
+The University of Rochester Rush Rhees Library bell tower at sunrise. 
+Close up of a therapy dog’s nose on the University of Rochester river campus. 
+University of Rochester logo
+Contact us
+(585) 275-2121
+See maps and directions
+Rochester, NY
+Search Rochester.eduSearch text
+Search Rochester.edu
+Search
+Privacy
+Copyright
+Emergency Information
+© University of Rochester 1996–2025
+
+
+Skip to main content
+Rochester shield
+Apply
+Visit
+Give
+Search Rochester.eduSearch text
+Search Rochester.edu
+Search
+Hajim School of Engineering & Applied Sciences
+Department of Computer Science
+About Us
+
+People
+
+Undergraduate
+
+Graduate
+
+Research
+
+News & Events
+
+Undergraduate Program
+Section Navigation
+Overview
+Advising
+Degree Requirements
+Major Declaration
+Resources
+Courses
+CS Lab Information
+Research Opportunities
+URCS Student Groups
+Teaching Assistantships
+Applying
+HomeCoursesSpring Term Schedule
+Spring Term Schedule
+Sortable  |   Group by Weekday
+
+Spring 2026
+Number
+Title
+Instructor
+Time
+CSC 160-01AI for AllAdam PurteeTR 3:25PM - 4:40PM
+CSC 161-01Introduction to ProgrammingAndrew Read-McFarlandTR 4:50PM - 6:05PM
+CSC 161-02Introduction to ProgrammingAndrew Read-McFarlandTR 2:00PM - 3:15PM
+CSC 161-03Introduction to ProgrammingAndrew Read-McFarlandMW 6:15PM - 7:30PM
+CSC 161-04Introduction to ProgrammingAndrew Read-McFarlandMW 3:25PM - 4:40PM
+CSC 161-05Introduction to ProgrammingAndrew Read-McFarlandTR 6:15PM - 7:30PM
+CSC 161-06Introduction to ProgrammingAndrew Read-McFarlandM 2:00PM - 3:15PM
+CSC 161-07Introduction to ProgrammingAndrew Read-McFarlandM 3:25PM - 4:40PM
+CSC 161-08Introduction to ProgrammingAndrew Read-McFarlandM 4:50PM - 6:05PM
+CSC 161-09Introduction to ProgrammingAndrew Read-McFarlandW 3:25PM - 4:40PM
+CSC 161-10Introduction to ProgrammingAndrew Read-McFarlandM 6:15PM - 7:30PM
+CSC 161-11Introduction to ProgrammingAndrew Read-McFarlandT 2:00PM - 3:15PM
+CSC 161-12Introduction to ProgrammingAndrew Read-McFarlandT 3:25PM - 4:40PM
+CSC 161-13Introduction to ProgrammingAndrew Read-McFarlandT 6:15PM - 7:30PM
+CSC 161-14Introduction to ProgrammingAndrew Read-McFarlandT 7:40PM - 8:55PM
+CSC 161-15Introduction to ProgrammingAndrew Read-McFarlandR 6:15PM - 7:30PM
+CSC 161-16Introduction to ProgrammingAndrew Read-McFarlandW 4:50PM - 6:05PM
+CSC 161-17Introduction to ProgrammingAndrew Read-McFarlandW 6:15PM - 7:30PM
+CSC 161-18Introduction to ProgrammingAndrew Read-McFarlandW 7:40PM - 8:55PM
+CSC 161-19Introduction to ProgrammingAndrew Read-McFarlandR 3:25PM - 4:40PM
+CSC 161-20Introduction to ProgrammingAndrew Read-McFarlandR 7:40PM - 8:55PM
+CSC 171-01Introduction to Computer ScienceEustrat ZhupaTR 2:00PM - 3:15PM
+CSC 171-02Introduction to Computer ScienceEustrat ZhupaMW 4:50PM - 6:05PM
+CSC 171-03Introduction to Computer ScienceEustrat ZhupaMW 12:30PM - 1:45PM
+CSC 171-04Introduction to Computer ScienceEustrat ZhupaMW 10:25AM - 11:40AM
+CSC 171-05Introduction to Computer ScienceEustrat ZhupaMW 2:00PM - 3:15PM
+CSC 171-06Introduction to Computer ScienceEustrat ZhupaW 10:25AM - 11:40AM
+CSC 171-08Introduction to Computer ScienceEustrat ZhupaM 4:50PM - 6:05PM
+CSC 171-10Introduction to Computer ScienceEustrat ZhupaM 6:15PM - 7:30PM
+CSC 171-13Introduction to Computer ScienceEustrat ZhupaT 4:50PM - 6:05PM
+CSC 171-14Introduction to Computer ScienceEustrat ZhupaT 4:50PM - 6:05PM
+CSC 171-15Introduction to Computer ScienceEustrat ZhupaT 6:15PM - 7:30PM
+CSC 171-16Introduction to Computer ScienceEustrat ZhupaT 6:15PM - 7:30PM
+CSC 171-19Introduction to Computer ScienceEustrat ZhupaW 3:25PM - 4:40PM
+CSC 171-20Introduction to Computer ScienceEustrat ZhupaW 3:25PM - 4:40PM
+CSC 171-21Introduction to Computer ScienceEustrat ZhupaW 6:15PM - 7:30PM
+CSC 171-22Introduction to Computer ScienceEustrat ZhupaR 6:15PM - 7:30PM
+CSC 172-01Data Structures & AlgorithmsAndrew Read-McFarlandTR 11:05AM - 12:20PM
+CSC 172-02Data Structures & AlgorithmsAndrew Read-McFarlandTR 4:50PM - 6:05PM
+CSC 172-03Data Structures & AlgorithmsAndrew Read-McFarlandMW 6:15PM - 7:30PM
+CSC 172-04Data Structures & AlgorithmsAndrew Read-McFarlandMW 2:00PM - 3:15PM
+CSC 172-06Data Structures & AlgorithmsAndrew Read-McFarlandMW 3:25PM - 4:40PM
+CSC 172-07Data Structures & AlgorithmsAndrew Read-McFarlandM 3:25PM - 4:40PM
+CSC 172-09Data Structures & AlgorithmsAndrew Read-McFarlandM 4:50PM - 6:05PM
+CSC 172-10Data Structures & AlgorithmsAndrew Read-McFarlandM 6:15PM - 7:30PM
+CSC 172-12Data Structures & AlgorithmsAndrew Read-McFarlandM 7:40PM - 8:55PM
+CSC 172-13Data Structures & AlgorithmsAndrew Read-McFarlandT 2:00PM - 3:15PM
+CSC 172-14Data Structures & AlgorithmsAndrew Read-McFarlandT 6:15PM - 7:30PM
+CSC 172-15Data Structures & AlgorithmsAndrew Read-McFarlandT 7:40PM - 8:55PM
+CSC 172-17Data Structures & AlgorithmsAndrew Read-McFarlandT 4:50PM - 6:05PM
+CSC 172-18Data Structures & AlgorithmsAndrew Read-McFarlandW 4:50PM - 6:05PM
+CSC 172-19Data Structures & AlgorithmsAndrew Read-McFarlandW 6:15PM - 7:30PM
+CSC 172-22Data Structures & AlgorithmsAndrew Read-McFarlandR 4:50PM - 6:05PM
+CSC 172-23Data Structures & AlgorithmsAndrew Read-McFarlandR 6:15PM - 7:30PM
+CSC 173-01Computation & Formal SystemsGeorge FergusonTR 2:00PM - 3:15PM
+CSC 186-01Video Game DevelopmentTed PawlickiTR 11:05AM - 12:20PM
+CSC 200-01Undergraduate Problem SeminarFatemeh NargesianMW 11:50AM - 1:05PM
+CSC 200H-01Honors Undergraduate Problem SeminarFatemeh NargesianMW 11:50AM - 1:05PM
+CSC 209-01Seminar on Artificial General IntelligenceChristopher KananM 2:00PM - 3:15PM
+CSC 210-01Web ProgrammingAndrew Read-McFarlandMW 2:00PM - 3:15PM
+CSC 214-01Mobile App DevelopmentArthur RoolfsTR 6:15PM - 7:30PM
+CSC 216-01AR/VR Interaction DesignZhen BaiTR 3:25PM - 4:40PM
+CSC 229-01Computer Models of Perception & CognitionRobert JacobsTR 11:05AM - 12:20PM
+CSC 240-01Intro to Data MiningMonika PolakTR 9:40AM - 10:55AM
+CSC 242-01Artificial IntelligenceAdam PurteeTR 4:50PM - 6:05PM
+CSC 243-01Advanced Computational NeuroscienceRalf HaefnerTR 9:40AM - 10:55AM
+CSC 243-02Advanced Computational NeuroscienceRalf HaefnerF 2:00PM - 3:15PM
+CSC 246-01Machine LearningXiangxiang XuTR 11:05AM - 12:20PM
+CSC 247-01Natural Language ProcessingHangfeng HeMW 10:25AM - 11:40AM
+CSC 249-01Machine VisionJiebo LuoTR 9:40AM - 10:55AM
+CSC 252-01Computer OrganizationYuhao ZhuWF 3:25PM - 4:40PM
+CSC 254-01Prog Language Design & Imp.George FergusonTR 3:25PM - 4:40PM
+CSC 254-04Prog Language Design & Imp.George FergusonR 6:15PM - 7:30PM
+CSC 254-05Prog Language Design & Imp.George FergusonR 6:15PM - 7:30PM
+CSC 254-07Prog Language Design & Imp.George FergusonW 3:25PM - 4:40PM
+CSC 254-08Prog Language Design & Imp.George FergusonW 4:50PM - 6:05PM
+CSC 254-09Prog Language Design & Imp.George FergusonW 4:50PM - 6:05PM
+CSC 254-12Prog Language Design & Imp.George FergusonW 3:25PM - 4:40PM
+CSC 258-01Parallel & Distributed SystemsMichael ScottMW 3:25PM - 4:40PM
+CSC 261-01Database SystemsEustrat ZhupaMW 2:00PM - 3:15PM
+CSC 263-01Data Management SystemsFatemeh NargesianMW 9:00AM - 10:15AM
+CSC 273W-01Writing for Computer ScienceJoseph LoporcaroT 4:50PM - 6:05PM
+CSC 273W-02Writing for Computer ScienceJoseph LoporcaroT 2:00PM - 3:15PM
+CSC 280-01Computer Models & LimitationsKaave HosseiniMW 2:00PM - 3:15PM
+CSC 280-02Computer Models &LimitationsKaave HosseiniW 4:50PM - 6:05PM
+CSC 280-03Computer Models &LimitationsKaave HosseiniW 6:15PM - 7:30PM
+CSC 280-04Computer Models &LimitationsKaave HosseiniR 4:50PM - 6:05PM
+CSC 280-09Computer Models &LimitationsKaave HosseiniR 3:25PM - 4:40PM
+CSC 282-01Design & Analysis of Efficient AlgorithmsEustrat ZhupaTR 9:40AM - 10:55AM
+CSC 282-02Design & Analysis of Efficient AlgorithmsEustrat ZhupaT 6:15PM - 7:30PM
+CSC 282-03Design & Analysis of Efficient AlgorithmsEustrat ZhupaW 6:15PM - 7:30PM
+CSC 282-04Design & Analysis of Efficient AlgorithmsEustrat ZhupaM 6:15PM - 7:30PM
+CSC 282-05Design & Analysis of Efficient AlgorithmsEustrat ZhupaW 7:40PM - 8:55PM
+CSC 283-01Topics in CryptographyMonika PolakMW 11:50AM - 1:05PM
+CSC 285-01Gems of Algorithms and ElectionsLane HemaspaandraMW 4:50PM - 6:05PM
+CSC 288-01Analytic Methods in Computer ScienceKaave HosseiniMW 4:50PM - 6:05PM
+CSC 295-01Quantum ComputingTed PawlickiTR 12:30PM - 1:45PM
+CSC 299W-01Social Implications of ComputingJoseph LoporcaroMW 3:25PM - 4:40PM
+CSC 386V-01Undergrad Visiting StudentChenliang Xu–
+CSC 390-01Supervised TeachingJoseph Loporcaro–
+CSC 391-01Independent StudyLane Hemaspaandra–
+CSC 391H-01Independent Study-HonorsHangfeng He–
+CSC 391W-01Independent StudyJiebo Luo–
+CSC 392-01Practicum––
+CSC 394-02InternshipAdam Purtee–
+CSC 395-01Independent ResearchEhsan Hoque–
+CSC 395H-01Independent Research HonorsAaron White–
+CSC 395H-02Independent Research HonorsLane Hemaspaandra–
+CSC 395H-06Independent Research HonorsJiebo Luo–
+CSC 395W-01Independent ResearchLenhart Schubert–
+Report a Digital Accessibility Barrier
+Department of Computer Science
+Location
+University of Rochester
+2513 Wegmans Hall
+P.O. Box 270226
+Rochester, NY 14627
+Phone
+(585) 275-5671
+Resources for
+Prospective students
+Current students
+Parents & families
+Faculty & staff
+Alumni
+Helpful links
+Intranet
+Web Communications
+Contact
+Directory
+Human resources
+UR Mobile (app)
+Parking & shuttles
+Information technology
+Blackboard
+myURHR
+MyPath
+Schools & divisions
+School of Arts & Sciences
+Hajim School of Engineering
+Eastman School of Music
+School of Medicine & Dentistry
+School of Nursing
+Simon Business School
+Warner School of Education
+Laboratory for Laser Energetics
+Libraries & collections
+University Libraries
+Memorial Art Gallery
+Ever better
+Global engagement
+Accessibility
+Vision & Values
+Office of University Engagement and Enrichment
+Nondiscrimination & Title IX
+More Rochester
+News
+Events
+Athletics
+Arts
+Two University of Rochester students working on an experiment in a lab.
+Exterior profile of the University of Rochester’s Eastman School of Music. 
+University of Rochester student plays the violin during a concert.
+Facebook
+YouTube
+X / Twitter
+TikTok
+Instagram
+LinkedIn
+Threads
+Follow Rochester
+Three University of Rochester sophomores posed together while wearing University of Rochester hats. 
+The University of Rochester Rush Rhees Library bell tower at sunrise. 
+Close up of a therapy dog’s nose on the University of Rochester river campus. 
+University of Rochester logo
+Contact us
+(585) 275-2121
+See maps and directions
+Rochester, NY
+Search Rochester.eduSearch text
+Search Rochester.edu
+Search
+Privacy
+Copyright
+Emergency Information
+© University of Rochester 1996–2025
+
+
+Skip to main content
+Rochester shield
+Apply
+Visit
+Give
+Search Rochester.eduSearch text
+Search Rochester.edu
+Search
+Hajim School of Engineering & Applied Sciences
+Department of Computer Science
+About Us
+
+People
+
+Undergraduate
+
+Graduate
+
+Research
+
+News & Events
+
+Undergraduate Program
+Section Navigation
+Overview
+Advising
+Degree Requirements
+Major Declaration
+Resources
+Courses
+CS Lab Information
+Research Opportunities
+URCS Student Groups
+Teaching Assistantships
+Applying
+HomeCoursesSummer Term Schedule
+Summer Term Schedule
+Sortable  |   Group by Weekday
+
+Summer 2025
+Number
+Title
+Instructor
+Time
+CSC 161S-1Introduction to ProgrammingArthur RoolfsTWRF 5:00PM - 7:00PM
+CSC 162-1Data Structures & Algorithms in PythonAndrea Cogliati–
+CSC 170-01Introduction to Web DevelopmentEustrat Zhupa–
+CSC 170-2Introduction to Web DevelopmentEustrat Zhupa–
+CSC 171-1Introduction to Computer ScienceTed Pawlicki–
+CSC 171-2Introduction to Computer Science - LabTed Pawlicki–
+CSC 171-3Introduction to Computer Science - WKSHPTed Pawlicki–
+CSC 172-1Data Structures & AlgorithmsTed Pawlicki–
+CSC 172-2Data Structures & Algorithms - LabTed Pawlicki–
+CSC 172-3Data Structures & Algorithms - WKSHPTed Pawlicki–
+CSC 214-1Mobile App DevelopmentArthur RoolfsTWRF 5:00PM - 7:00PM
+CSC 242-01Artificial IntelligenceTed Pawlicki–
+CSC 261-01Database SystemsEustrat Zhupa–
+CSC 280-01Computer Models &LimitationsMonika Polak–
+CSC 280-02Computer Models &LimitationsMonika Polak–
+CSC 299W-1Social Implications of ComputingJoseph Loporcaro–
+Report a Digital Accessibility Barrier
+Department of Computer Science
+Location
+University of Rochester
+2513 Wegmans Hall
+P.O. Box 270226
+Rochester, NY 14627
+Phone
+(585) 275-5671
+Resources for
+Prospective students
+Current students
+Parents & families
+Faculty & staff
+Alumni
+Helpful links
+Intranet
+Web Communications
+Contact
+Directory
+Human resources
+UR Mobile (app)
+Parking & shuttles
+Information technology
+Blackboard
+myURHR
+MyPath
+Schools & divisions
+School of Arts & Sciences
+Hajim School of Engineering
+Eastman School of Music
+School of Medicine & Dentistry
+School of Nursing
+Simon Business School
+Warner School of Education
+Laboratory for Laser Energetics
+Libraries & collections
+University Libraries
+Memorial Art Gallery
+Ever better
+Global engagement
+Accessibility
+Vision & Values
+Office of University Engagement and Enrichment
+Nondiscrimination & Title IX
+More Rochester
+News
+Events
+Athletics
+Arts
+Two University of Rochester students working on an experiment in a lab.
+Exterior profile of the University of Rochester’s Eastman School of Music. 
+University of Rochester student plays the violin during a concert.
+Facebook
+YouTube
+X / Twitter
+TikTok
+Instagram
+LinkedIn
+Threads
+Follow Rochester
+Three University of Rochester sophomores posed together while wearing University of Rochester hats. 
+The University of Rochester Rush Rhees Library bell tower at sunrise. 
+Close up of a therapy dog’s nose on the University of Rochester river campus. 
+University of Rochester logo
+Contact us
+(585) 275-2121
+See maps and directions
+Rochester, NY
+Search Rochester.eduSearch text
+Search Rochester.edu
+Search
+Privacy
+Copyright
+Emergency Information
+© University of Rochester 1996–2025
+
+
+
+Skip to main content
+Rochester shield
+Apply
+Visit
+Give
+Search Rochester.eduSearch text
+Search Rochester.edu
+Search
+Hajim School of Engineering & Applied Sciences
+Department of Computer Science
+About Us
+
+People
+
+Undergraduate
+
+Graduate
+
+Research
+
+News & Events
+
+People
+Section Navigation
+Full Directory
+Faculty
+Graduate Students
+Staff
+HomePeople
+Full Directory
+Skip navigation of people last names
+Navigation of people last names
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+No people for last names with letter O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z
+A
+
+Abdelkader, Abdelrahman Mohamed Ali
+MS Student
+
+Email
+a.abdelkader@rochester.edu
+Profile Photo
+Adnan, Tariq
+PhD Student
+
+Email
+tadnan@cs.rochester.edu
+Web Address
+Website
+James Allen
+Allen, James F.
+Professor Emeritus of Computer Science
+
+Email
+james@cs.rochester.edu
+Web Address
+Website
+Interests: Natural language understanding; Discourse; Knowledge representation; Common-sense reasoning; Planning
+
+Photo of Hannah An
+An, Hannah
+PhD Student
+
+Email
+yan2@cs.rochester.edu
+Web Address
+Website
+B
+Zhen Bai
+Bai, Zhen
+Biggar Family Fellow in Data Science, Goergen Institute for Data Science and Artificial Intelligence
+
+Assistant Professor of Computer Science
+
+Office Location
+3007 Wegmans Hall
+Telephone
+(585) 275-7758
+Email
+zbai@cs.rochester.edu
+Web Address
+Website
+Interests: Human-Computer Interaction; Augmented Reality; Tangible User Interfaces; Embodied Conversational Agent; Technology-Enhanced Learning; Computer-Supported Collaborative Work; Assistive Technology; Machine Learning for HCI
+
+
+Balamurugan Kanimozhi, Tejaswini
+MS Student
+
+Email
+tbalamur@ur.rochester.edu
+
+Beadle, Alan
+PhD Student
+
+Email
+hbeadle@cs.rochester.edu
+Web Address
+Website
+
+Bi, Jing
+PhD student
+
+Email
+jbi5@cs.rochester.edu
+Web Address
+Website
+Profile Photo
+Bowering, Ryan
+PhD Student
+
+Email
+rbowerin@UR.ROCHESTER.EDU
+Web Address
+Website
+photo of Adam Brohl
+Brohl, Adam
+PhD Student
+
+Email
+abrohl@ur.rochester.edu
+Web Address
+Website
+Christopher M. Brown
+Brown, Christopher M.
+Professor Emeritus of Computer Science
+
+Email
+brown@cs.rochester.edu
+Web Address
+Website
+Interests: Artificial intelligence; Computer vision; Robotics
+
+Abigail Burton
+Burton, Abigail
+Department Coordinator
+
+Office Location
+2601 Wegmans Hall
+Telephone
+(585) 275-5671
+Email
+aburt11@ur.rochester.edu
+C
+Headshot of student.
+Catania, James
+MS Student
+
+Email
+jcatani4@ur.rochester.edu
+Mujdat Cetin
+Cetin, Mujdat
+Robin and Tim Wentworth Director, Goergen Institute for Data Science and Artificial Intelligence
+
+Professor of Electrical and Computer Engineering
+
+Professor of Computer Science
+
+Director, New York State Center of Excellence in Data Science
+
+Office Location
+1211 Wegmans Hall and 719 Computer Studies Building
+Telephone
+(585) 276-5061
+Email
+mujdat.cetin@rochester.edu
+Interests: computational sensing and imaging as applied to radar and biomedical imaging; probabilistic methods for image and video analysis as applied to biomedical image analysis, microscopic neuroimaging, and computer vision; signal processing and machine learning for brain-computer/machine interfaces, with applications for alternative communication and rehabilitation for patients and monitoring of cognitive states
+
+Alina Chadwick
+Chadwick, Alina
+PhD Student
+
+Email
+achadwic@ur.rochester.edu
+Web Address
+Website
+
+Chang, JiWon
+PhD Student
+
+Email
+jchang38@cs.rochester.edu
+Web Address
+Website
+
+Chen, Ethan
+PhD Student
+
+Email
+echen48@cs.rochester.edu
+Web Address
+Website
+
+Chen, Junyu
+PhD Student
+
+Email
+jchen175@cs.rochester.edu
+Web Address
+Website
+Profile Photo
+Cheng, Binbin
+PhD Student
+
+Email
+bcheng8@UR.ROCHESTER.EDU
+Web Address
+Website
+Headshot of student.
+Chowdhury, Zubaer Rahman
+MS Student
+
+Email
+zchowdh4@ur.rochester.edu
+Dave Costello
+Costello, Dave
+Manager Computing Systems, Resources and Technologies | Operations Systems Analyst/Programmer Lead
+
+Office Location
+3311 Wegmans Hall
+Email
+costello@cs.rochester.edu
+Web Address
+Website
+John Criswell
+Criswell, John
+Associate Professor of Computer Science
+
+Office Location
+3405 Wegmans Hall
+Telephone
+(585) 275-1118
+Email
+criswell@cs.rochester.edu
+Web Address
+Website
+Interests: Computer Security; Automatic compiler transformations; Secure Virtual Architecture
+
+D
+Thanh Dang
+Dang, Thanh L
+Postdoctoral Associate
+
+Office Location
+2511 Wegmans Hall
+Email
+tdang9@ur.rochester.edu
+Web Address
+Website
+Chen Ding
+Ding, Chen
+Professor of Computer Science
+
+Chair, Department of Computer Science
+
+Office Location
+3407 Wegmans Hall
+Telephone
+(585) 275-1373
+Email
+chen.ding@rochester.edu
+Web Address
+Website
+Interests: Locality theory and optimization; Compilers and run-time systems to improve locality and parallelism; Memory management; Parallel programming; High-performance computing
+
+
+Dinh, Helia Linh
+PhD Student
+
+Email
+ldinh@ur.rochester.edu
+Web Address
+Website
+
+Dong, Rongcui
+PhD Student
+
+Email
+rdong3@cs.rochester.edu
+Web Address
+Website
+Photo of Mingzhe Du
+Du, Mingzhe
+PhD Student
+
+Email
+mdu5@cs.rochester.edu
+Web Address
+Website
+Zhiyao Duan
+Duan, Zhiyao
+Professor of Electrical and Computer Engineering
+
+Professor of Computer Science
+
+Office Location
+720 Computer Studies Building
+Telephone
+(585) 275-5302
+Email
+zhiyao.duan@rochester.edu
+Web Address
+Website
+Interests: Computer Audition; Audio Signal Processing; Machine Learning; Music Information Retrieval
+
+Sandhya Dwarkadas
+Dwarkadas, Sandhya
+Visiting Research Professor of Computer Science
+
+Email
+sandhya@cs.rochester.edu
+Web Address
+Website
+Interests: Parallel and distributed computing; Computer architecture and networks; Interaction and interface between the compiler, runtime system, and underlying architecture; Software distributed shared memory; Integrated compiler and runtime support for parallelism; Simulation methodology; Uniprocessor and multiprocessor architectures; Parallel applications development; Performance evaluation
+
+E
+Ryan Eckert
+Eckert, Ryan
+Sr Financial Analyst
+
+Office Location
+2505 Wegmans Hall
+Email
+reckert5@cs.rochester.edu
+F
+Profile Photo
+Fan, Xingzhong
+PhD Student
+
+Email
+xfan17@UR.ROCHESTER.EDU
+Web Address
+Website
+Erfan Farhadi
+Farhadi, Erfan
+PhD Student
+
+Email
+efarhadi@ur.rochester.edu
+Web Address
+Website
+
+Feng, Mingqian
+PhD Student
+
+Email
+mfeng7@cs.rochester.edu
+Web Address
+Website
+George Ferguson
+Ferguson, George
+Professor of Computer Science (Instruction) Co-Director Computer Science Undergraduate Program
+
+Office Location
+2103 Wegmans Hall
+Email
+ferguson@cs.rochester.edu
+Web Address
+Website
+Interests: Artificial intelligence; Intelligent agents; Agent communication languages; Agent architectures; User interfaces: speech recognition, natural language understanding, dialogue, conversational agents; Temporal reasoning: representation, planning, scheduling; Semantic web: ontologies, knowledge-based systems
+
+G
+
+Gangaraju, Kushal
+MS Student
+
+Email
+kgangara@UR.Rochester.edu
+Tony Geng
+Geng, Tong (Tony)
+Assistant Professor of Electrical and Computer Engineering
+
+Assistant Professor of Computer Science
+
+Office Location
+723 Computer Studies Building
+Telephone
+(585) 275-1735
+Email
+tong.geng@rochester.edu
+Web Address
+Website
+Interests: Computer architecture; Graph learning; Machine learning; Accelerators for AI; High-performance computing
+
+Gourab Ghoshal
+Ghoshal, Gourab
+Professor of Physics
+
+Professor of Computer Science
+
+Office Location
+464 Bausch & Lomb Hall
+Telephone
+(585) 276-7748
+Email
+gghoshal@pas.rochester.edu
+Web Address
+Website
+Interests: Noneqilibrium statistical mechanics, complex systems and network theory
+
+Daniel Gildea
+Gildea, Daniel
+Professor of Computer Science
+
+Office Location
+3019 Wegmans Hall
+Telephone
+(585) 275-7230
+Email
+gildea@cs.rochester.edu
+Web Address
+Website
+Interests: Machine translation; Semantic parsing; Algorithms for natural language processing
+
+
+Gu, Zijian
+MS Student
+
+Email
+zgu17@UR.Rochester.edu
+Profile Photo
+Gu, Cheng
+PhD Student
+
+Email
+cgu11@UR.ROCHESTER.EDU
+Web Address
+Website
+
+Gul, Alishba
+MS Student
+
+Email
+agul2@UR.Rochester.edu
+Yanan Guo
+Guo, Yanan
+Assistant Professor of Computer Science
+
+Office Location
+3403 Wegmans Hall
+Email
+yguo51@cs.rochester.edu
+Web Address
+Website
+Interests: Microarchitectural side channels; Software security; Machine learning security; GPU systems and architectures; Memory systems
+
+Photo of Sudhanshu Gupta
+Gupta, Sudhanshu
+PhD Student
+
+Email
+sgupta45@cs.rochester.edu
+Web Address
+Website
+H
+Headshot of student.
+Haddad, Elias
+MS Student
+
+Email
+ehaddad2@ur.rochester.edu
+Headshot of student.
+Hadjiyski, Nathan Ryan
+MS Student
+
+Email
+nhadjiys@ur.rochester.edu
+Ralf Haefner
+Haefner, Ralf
+Associate Professor of Brain & Cognitive Sciences
+
+Associate Professor of Physics
+
+Associate Professor of Computer Science
+
+Office Location
+318 Meliora Hall
+Email
+rhaefne2@ur.rochester.edu
+Web Address
+Website
+Interests: Computational Neuroscience; Perceptual decision-making; Probabilistic inference; Selective attention; Neural population encoding and decoding; Depth perception/processing of binocular disparity
+
+Profile Photo
+Hart, Gabriel
+PhD Student
+
+Email
+ghart3@UR.ROCHESTER.EDU
+Web Address
+Website
+
+Hasan, Masum
+PhD Student
+
+Email
+m.hasan@rochester.edu
+Web Address
+Website
+Profile Photo
+Haung, Pengxiang
+PhD Student
+
+Email
+phuang19@UR.ROCHESTER.EDU
+Web Address
+Website
+Hangfeng He
+He, Hangfeng
+Assistant Professor of Computer Science and Data Science
+
+Office Location
+3009 Wegmans Hall
+Telephone
+(585) 275-8848
+Email
+hhe15@cs.rochester.edu
+Web Address
+Website
+Interests: Machine learning; Natural language processing; Reasoning
+
+Jana Head
+Head, Jana
+Undergraduate Program Coordinator
+
+Advises 1st and 2nd year, prospective, and transfer students
+
+Office Location
+2515 Wegmans Hall
+Telephone
+(585) 275-4505
+Email
+jhead4@cs.rochester.edu
+Wendi Heinzelman
+Heinzelman, Wendi
+Professor of Electrical and Computer Engineering
+
+Professor of Computer Science
+
+Dean, Hajim School of Engineering and Applied Sciences
+
+Office Location
+309 Lattimore Hall
+Telephone
+(585) 273-3958
+Email
+wendi.heinzelman@rochester.edu
+Web Address
+Website
+Interests: Wireless sensor networks; Mobile ad hoc networks; Multimedia communication; Heterogeneous networking; Cloud computing
+
+Lane A. Hemaspaandra
+Hemaspaandra, Lane A.
+Professor of Computer Science
+
+Office Location
+2317 Wegmans Hall
+Email
+lane "at" cs.rochester.edu
+Web Address
+Website
+Interests: Computational social choice (elections, preference aggregation, power indices, etc.); Computational complexity theory (counting-based computation, probabilistic computation, unambiguous computation, the importance of query order when accessing databases, the study of efficient algorithms for complex sets, complexity-theoretic aspects of security, fault-tolerance, and data compression, etc.)
+
+Gregory Heyworth
+Heyworth, Gregory
+Associate Professor of English
+
+Associate Professor of Computer Science
+
+Director, Lazarus Project
+
+Office Location
+514 Morey Hall
+Telephone
+(585) 275-2548
+Email
+gregory.heyworth@rochester.edu
+Anh Hoang
+Hoang, Anh
+Accountant
+
+Office Location
+3503 Wegmans Hall
+Telephone
+(585) 275-9491
+Email
+ahoang7@cs.rochester.edu
+Ehsan Hoque
+Hoque, Ehsan
+Professor of Computer Science
+
+Office Location
+3013 Wegmans Hall
+Telephone
+(585) 275-1351
+Email
+mehoque@cs.rochester.edu
+Web Address
+Website
+Interests: Human Computer Interaction; Artificial Intelligence ; Interactive machine learning; Health and wellbeing; Future of skills
+
+Kaave Hosseini
+Hosseini, Kaave
+Assistant Professor of Computer Science
+
+Office Location
+2507 Wegmans Hall
+Email
+shossei2@ur.rochester.edu
+Web Address
+Website
+Interests: Theoretical computer science; Additive combinatorics; Pseudorandomness; Discrete Fourier analysis
+
+Thomas Howard
+Howard, Thomas M.
+Associate Professor of Electrical and Computer Engineering
+
+Associate Professor of Computer Science
+
+Office Location
+732 Computer Studies Building
+Telephone
+(585) 275--375
+Email
+thoward@ece.rochester.edu
+Interests: Artificial Intelligence; Robotics; Motion Planning; Human-Robot Interaction
+
+Michael Huang
+Huang, Michael
+Professor of Electrical and Computer Engineering
+
+Professor of Computer Science
+
+Office Location
+414 Computer Studies Building
+Telephone
+(585) 275-2111
+Email
+michael.huang@rochester.edu
+Web Address
+Website
+Interests: High-performance and energy-efficient computer microarchitecture; non-von Neumann computing; Ising machines
+
+
+Huang, Chao
+PhD Student
+
+Email
+chuang65@cs.rochester.edu
+Web Address
+Website
+
+Huang, JinFa
+PhD Student
+
+Email
+jhuang90@ur.rochester.edu
+Web Address
+Website
+
+Huang, Yuesong
+MS Student
+
+Email
+yhu116@ur.rochester.edu
+I
+
+Islam, Saiful
+PhD Student
+
+Email
+mislam6@ur.rochester.edu
+Web Address
+Website
+J
+Robert Jacobs
+Jacobs, Robert A.
+Professor, Brain and Cognitive Sciences, Computer Science, and the Center for Visual Science
+
+Office Location
+306 Meliora Hall
+Telephone
+(585) 275-0753
+Email
+Rjacobs@ur.rochester.edu
+Web Address
+Website
+Interests: cognitive and perceptual learning; neural computation
+
+
+Jiang, Alvin
+MS Student
+
+Email
+yjiang54@simon.rochester.edu
+
+Jiang, Xinyu
+MS Student
+
+Email
+xjiang36@UR.Rochester.edu
+Profile Photo
+Jin, Yihan
+PhD Student
+
+Email
+yjin52@UR.ROCHESTER.EDU
+Web Address
+Website
+K
+Anson Kahng
+Kahng, Anson
+Assistant Professor of Computer Science and Data Science
+
+Office Location
+2401 Wegmans Hall
+Email
+akahng2@cs.rochester.edu
+Web Address
+Website
+Interests: Computational social choice; Democracy and computer science; Economics and computation; Artificial intelligence; Theoretical computer science; Algorithmic game theory
+
+Christopher Kanan
+Kanan, Christopher
+Associate Professor of Computer Science
+
+Associate Director for AI Strategy, Goergen Institute for Data Science and Artificial Intelligence
+
+Office Location
+3017 Wegmans Hall
+Email
+ckanan@cs.rochester.edu
+Web Address
+Website
+Interests: Artificial Intelligence; Deep Learning; Computer Vision; Cognitive Science; Applied Machine Learning (e.g. Medical Computer Vision)
+
+Jian Kang
+Kang, Jian
+Assistant Professor of Computer Science
+
+Office Location
+3011 Wegmans Hall
+Email
+jian.kang@rochester.edu
+Web Address
+Website
+Interests: Data mining; Computational social science; Uncertainty quantification; Algorithmic fairness; Trustworthy AI; Machine learning
+
+Henry Kautz
+Kautz, Henry
+Professor Emeritus of Computer Science
+
+Email
+kautz@cs.rochester.edu
+Web Address
+Website
+Interests: Artificial intelligence; Pervasive computing; Data science
+
+Headshot of student.
+Khan, Tasin Tayeba
+MS Student
+
+Email
+tkhan17@ur.rochester.edu
+Headshot of student.
+Klein, Benjamin (Ben)
+MS Student
+
+Email
+bklein10@ur.rochester.edu
+Headshot of student.
+Knoll, Samuel Jason
+MS Student
+
+Email
+sknoll@ur.rochester.edu
+Kristi Kongmany
+Kongmany, Kristi
+Grants and Contracts Administrator
+
+Office Location
+3509 Wegmans Hall
+Telephone
+(585) 275-5478
+Email
+kristi@cs.rochester.edu
+Pavlo Kuchmiichuk
+Kuchmiichuk, Pavlo
+PhD Student
+
+Email
+pkuchmii@ur.rochester.edu
+Web Address
+Website
+L
+Profile Photo
+Li, Yifan
+PhD Student
+
+Email
+yli287@cs.rochester.edu
+Web Address
+Website
+
+Li, Jingwen
+MS Student
+
+Email
+jli274@UR.Rochester.edu
+Jiaming Liang smiling. 
+Liang, Jiaming
+Assistant Professor of Computer Science and Data Science
+
+Office Location
+2403 Wegmans Hall
+Email
+jliang31@cs.rochester.edu
+Web Address
+Website
+Interests: Mathematical and numerical optimization; Sampling algorithms; Stochastic programming; Algorithmic game theory
+
+Profile Photo
+Liang, Susan
+PhD Student
+
+Email
+sliang22@cs.rochester.edu
+Web Address
+Website
+Profile Photo
+Lin, Jingyang
+PhD Student
+
+Email
+jlin81@cs.rochester.edu
+Web Address
+Website
+
+Lin, Wei-Kai
+PhD Student
+
+Email
+wlin33@cs.rochester.edu
+Web Address
+Website
+
+Liu, Pai
+PhD Student
+
+Email
+pliu29@cs.rochester.edu
+Web Address
+Website
+Headshot of student.
+Liu, Luke
+MS Student
+
+Email
+lliu88@ur.rochester.edu
+Joseph Loporcaro
+Loporcaro, Joseph
+Assistant Professor of Digital Media Studies and Computer Science (Instruction)
+
+Office Location
+206B Morey Hall
+Email
+j.loporcaro@rochester.edu
+Interests: Video game design, development, theory, and culture; digital media theory and production; mass media and pop culture; technology/media ethics; design thinking, research writing; social media studies; web design and development
+
+Yang Lu
+Lu, Yang
+Visiting Student
+
+Bear Lab
+
+Email
+ylu105@ur.rochester.edu
+Jiebo Luo
+Luo, Jiebo
+Albert Arendt Hopeman Professor of Engineering
+
+Professor of Computer Science
+
+Office Location
+3101 Wegmans Hall
+Telephone
+(585) 276-5784
+Email
+jluo@cs.rochester.edu
+Web Address
+Website
+Interests: Computer Vision; Machine learning; Data Mining; Social Media; Biomedical Informatics; Human Computer Interaction; Ubiquitous and Mobile Computing
+
+
+Lyu, Hanjia
+PhD Student
+
+Email
+hlyu5@ur.rochester.edu
+Web Address
+Website
+M
+Gonzalo Mateos
+Mateos, Gonzalo
+Professor of Electrical and Computer Engineering
+
+Professor of Computer Science
+
+Asaro Biggar Family Fellow in Data Science
+
+Office Location
+726 Computer Studies Building
+Telephone
+(585) 275-5930
+Email
+gmateosb@ece.rochester.edu
+Web Address
+Website
+Interests: Statistical Signal Processing; Networks; Machine Learning; Decentralized Optimization; Graph Signal Processing
+
+Mary Méndez-Rizzo
+Méndez-Rizzo, Mary
+Graduate Program Coordinator
+
+Advises PhD students
+
+Office Location
+3505 Wegmans Hall
+Telephone
+(585) 275-7737
+Email
+mrizzo6@ur.rochester.edu
+Sarah Mills
+Mills, Sarah
+Undergraduate Program Coordinator
+
+Advises juniors, seniors, E5, and T5 students
+
+Office Location
+2513 Wegmans Hall
+Telephone
+(585) 276-5903
+Email
+smills14@cs.rochester.edu
+Profile Photo
+Motorcu, Hakki
+PhD Student
+
+Email
+hmotorcu@cs.rochester.edu
+Web Address
+Website
+N
+Fatemeh Nargesian
+Nargesian, Fatemeh
+James P. Wilmot Distinguished Assistant Professor in the Department of Computer Science
+
+Assistant Professor of Computer Science
+
+Office Location
+3015 Wegmans Hall
+Email
+f.nargesian@rochester.edu
+Web Address
+Website
+Interests: Data management ; Data science ; Data discovery and integration
+
+Photo of Randal C. Nelson
+Nelson, Randal C.
+Professor in Memoriam
+
+Email
+N/A
+Web Address
+Website
+Interests: Machine vision and robotics; Object recognition and learning representations at the interface between feature-based and appearance-based approaches; Vision for manipulation and hand-eye coordination; Motion recognition and analysis, and visual navigation
+
+Headshot of student.
+Nguyen, Minh Phan
+MS Student
+
+Email
+mnguy31@ur.rochester.edu
+Profile Photo
+Nian, Dongdong
+PhD Student
+
+Email
+dnian@UR.ROCHESTER.EDU
+Web Address
+Website
+P
+Sreepathi Pai
+Pai, Sreepathi
+Associate Professor of Computer Science
+
+Office Location
+3409 Wegmans Hall
+Telephone
+(585) 276-2391
+Email
+sree@cs.rochester.edu
+Web Address
+Website
+Interests: Compilers; Heterogeneous Architectures; GPU algorithms; Performance Modeling
+
+Profile Photo
+Park, Sooyong
+PhD Student
+
+Email
+spark180@UR.ROCHESTER.EDU
+Web Address
+Website
+
+Pate, Neeley
+PhD Student
+
+Email
+npate@cs.rochester.edu
+Web Address
+Website
+Thaddeus E. Pawlicki
+Pawlicki, Thaddeus E.
+Associate Professor of Computer Science (Instruction)
+
+Office Location
+2101 Wegmans Hall
+Email
+pawlicki@cs.rochester.edu
+Web Address
+Website
+Interests: Undergraduate eduction; Robotics; Computer vision; Artificial intelligence
+
+Monika Polak
+Polak, Monika
+Associate Professor of Computer Science (Instruction)
+
+Office Location
+2201 Wegmans Hall
+Email
+mpolak@cs.rochester.edu
+Web Address
+Website
+Interests: Cryptography; Quantum-Resistant Cryptography; Algebraic Graph Theory; Extremal Graph Theory; Pseudorandomness; Coding Theory
+
+
+Proma, Adiba
+PhD Student
+
+Email
+aproma@cs.rochester.edu
+Web Address
+Website
+Adam Purtee
+Purtee, Adam
+Associate Professor of Computer Science (Instruction)
+
+Office Location
+2109 Wegmans Hall
+Email
+apurtee@cs.rochester.edu
+Web Address
+Website
+Interests: Natural language understanding ; Knowledge representation ; Commonsense reasoning ; Machine Learning ; Numerical programming
+
+Q
+Photo of Jingyu Qiu
+Qiu, Jingyu
+PhD Student
+
+Email
+jqiu9@ur.rochester.edu
+Web Address
+Website
+Nick Quattrociocchi
+Quattrociocchi, Nick
+Graduate Program Coordinator
+
+Advises Master's students
+
+Office Location
+3303 Wegmans Hall
+Telephone
+(585) 275-8349
+Email
+nquattro@cs.rochester.edu
+R
+Andrew Read-McFarland
+Read-McFarland, Andrew
+Assistant Professor of Computer Science (Instruction)
+
+Office Location
+2105 Wegmans Hall
+Email
+areadmcf@cs.rochester.edu
+Web Address
+Website
+Photo of Ben Reber
+Reber, Benjamin
+PhD Student
+
+Email
+breber@cs.rochester.edu
+Web Address
+Website
+Arthur Roolfs
+Roolfs, Arthur
+Adjunct Instructor of Computer Science
+
+Email
+aroolfs@UR.Rochester.edu
+S
+Photo of Joe Saber
+Saber, Joseph
+PhD Student
+
+Email
+jsaber@cs.rochester.edu
+Web Address
+Website
+Rebecca Salganik
+Salganik, Rebecca
+PhD Student
+
+Email
+rsalgani@ur.rochester.edu
+Web Address
+Website
+Lenhart K. Schubert
+Schubert, Lenhart K.
+Professor Emeritus of Computer Science
+
+Email
+schubert@cs.rochester.edu
+Web Address
+Website
+Interests: Language and dialogue ; Knowledge representation and inference; Schema learning and schema-based behavior ; Self-motivated agents
+
+Michael L. Scott
+Scott, Michael L.
+Arthur Gould Yates Professor of Engineering
+
+Professor of Computer Science
+
+Former Chair, Department of Computer Science
+
+Office Location
+3401 Wegmans Hall
+Email
+scott@cs.rochester.edu
+Web Address
+Website
+Interests: Systems software for parallel and distributed computing; Programming languages; Operating systems; Synchronization; Transactional memory; Persistent memory
+
+Profile Photo
+Sefkow, Adam
+Assistant Professor, Department of Mechanical Engineering
+
+Assistant Professor, Department of Physics
+
+Assistant Professor, Department of Computer Science
+
+Senior Scientist, Laboratory for Laser Energetics (LLE)
+
+Office Location
+205 Hopeman
+Telephone
+(585) 276-4130
+Email
+asef@lle.rochester.edu
+Web Address
+Website
+Interests: Inertial confinement fusion; magneto-inertial fusion; high energy density physics; laser-plasma interaction; computational physics; magnetohydrodynamics; particle-in-cell simulations
+
+Joel I. Seiferas
+Seiferas, Joel I.
+Professor Emeritus of Computer Science
+
+Email
+joel@cs.rochester.edu
+Web Address
+Website
+Interests: Theoretical computer science; Computational complexity; Algorithms; Automata
+
+Headshot of student.
+Senturk, Ertugrul
+MS Student
+
+Email
+esenturk@ur.rochester.edu
+Gaurav Sharma
+Sharma, Gaurav
+Professor of Electrical and Computer Engineering
+
+Professor of Computer Science
+
+Professor of Biostatistics and Computational Biology
+
+Office Location
+725 Computer Studies Building
+Telephone
+(585) 275-7313
+Email
+gaurav.sharma@rochester.edu
+Web Address
+Website
+Interests: Data Analytics; Cyber Physical Systems; Signal and Image Processing; Computer Vision; Media Security; Communications
+
+Photo unavailable
+Sheng, Huanxin
+PhD Student
+
+Email
+hsheng2@ur.rochester.edu
+Web Address
+Website
+Profile Photo
+Song, Luchuan
+PhD Student
+
+Email
+lsong11@cs.rochester.edu
+Web Address
+Website
+
+Spann, James
+PhD Student
+
+Email
+jspann2@ur.rochester.edu
+Web Address
+Website
+
+Srivastava, Shikhar
+PhD Student
+
+Email
+ssrivas9@cs.rochester.edu
+Web Address
+Website
+Daniel Stefankovic
+Stefankovic, Daniel
+Professor of Computer Science
+
+Office Location
+2315 Wegmans Hall
+Email
+daniel.stefankovic@rochester.edu
+Web Address
+Website
+Interests: Theoretical computer science: graph theory, combinatorics, Fourier transform, Markov chains/counting, learning theory, phylogeny, game theory, graph equations, routing
+
+T
+
+Taneja, Kshitij
+MS Student
+
+Email
+ktaneja2@ur.rochester.edu
+Yunlong Tang
+Tang, Yunlong
+PhD Student
+
+Email
+ytang37@cs.rochester.edu
+Web Address
+Website
+
+Tang, Yao
+MS Student
+
+Email
+ytang49@ur.rochester.edu
+
+Tao, Zhengbin
+PhD Student
+
+Email
+ztao6@cs.rochester.edu
+Web Address
+Website
+Profile Photo
+Tran, Tung Lam
+PhD Student
+
+Email
+ttran53@UR.ROCHESTER.EDU
+Web Address
+Website
+
+Tyagi, Abhishek
+PhD Student
+
+Email
+atyagi2@cs.rochester.edu
+Web Address
+Website
+U
+
+Ujjainkar, Nisarg
+PhD Student
+
+Email
+nujjaink@ur.rochester.edu
+Web Address
+Website
+V
+Photo of Benjie Valpey
+Valpey, Benjamin
+PhD Student
+
+Email
+bvalpey@cs.rochester.edu
+Web Address
+Website
+W
+
+Waghanna, Pranav Suryakiran
+MS Student
+
+Email
+pwaghann@ur.rochester.edu
+Profile Photo
+Wang, Hecong
+PhD Student
+
+Email
+hwang99@cs.rochester.edu
+Web Address
+Website
+
+Wang, Yiyang
+PhD Student
+
+Email
+ywang418@cs.rochester.edu
+Web Address
+Website
+Youwei Wang
+Wang, Youwei
+PhD Student
+
+Email
+ywang464@ur.rochester.edu
+Web Address
+Website
+
+Wang, Bingjie
+MS Student
+
+Email
+bwang72@UR.Rochester.edu
+Zixuan Wang
+Wang, Zixuan
+Visiting Student
+
+Email
+zwang234@UR.Rochester.edu
+Ian Ward
+Ward, Ian
+Programmer Analyst
+
+Office Location
+3309 Wegmans Hall
+Email
+iward3@cs.rochester.edu
+
+Wasmosy, Erik
+MS Student
+
+Email
+ewasmosy@ur.rochester.edu
+Profile Photo
+Wei, Qiangjie
+PhD Student
+
+Email
+qwei3@UR.ROCHESTER.EDU
+Web Address
+Website
+Aaron White
+White, Aaron
+Associate Professor of Linguistics
+
+Associate Professor of Computer Science
+
+Director of FACTS.lab
+
+Office Location
+511A Lattimore Hall
+Email
+aaron.white@rochester.edu
+Web Address
+Website
+Interests: Computational Linguistics; Natural Language Semantics
+
+
+Wu, Yanghui
+PhD Student
+
+Email
+ywu86@cs.rochester.edu
+Web Address
+Website
+Shutong Wu
+Wu, Shutong
+PhD Student
+
+Email
+swu85@ur.rochester.edu
+Web Address
+Website
+X
+Chenliang Xu
+Xu, Chenliang
+Associate Professor of Computer Science
+
+Office Location
+3005 Wegmans Hall
+Email
+chenliang.xu@rochester.edu
+Web Address
+Website
+Interests: Computer Vision; Video Analysis; Machine Learning; Deep Learning; Multimodal Modeling
+
+Xiangxiang Xu
+Xu, Xiangxiang
+Assistant Professor of Computer Science
+
+Office Location
+3003 Wegmans Hall
+Email
+xiangxiangxu@rochester.edu
+Interests: Information Theory; Information Processing; Machine Learning Theory; Representation Learning
+
+Headshot of student.
+Xu, Xuanpei
+MS Student
+
+Email
+xxu66@ur.rochester.edu
+Y
+Profile Photo
+Yagmur, Ismail Can
+PhD Student
+
+Email
+iyagmur@UR.ROCHESTER.EDU
+Web Address
+Website
+Yukang Yan
+Yan, Yukang
+Assistant Professor of Computer Science
+
+Office Location
+3103 Wegmans Hall
+Email
+yyan37@cs.rochester.edu
+Web Address
+Website
+Interests: Human-Computer Interaction; Human Behavior Modeling; Virtual/Augmented Reality
+
+
+Yan, Han
+PhD Student
+
+Email
+hyan20@ur.rochester.edu
+Web Address
+Website
+Headshot of student.
+Yang, Lucy
+MS Student
+
+Email
+lyang25@ur.rochester.edu
+Profile Photo
+Yao, Yuan
+PhD Student
+
+Email
+yyao39@cs.rochester.edu
+Web Address
+Website
+
+Yu, Yongsheng
+PhD Student
+
+Email
+yyu90@cs.rochester.edu
+Web Address
+Website
+Z
+Profile Photo
+Zeng, Ziyun
+PhD Student
+
+Email
+zzeng24@UR.ROCHESTER.EDU
+Web Address
+Website
+Photo of Shuang Zhai
+Zhai, Shuang
+PhD Student
+
+Email
+szhai2@cs.rochester.edu
+Web Address
+Website
+Profile Photo
+Zhang, Zeliang
+PhD Student
+
+Email
+zzh136@cs.rochester.edu
+Web Address
+Website
+Tianyu Zhang
+Zhang, Tianyu
+PhD Student
+
+Email
+tzhang71@ur.rochester.edu
+Web Address
+Website
+Profile Photo
+Zhang, Wenbo
+PhD Student
+
+Email
+wzhang66@UR.ROCHESTER.EDU
+Web Address
+Website
+Profile Photo
+Zhang, Nandi
+PhD Student
+
+Email
+nzhang28@UR.ROCHESTER.EDU
+Web Address
+Website
+Zhenghong Zhou
+Zhou, Zhenghong
+PhD Student
+
+Email
+zzhou72@ur.rochester.edu
+Web Address
+Website
+Yuhao Zhu
+Zhu, Yuhao
+Associate Professor of Computer Science
+
+Office Location
+3501 Wegmans Hall
+Email
+yzhu@rochester.edu
+Web Address
+Website
+Interests: Computer Systems and Architecture; Computer Imaging and Graphics; Augmented/Virtual Reality; Human (Visual) Perception and Cognition; Computational Art, Art History, and Aesthetics
+
+Profile Photo
+Zhu, Yifan
+PhD Student
+
+Email
+yzhu104@cs.rochester.edu
+Web Address
+Website
+Eustrat Zhupa
+Zhupa, Eustrat
+Assistant Professor of Computer Science (Instruction)
+
+Office Location
+2107 Wegmans Hall
+Telephone
+(585) 275-9499
+Email
+ezhupa@cs.rochester.edu
+Web Address
+Website
+Shelley Zoeke
+Zoeke, Shelley
+Academic Finance and Operations Manager
+
+Office Location
+3507 Wegmans Hall
+Telephone
+(585) 275-9478
+Email
+szoeke@cs.rochester.edu
+Report a Digital Accessibility Barrier
+Department of Computer Science
+Location
+University of Rochester
+2513 Wegmans Hall
+P.O. Box 270226
+Rochester, NY 14627
+Phone
+(585) 275-5671
+Resources for
+Prospective students
+Current students
+Parents & families
+Faculty & staff
+Alumni
+Helpful links
+Intranet
+Web Communications
+Contact
+Directory
+Human resources
+UR Mobile (app)
+Parking & shuttles
+Information technology
+Blackboard
+myURHR
+MyPath
+Schools & divisions
+School of Arts & Sciences
+Hajim School of Engineering
+Eastman School of Music
+School of Medicine & Dentistry
+School of Nursing
+Simon Business School
+Warner School of Education
+Laboratory for Laser Energetics
+Libraries & collections
+University Libraries
+Memorial Art Gallery
+Ever better
+Global engagement
+Accessibility
+Vision & Values
+Office of University Engagement and Enrichment
+Nondiscrimination & Title IX
+More Rochester
+News
+Events
+Athletics
+Arts
+Two University of Rochester students working on an experiment in a lab.
+Exterior profile of the University of Rochester’s Eastman School of Music. 
+University of Rochester student plays the violin during a concert.
+Facebook
+YouTube
+X / Twitter
+TikTok
+Instagram
+LinkedIn
+Threads
+Follow Rochester
+Three University of Rochester sophomores posed together while wearing University of Rochester hats. 
+The University of Rochester Rush Rhees Library bell tower at sunrise. 
+Close up of a therapy dog’s nose on the University of Rochester river campus. 
+University of Rochester logo
+Contact us
+(585) 275-2121
+See maps and directions
+Rochester, NY
+Search Rochester.eduSearch text
+Search Rochester.edu
+Search
+Privacy
+Copyright
+Emergency Information
+© University of Rochester 1996–2025
+Skip to main content
+Rochester shield
+Apply
+Visit
+Give
+Search Rochester.eduSearch text
+Search Rochester.edu
+Search
+Hajim School of Engineering & Applied Sciences
+Department of Computer Science
+About Us
+
+People
+
+Undergraduate
+
+Graduate
+
+Research
+
+News & Events
+
+Undergraduate Program
+Section Navigation
+Overview
+Advising
+Degree Requirements
+Major Declaration
+Resources
+Courses
+CS Lab Information
+Research Opportunities
+URCS Student Groups
+Teaching Assistantships
+Applying
+Home
+CS Lab Information
+What follows is a summary and guide to utilizing the computational resources available to undergraduate CS students. If you have questions or concerns that are not answered below, please email cs-labstaff@lists.rochester.edu.
+
+Computer Science Accounts
+Who receives accounts
+Getting started with your account
+Initial login
+Proper account usage
+Using Linux
+Resources for Getting Help (read section to view contact details)
+TA / Instructor / CSUG Tutoring
+University IT
+CIRC
+Labstaff
+FAQs
+Computer Science Lab Spaces
+Computer Science Accounts
+Receiving an Account
+Students are automatically provisioned accounts on the CS instructional network if they are registered for a CS course with programming as part of the syllabus and a course number greater than 172. These accounts remain active for the duration of the course and are automatically disabled at the completion of the semester. Students registered for CSC172 or below will not receive access to department accounts and can use campus IT computers to complete their course work. If you are currently formally enrolled in a course that qualifies you for an account, but have not received an account, please login to https://accounts.csug.rochester.edu and follow the instructions there.
+
+Students officially declaring their Computer Science (CS) major will also be provisioned an account on the CS instructional network. Accounts for declared majors will persist until the student graduates or leaves the program.
+
+Getting started with your account
+Initial Login
+Initial logins can be conducted either through SSH or with a desktop in the CS Majors Lab. When you login to https://accounts.csug.rochester.edu you will be provided with specific instructions for your initial login. Access to this website is limited to on-campus addresses and the university VPN. This site is not accessible from the wireless guest network. Please read the instructions carefully. If you have trouble logging in, please triple check that your are follow the instructions correctly, read through https://www.cs.rochester.edu/cms/csinfo/password-change/ (VPN or UR_Connected connection required), and check the FAQ's before contacting labstaff for help.
+
+Steps for successful first login
+Steps to change your password on your initial login
+Proper Account Usage
+In the CS department your account is managed by an operating system called Linux. Workstations run Fedora Linux while many of the servers run a version of Linux named CentOS; both of which are sponsored by a software company called Red Hat.
+
+In Linux, users are provided with a home directory. A home directory is a space on the file system designed to provide each user with a private place to store their files, configurations, and personal settings. As the CS network has more users than your typical personal computer or network, your home directory and its files are typically not saved on the computer you are logged into, but instead loaded from a networked file share. Due to the network share, higher number of users, and differing computational loads there are marked differences between using a personal computer and a CS computer. Please keep the following in mind while using equipment on the CS network:
+
+Utilizing Department Hardware:
+On the instructional network there are 4 "cycle" servers that are used to connect to the instructional network.
+The machines are named cycle[1-4].csug.rochester.edu
+To access these machines via ssh you must be on-campus (excluding guest Wi-Fi) or connected to the university VPN.
+If you are a CS major you can also utilize department hardware by logging into a desktop in the majors lab.
+cycle1 typically sees the highest amount of traffic.
+If the w command shows a high number of users or a high load average (typically over ~20) you may want to consider using one of the other cycle/gpu machines.
+When testing or repetitively launching code you have written please ensure that you are not irrecoverably tying up large amounts of resources by launching processes that get stuck in D and Z statuses (the commandstop/pscan be used to identify said processes)
+Workstation will periodically be restarted to apply updates, please ensure you are saving all work in case a restart for an urgent update is needed.
+When you are finished using a workstation please logout so that the resources can be reclaimed for the next user.
+Please do not power off workstations as they need to be running to keep updates current.
+User home directories are backed up nightly, contact cs-labstaff@lists.rochester.edu if needed.
+For the completion of coursework, the department has 6 gpu machines (gpu-node[01-06].csug.rochester.edu) that are reachable from the cycle machines.
+Disk Utilization:
+The instructional network has a disk quota (limit) set for your network mounted home directory depending on your student status. All user home directory space is backed up nightly but it is not vast like a personal hardrive. Home directory space is to be used for personal shell account configuration and assignments but it will not be large enough to store large datasets/files, or personal software installations. If you need software packages for assignments sometimes instructors and/or course teaching assistants make packages available elsewhere on the system for use by the class. You may also make use of quota free /localdisk (which is not backed up). /localdisk is hardrive space available directly on the local hardrive of the machine to install and test personal packages or temporarily store large files.  Non standard software and project storage requirements questions should be directed to your course instructor or TA.
+When you exceed your quota you will receive an email from the system.
+The quota command will show your allocated disk space.
+
+If you do not clean up your files you may be locked out of department resources, as programs that require file IO operations will not have space to write new data to disk.
+Quotas are small so keep an eye on your file sizes.
+Students commonly exceed their quotas by downloading large datasets, large python libraries, extra versions of python, large hidden files, and by letting their ./cache and ./config directories grow too large. To monitor these downfalls please see the “du” command below.
+Clearing your browser cache, removing core dump files, and emptying your trash folder regularly can help keep your disk usage down.
+Visual Studio Code is notoriously greedy for disk space (especially when using remote features). For this reason on the instructional network your vscode directory does not reside in your home directory. This location will be reset after each semester, so ensure you have backed up any configurations/workspaces you wish to keep.
+The remote dev features of other IDE's may be similarly inefficient, it is recomended to consult their documentation to either reduce their size or to move their default save location out of your home directory.
+When using virtual environments such as anaconda, individual apps like pip, huggingface…etc will still cache files to your default home location (~/.cache) If you are downloading datasets this may quickly fill up your home directory unless you read the apps documentation and change it’s default cache location.
+readlink -f <username> will show the location of your home directory
+df -hwill show a disk utilization summary
+Writing to files over a network (aka your home directory) is typically slower than writing to a drive installed in the computer.
+Space on the local computer’s hard drive is available at /localdisk, please note this space is not backed up.
+Conducting heavy computations with data/code saved in your home directory will most likely result in network IO slowing down your execution.
+Using Linux
+One of the most efficient ways to interface with Linux machines is through the Command Line Interface (CLI). What follows is a listing of some essential, tab complete, Linux CLI commands. More can be found at http://mally.stanford.edu/~sr/computing/basic-unix.html.
+
+1. Navigating the File System:
+pwd: Print working directory (displays the current directory path).
+ls: List files and directories.
+Options: -l (long format), -a (show hidden files).
+cd: Change directory.
+Example: cd ~/Documents ( Changes to Documents folder in home dir.)
+Example: cd ( Changes to home dir.)
+2. File Operations:
+cp: Copy files or directories.
+Example: cp file.txt destination/
+mv: Move or rename files or directories.
+Example: mv file.txt newname.txt or mv file.txt destination/
+rm: Remove files or directories.
+Example: rm file.txt
+Caution: Use with care; it deletes files permanently.
+3. Working with Directories:
+mkdir: Create a new directory.
+Example: mkdir new_directory
+rmdir: Remove an empty directory.
+rm -r: Remove a directory and its contents recursively.
+du -h –max-depth=1: Shows size of folder contents for current directory
+4. Viewing File Contents:
+cat: Display the entire contents of a file.
+more or less: View file contents one screen at a time.
+Example: less file.txt
+5. Editing Text Files:
+nano or vim: Text editors for creating or modifying files.
+Example: nano newfile.txt
+6. File Permissions:
+chmod: Change file permissions.
+Example: chmod +x script.sh (make a script executable).
+7. System Information:
+uname -a: Display information about the system.
+df -h: Show disk space usage.
+free -h: Display free and used memory.
+8. User Management:
+whoami: Display the current username.
+who: Show who is logged in.
+9. Searching for Files:
+find: Search for files and directories.
+Example: find / -name filename
+10. Network Commands:
+ping: Check network connectivity.
+Example: ping google.com
+ifconfig or ip: Display network interface information.
+ssh: Secure Shell for remote login.
+11. Process Management:
+ps: Display information about running processes.
+kill: Terminate a process.
+Example: kill processID
+top: View interactive process list
+12. Compression and Archiving:
+tar: Create or extract tar archives.
+Example: tar -cvf archive.tar directory/
+13. Help and Manual:
+man: Access the manual pages for commands.
+Example: man ls
+Resources for Getting Help
+To reach a party that is able to properly address your issue, please read through the following options and contact the appropriate recipient. If your concern is not covered below, please contact cs-labstaff@lists.rochester.edu.
+
+TA / Instructor / Tutor (see sylubus)
+Questions on assignments
+Programming help/questions
+General CS questions
+UIT (univithelp@rochester.edu, https://tech.rochester.edu/ )
+Trouble connecting to VPN
+Issues with the wireless network http://www.rochester.edu/it/wireless/
+Active directory account issues
+Problems with email
+CIRC (https://www.circ.rochester.edu/)
+For questions concerning the BlueHive cluster
+CS Labstaff (cs-labstaff@lists.rochester.edu)
+Broken or damaged hardware in the Majors Lab
+CS account password resets
+Trouble printing in the Majors Lab
+Unable to login to an existing CS account/servers
+FAQs
+Can I get a CS account without being enrolled in a CS course? 
+No, at this time CS course enrollment is a requirement for a CS account
+When I type my password in I don't see any characters, is the system broken? 
+No, for security reasons many terminals do not show characters when typing passwords. If you believe you have mistyped, you can either hit backspace numerous times, abort your current command (ctrl+c on many terminals), or on bash clear to the left of the cursor (ctl+u).
+Computer Science Lab Spaces
+Students need to have their ID cards encoded for access in order to get in to the major computer science lab. Only declared CS Majors may have access to this space. If you do not have access but believe you are a declared major, please check with your undergraduate coordinator. If you have recently declared as a CS major, access to the lab is not immediate.
+
+
+Report a Digital Accessibility Barrier
+Department of Computer Science
+Location
+University of Rochester
+2513 Wegmans Hall
+P.O. Box 270226
+Rochester, NY 14627
+Phone
+(585) 275-5671
+Resources for
+Prospective students
+Current students
+Parents & families
+Faculty & staff
+Alumni
+Helpful links
+Intranet
+Web Communications
+Contact
+Directory
+Human resources
+UR Mobile (app)
+Parking & shuttles
+Information technology
+Blackboard
+myURHR
+MyPath
+Schools & divisions
+School of Arts & Sciences
+Hajim School of Engineering
+Eastman School of Music
+School of Medicine & Dentistry
+School of Nursing
+Simon Business School
+Warner School of Education
+Laboratory for Laser Energetics
+Libraries & collections
+University Libraries
+Memorial Art Gallery
+Ever better
+Global engagement
+Accessibility
+Vision & Values
+Office of University Engagement and Enrichment
+Nondiscrimination & Title IX
+More Rochester
+News
+Events
+Athletics
+Arts
+Two University of Rochester students working on an experiment in a lab.
+Exterior profile of the University of Rochester’s Eastman School of Music. 
+University of Rochester student plays the violin during a concert.
+Facebook
+YouTube
+X / Twitter
+TikTok
+Instagram
+LinkedIn
+Threads
+Follow Rochester
+Three University of Rochester sophomores posed together while wearing University of Rochester hats. 
+The University of Rochester Rush Rhees Library bell tower at sunrise. 
+Close up of a therapy dog’s nose on the University of Rochester river campus. 
+University of Rochester logo
+Contact us
+(585) 275-2121
+See maps and directions
+Rochester, NY
+Search Rochester.eduSearch text
+Search Rochester.edu
+Search
+Privacy
+Copyright
+Emergency Information
+© University of Rochester 1996–2025

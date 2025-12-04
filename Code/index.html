@@ -287,6 +287,11 @@
             </div>
 
             <div class="form-group">
+                <label for="reg-studentid">Student ID</label>
+                <input type="text" id="reg-studentid" placeholder="8-digit Student ID" required pattern="[0-9]{8}" maxlength="8">
+            </div>
+
+            <div class="form-group">
                 <label for="reg-password">Password</label>
                 <input type="password" id="reg-password" placeholder="Create a password" required>
             </div>
@@ -298,12 +303,21 @@
 
             <div class="form-group">
                 <label for="reg-major">Major</label>
-                <input type="text" id="reg-major" placeholder="Your major" required>
+                <select id="reg-major" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px;">
+                    <option value="">Select Major</option>
+                    <option value="Computer Science">Computer Science</option>
+                </select>
             </div>
 
             <div class="form-group">
                 <label for="reg-year">Year</label>
-                <input type="text" id="reg-year" placeholder="e.g., Sophomore, Junior" required>
+                <select id="reg-year" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px;">
+                    <option value="">Select Year</option>
+                    <option value="Freshman">Freshman</option>
+                    <option value="Sophomore">Sophomore</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Senior">Senior</option>
+                </select>
             </div>
 
             <button type="submit" class="login-button">Create Account</button>
@@ -460,14 +474,21 @@
             const firstname = document.getElementById('reg-firstname').value.trim();
             const lastname = document.getElementById('reg-lastname').value.trim();
             const netid = document.getElementById('reg-netid').value.trim().toLowerCase();
+            const studentid = document.getElementById('reg-studentid').value.trim();
             const password = document.getElementById('reg-password').value;
             const confirmPassword = document.getElementById('reg-confirm-password').value;
             const major = document.getElementById('reg-major').value.trim();
             const year = document.getElementById('reg-year').value.trim();
 
             // 验证输入
-            if (!firstname || !lastname || !netid || !password || !major || !year) {
+            if (!firstname || !lastname || !netid || !studentid || !password || !major || !year) {
                 showError('Please fill in all fields.');
+                return;
+            }
+
+            // 验证 Student ID 格式（8位数字）
+            if (!/^\d{8}$/.test(studentid)) {
+                showError('Student ID must be exactly 8 digits.');
                 return;
             }
 
@@ -502,6 +523,7 @@
                     fullName: `${firstname} ${lastname}`,
                     email: `${netid}@u.rochester.edu`,
                     netId: netid,
+                    studentId: studentid,
                     avatar: '👤',
                     degree: major,
                     year: year
@@ -511,10 +533,10 @@
                 courses: [],
                 mailingList: {
                     professors: [],
-                    tas: [],
+                    ta: [],
                     classmates: [],
                     friends: [],
-                    clubs: [],
+                    club: [],
                     research: []
                 },
                 degreeProgress: {

@@ -1,0 +1,2233 @@
+{
+  "courses": [
+    {
+      "code": "CSC 131-1",
+      "title": "Recreational Graphics",
+      "instructor": "Ted Pawlicki",
+      "time": "TR 11:05AM - 12:20PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 160-01",
+      "title": "AI for All",
+      "instructor": "Adam Purtee",
+      "time": "TR 4:50PM - 6:05PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 161-1",
+      "title": "Introduction to Programming",
+      "instructor": "Monika Polak",
+      "time": "TR 11:05AM - 12:20PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 161-10",
+      "title": "Introduction to Programming",
+      "instructor": "Monika Polak",
+      "time": "R 2:00PM - 3:15PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 161-11",
+      "title": "Introduction to Programming",
+      "instructor": "Monika Polak",
+      "time": "R 4:50PM - 6:05PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 161-12",
+      "title": "Introduction to Programming",
+      "instructor": "Monika Polak",
+      "time": "R 7:40PM - 8:55PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 161-13",
+      "title": "Introduction to Programming",
+      "instructor": "Monika Polak",
+      "time": "T 3:25PM - 4:40PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 161-14",
+      "title": "Introduction to Programming",
+      "instructor": "Monika Polak",
+      "time": "T 6:15PM - 7:30PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 161-15",
+      "title": "Introduction to Programming",
+      "instructor": "Monika Polak",
+      "time": "TR 12:30PM - 1:45PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 161-16",
+      "title": "Introduction to Programming",
+      "instructor": "Monika Polak",
+      "time": "W 3:25PM - 4:40PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 161-18",
+      "title": "Introduction to Programming",
+      "instructor": "Monika Polak",
+      "time": "TR 4:50PM - 6:05PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 161-22",
+      "title": "Introduction to Programming",
+      "instructor": "Monika Polak",
+      "time": "M 9:00AM - 10:15AM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 161-23",
+      "title": "Introduction to Programming",
+      "instructor": "Monika Polak",
+      "time": "W 2:00PM - 3:15PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 161-3",
+      "title": "Introduction to Programming",
+      "instructor": "Monika Polak",
+      "time": "U 1:30PM - 3:00PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 161-5",
+      "title": "Introduction to Programming",
+      "instructor": "Monika Polak",
+      "time": "M 10:25AM - 11:40AM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 161-8",
+      "title": "Introduction to Programming",
+      "instructor": "Monika Polak",
+      "time": "MW 12:30PM - 1:45PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 171-1",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "MW 10:25AM - 11:40AM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 171-10",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "M 7:40PM - 8:55PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 171-13",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "MW 2:00PM - 3:15PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 171-14",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "T 3:25PM - 4:40PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 171-15",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "T 4:50PM - 6:05PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 171-21",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "TR 9:40AM - 10:55AM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 171-22",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "TR 11:05AM - 12:20PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 171-27",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "M 12:30PM - 1:45PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 171-3",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "W 2:00PM - 3:15PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 171-4",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "M 3:25PM - 4:40PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 171-5",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "M 3:25PM - 4:40PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 171-9",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "T 2:00PM - 3:15PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 172-1",
+      "title": "Data Structures & Algorithms",
+      "instructor": "Ted Pawlicki",
+      "time": "TR 9:40AM - 10:55AM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 172-14",
+      "title": "Data Structures & Algorithms",
+      "instructor": "Ted Pawlicki",
+      "time": "MW 2:00PM - 3:15PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 172-16",
+      "title": "Data Structures & Algorithms",
+      "instructor": "Ted Pawlicki",
+      "time": "MW 4:50PM - 6:05PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 172-18",
+      "title": "Data Structures & Algorithms",
+      "instructor": "Ted Pawlicki",
+      "time": "R 2:00PM - 3:15PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 172-19",
+      "title": "Data Structures & Algorithms",
+      "instructor": "Ted Pawlicki",
+      "time": "R 4:50PM - 6:05PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 172-22",
+      "title": "Data Structures & Algorithms",
+      "instructor": "Ted Pawlicki",
+      "time": "T 7:40PM - 8:55PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 172-25",
+      "title": "Data Structures & Algorithms",
+      "instructor": "Ted Pawlicki",
+      "time": "TR 2:00PM - 3:15PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 172-5",
+      "title": "Data Structures & Algorithms",
+      "instructor": "Ted Pawlicki",
+      "time": "M 3:25PM - 4:40PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 172-6",
+      "title": "Data Structures & Algorithms",
+      "instructor": "Ted Pawlicki",
+      "time": "M 4:50PM - 6:05PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 172-7",
+      "title": "Data Structures & Algorithms",
+      "instructor": "Ted Pawlicki",
+      "time": "M 6:15PM - 7:30PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 173-01",
+      "title": "Computation & Formal Systems",
+      "instructor": "George Ferguson",
+      "time": "MW 2:00PM - 3:15PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 212-1",
+      "title": "Human Computer Interaction",
+      "instructor": "Yukang Yan",
+      "time": "TR 11:05AM - 12:20PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 214-1",
+      "title": "Mobile App Development",
+      "instructor": "Arthur Roolfs",
+      "time": "TR 6:15PM - 7:30PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 240-01",
+      "title": "Intro to Data Mining",
+      "instructor": "Cantay Caliskan",
+      "time": "TR 3:25PM - 4:40PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 241-01",
+      "title": "Intro to Computational Neuroscience",
+      "instructor": "Ralf Haefner",
+      "time": "TR 12:30PM - 1:45PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 242-01",
+      "title": "Artificial Intelligence",
+      "instructor": "Ted Pawlicki",
+      "time": "TR 3:25PM - 4:40PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 245-01",
+      "title": "Deep Learning",
+      "instructor": "Chenliang Xu",
+      "time": "TR 9:40AM - 10:55AM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 246-01",
+      "title": "Machine Learning",
+      "instructor": "Adam Purtee",
+      "time": "TR 11:05AM - 12:20PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 252-01",
+      "title": "Computer Organization",
+      "instructor": "Yanan Guo",
+      "time": "MW 3:25PM - 4:40PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 253-01",
+      "title": "Collaborative Programming & Software Design",
+      "instructor": "Chen Ding",
+      "time": "MW 3:25PM - 4:40PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 254-01",
+      "title": "Prog Language Design & Imp",
+      "instructor": "Michael Scott",
+      "time": "MW 10:25AM - 11:40AM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 254-03",
+      "title": "Prog Language Design & Imp",
+      "instructor": "Michael Scott",
+      "time": "R 3:25PM - 4:40PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 254-04",
+      "title": "Prog Language Design & Imp",
+      "instructor": "Michael Scott",
+      "time": "R 6:15PM - 7:30PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 254-08",
+      "title": "Prog Language Design & Imp",
+      "instructor": "Michael Scott",
+      "time": "W 3:25PM - 4:40PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 254-10",
+      "title": "Prog Language Design & Imp",
+      "instructor": "Michael Scott",
+      "time": "W 6:15PM - 7:30PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 254-12",
+      "title": "Prog Language Design & Imp",
+      "instructor": "Michael Scott",
+      "time": "W 3:25PM - 4:40PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 256-1",
+      "title": "Operating Systems",
+      "instructor": "John Criswell",
+      "time": "TR 2:00PM - 3:15PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 257-1",
+      "title": "Computer NetworksAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "MW 4:50PM - 6:05PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 259-1",
+      "title": "Computer Imaging & Graphics",
+      "instructor": "Yuhao Zhu",
+      "time": "WF 2:00PM - 3:15PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 261-01",
+      "title": "Database Systems",
+      "instructor": "Eustrat Zhupa",
+      "time": "MW 12:30PM - 1:45PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 264-1",
+      "title": "Computer Audition",
+      "instructor": "Zhiyao Duan",
+      "time": "TR 12:30PM - 1:45PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 273",
+      "title": "W- Writing for Computer Science",
+      "instructor": "Joseph Loporcaro",
+      "time": "T 2:00PM - 3:15PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 273",
+      "title": "W- Writing for Computer Science",
+      "instructor": "Joseph Loporcaro",
+      "time": "T 4:50PM - 6:05PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 276-01",
+      "title": "Computer Architecture and Security",
+      "instructor": "Yanan Guo",
+      "time": "MW 4:50PM - 6:05PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 277-01",
+      "title": "End-To-End Deep Learning",
+      "instructor": "Christopher Kanan",
+      "time": "MW 3:25PM - 4:40PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 280-01",
+      "title": "Computer Models &Limitations",
+      "instructor": "Monika Polak",
+      "time": "MW 2:00PM - 3:15PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 280-03",
+      "title": "Computer Models &Limitations",
+      "instructor": "Monika Polak",
+      "time": "W 4:50PM - 6:05PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 280-04",
+      "title": "Computer Models &Limitations",
+      "instructor": "Monika Polak",
+      "time": "W 6:15PM - 7:30PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 280-06",
+      "title": "Computer Models &Limitations",
+      "instructor": "Monika Polak",
+      "time": "R 6:15PM - 7:30PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 280-08",
+      "title": "Computer Models &Limitations",
+      "instructor": "Monika Polak",
+      "time": "R 3:25PM - 4:15PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 281-1",
+      "title": "Intro to CryptographyAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "MW 9:00AM - 10:15AM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 282-01",
+      "title": "Design & Analysis of Efficient Algorithms",
+      "instructor": "Daniel Stefankovic",
+      "time": "TR 11:05AM - 12:20PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 282-02",
+      "title": "Design & Analysis of Efficient Algorithms",
+      "instructor": "Daniel Stefankovic",
+      "time": "T 6:15PM - 7:30PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 282-03",
+      "title": "Design & Analysis of Efficient Algorithms",
+      "instructor": "Daniel Stefankovic",
+      "time": "W 6:15PM - 7:30PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 282-04",
+      "title": "Design & Analysis of Efficient Algorithms",
+      "instructor": "Daniel Stefankovic",
+      "time": "M 6:15PM - 7:30PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 282-05",
+      "title": "Design & Analysis of Efficient Algorithms",
+      "instructor": "Daniel Stefankovic",
+      "time": "W 7:40PM - 8:55PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 284-1",
+      "title": "Advanced Algorithms",
+      "instructor": "Daniel Stefankovic",
+      "time": "MW 4:50PM - 6:05PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 289-01",
+      "title": "Algorithmic Game Theory",
+      "instructor": "Anson Kahng",
+      "time": "MW 4:50PM - 6:05PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 290-1",
+      "title": "Machine Learning Systems for Efficient AI",
+      "instructor": "Sreepathi Pai",
+      "time": "MW 9:00AM - 10:15AM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 299",
+      "title": "W- Social Implications of Computing",
+      "instructor": "Joseph Loporcaro",
+      "time": "MW 3:25PM - 4:40PM",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 386",
+      "title": "V- Undergrad Visiting Student",
+      "instructor": "Chenliang Xu",
+      "time": "TBA",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 391-1",
+      "title": "",
+      "instructor": "Independent Study",
+      "time": "TBA",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 392-1",
+      "title": "",
+      "instructor": "Practicum",
+      "time": "TBA",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 394-1",
+      "title": "Internship",
+      "instructor": "Adam Purtee",
+      "time": "TBA",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 395-1",
+      "title": "Independent Research",
+      "instructor": "Zhen Bai",
+      "time": "TBA",
+      "term": "Fall 2025"
+    },
+    {
+      "code": "CSC 160-01",
+      "title": "AI for All",
+      "instructor": "Adam Purtee",
+      "time": "TR 3:25PM - 4:40PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 161-01",
+      "title": "Introduction to ProgrammingAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "TR 4:50PM - 6:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 161-02",
+      "title": "Introduction to ProgrammingAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "TR 2:00PM - 3:15PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 161-03",
+      "title": "Introduction to ProgrammingAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "MW 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 161-04",
+      "title": "Introduction to ProgrammingAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "MW 3:25PM - 4:40PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 161-05",
+      "title": "Introduction to ProgrammingAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "TR 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 161-06",
+      "title": "Introduction to ProgrammingAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "M 2:00PM - 3:15PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 161-07",
+      "title": "Introduction to ProgrammingAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "M 3:25PM - 4:40PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 161-08",
+      "title": "Introduction to ProgrammingAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "M 4:50PM - 6:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 161-09",
+      "title": "Introduction to ProgrammingAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "W 3:25PM - 4:40PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 161-10",
+      "title": "Introduction to ProgrammingAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "M 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 161-11",
+      "title": "Introduction to ProgrammingAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "T 2:00PM - 3:15PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 161-12",
+      "title": "Introduction to ProgrammingAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "T 3:25PM - 4:40PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 161-13",
+      "title": "Introduction to ProgrammingAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "T 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 161-14",
+      "title": "Introduction to ProgrammingAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "T 7:40PM - 8:55PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 161-15",
+      "title": "Introduction to ProgrammingAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "R 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 161-16",
+      "title": "Introduction to ProgrammingAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "W 4:50PM - 6:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 161-17",
+      "title": "Introduction to ProgrammingAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "W 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 161-18",
+      "title": "Introduction to ProgrammingAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "W 7:40PM - 8:55PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 161-19",
+      "title": "Introduction to ProgrammingAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "R 3:25PM - 4:40PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 161-20",
+      "title": "Introduction to ProgrammingAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "R 7:40PM - 8:55PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 171-01",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "TR 2:00PM - 3:15PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 171-02",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "MW 4:50PM - 6:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 171-03",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "MW 12:30PM - 1:45PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 171-04",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "MW 10:25AM - 11:40AM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 171-05",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "MW 2:00PM - 3:15PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 171-06",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "W 10:25AM - 11:40AM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 171-08",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "M 4:50PM - 6:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 171-10",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "M 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 171-13",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "T 4:50PM - 6:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 171-14",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "T 4:50PM - 6:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 171-15",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "T 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 171-16",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "T 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 171-19",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "W 3:25PM - 4:40PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 171-20",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "W 3:25PM - 4:40PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 171-21",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "W 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 171-22",
+      "title": "Introduction to Computer Science",
+      "instructor": "Eustrat Zhupa",
+      "time": "R 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 172-01",
+      "title": "Data Structures & AlgorithmsAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "TR 11:05AM - 12:20PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 172-02",
+      "title": "Data Structures & AlgorithmsAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "TR 4:50PM - 6:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 172-03",
+      "title": "Data Structures & AlgorithmsAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "MW 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 172-04",
+      "title": "Data Structures & AlgorithmsAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "MW 2:00PM - 3:15PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 172-06",
+      "title": "Data Structures & AlgorithmsAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "MW 3:25PM - 4:40PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 172-07",
+      "title": "Data Structures & AlgorithmsAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "M 3:25PM - 4:40PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 172-09",
+      "title": "Data Structures & AlgorithmsAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "M 4:50PM - 6:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 172-10",
+      "title": "Data Structures & AlgorithmsAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "M 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 172-12",
+      "title": "Data Structures & AlgorithmsAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "M 7:40PM - 8:55PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 172-13",
+      "title": "Data Structures & AlgorithmsAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "T 2:00PM - 3:15PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 172-14",
+      "title": "Data Structures & AlgorithmsAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "T 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 172-15",
+      "title": "Data Structures & AlgorithmsAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "T 7:40PM - 8:55PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 172-17",
+      "title": "Data Structures & AlgorithmsAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "T 4:50PM - 6:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 172-18",
+      "title": "Data Structures & AlgorithmsAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "W 4:50PM - 6:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 172-19",
+      "title": "Data Structures & AlgorithmsAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "W 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 172-22",
+      "title": "Data Structures & AlgorithmsAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "R 4:50PM - 6:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 172-23",
+      "title": "Data Structures & AlgorithmsAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "R 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 173-01",
+      "title": "Computation & Formal Systems",
+      "instructor": "George Ferguson",
+      "time": "TR 2:00PM - 3:15PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 186-01",
+      "title": "Video Game Development",
+      "instructor": "Ted Pawlicki",
+      "time": "TR 11:05AM - 12:20PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 200-01",
+      "title": "Undergraduate Problem Seminar",
+      "instructor": "Fatemeh Nargesian",
+      "time": "MW 11:50AM - 1:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 200",
+      "title": "H- Honors Undergraduate Problem Seminar",
+      "instructor": "Fatemeh Nargesian",
+      "time": "MW 11:50AM - 1:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 209-01",
+      "title": "Seminar on Artificial General Intelligence",
+      "instructor": "Christopher Kanan",
+      "time": "M 2:00PM - 3:15PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 210-01",
+      "title": "Web ProgrammingAndrew Read-Mc",
+      "instructor": "Farland",
+      "time": "MW 2:00PM - 3:15PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 214-01",
+      "title": "Mobile App Development",
+      "instructor": "Arthur Roolfs",
+      "time": "TR 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 216-01",
+      "title": "AR VR Interaction Design",
+      "instructor": "Zhen Bai",
+      "time": "TR 3:25PM - 4:40PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 229-01",
+      "title": "Computer Models of Perception & Cognition",
+      "instructor": "Robert Jacobs",
+      "time": "TR 11:05AM - 12:20PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 240-01",
+      "title": "Intro to Data Mining",
+      "instructor": "Monika Polak",
+      "time": "TR 9:40AM - 10:55AM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 242-01",
+      "title": "Artificial Intelligence",
+      "instructor": "Adam Purtee",
+      "time": "TR 4:50PM - 6:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 243-01",
+      "title": "Advanced Computational Neuroscience",
+      "instructor": "Ralf Haefner",
+      "time": "TR 9:40AM - 10:55AM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 243-02",
+      "title": "Advanced Computational Neuroscience",
+      "instructor": "Ralf Haefner",
+      "time": "F 2:00PM - 3:15PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 246-01",
+      "title": "Machine Learning",
+      "instructor": "Xiangxiang Xu",
+      "time": "TR 11:05AM - 12:20PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 247-01",
+      "title": "Natural Language Processing",
+      "instructor": "Hangfeng He",
+      "time": "MW 10:25AM - 11:40AM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 249-01",
+      "title": "Machine Vision",
+      "instructor": "Jiebo Luo",
+      "time": "TR 9:40AM - 10:55AM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 252-01",
+      "title": "Computer Organization",
+      "instructor": "Yuhao Zhu",
+      "time": "WF 3:25PM - 4:40PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 254-01",
+      "title": "Prog Language Design & Imp",
+      "instructor": "George Ferguson",
+      "time": "TR 3:25PM - 4:40PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 254-04",
+      "title": "Prog Language Design & Imp",
+      "instructor": "George Ferguson",
+      "time": "R 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 254-05",
+      "title": "Prog Language Design & Imp",
+      "instructor": "George Ferguson",
+      "time": "R 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 254-07",
+      "title": "Prog Language Design & Imp",
+      "instructor": "George Ferguson",
+      "time": "W 3:25PM - 4:40PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 254-08",
+      "title": "Prog Language Design & Imp",
+      "instructor": "George Ferguson",
+      "time": "W 4:50PM - 6:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 254-09",
+      "title": "Prog Language Design & Imp",
+      "instructor": "George Ferguson",
+      "time": "W 4:50PM - 6:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 254-12",
+      "title": "Prog Language Design & Imp",
+      "instructor": "George Ferguson",
+      "time": "W 3:25PM - 4:40PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 258-01",
+      "title": "Parallel & Distributed Systems",
+      "instructor": "Michael Scott",
+      "time": "MW 3:25PM - 4:40PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 261-01",
+      "title": "Database Systems",
+      "instructor": "Eustrat Zhupa",
+      "time": "MW 2:00PM - 3:15PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 263-01",
+      "title": "Data Management Systems",
+      "instructor": "Fatemeh Nargesian",
+      "time": "MW 9:00AM - 10:15AM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 273",
+      "title": "W- Writing for Computer Science",
+      "instructor": "Joseph Loporcaro",
+      "time": "T 4:50PM - 6:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 273",
+      "title": "W- Writing for Computer Science",
+      "instructor": "Joseph Loporcaro",
+      "time": "T 2:00PM - 3:15PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 280-01",
+      "title": "Computer Models & Limitations",
+      "instructor": "Kaave Hosseini",
+      "time": "MW 2:00PM - 3:15PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 280-02",
+      "title": "Computer Models &Limitations",
+      "instructor": "Kaave Hosseini",
+      "time": "W 4:50PM - 6:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 280-03",
+      "title": "Computer Models &Limitations",
+      "instructor": "Kaave Hosseini",
+      "time": "W 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 280-04",
+      "title": "Computer Models &Limitations",
+      "instructor": "Kaave Hosseini",
+      "time": "R 4:50PM - 6:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 280-09",
+      "title": "Computer Models &Limitations",
+      "instructor": "Kaave Hosseini",
+      "time": "R 3:25PM - 4:40PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 282-01",
+      "title": "Design & Analysis of Efficient Algorithms",
+      "instructor": "Eustrat Zhupa",
+      "time": "TR 9:40AM - 10:55AM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 282-02",
+      "title": "Design & Analysis of Efficient Algorithms",
+      "instructor": "Eustrat Zhupa",
+      "time": "T 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 282-03",
+      "title": "Design & Analysis of Efficient Algorithms",
+      "instructor": "Eustrat Zhupa",
+      "time": "W 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 282-04",
+      "title": "Design & Analysis of Efficient Algorithms",
+      "instructor": "Eustrat Zhupa",
+      "time": "M 6:15PM - 7:30PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 282-05",
+      "title": "Design & Analysis of Efficient Algorithms",
+      "instructor": "Eustrat Zhupa",
+      "time": "W 7:40PM - 8:55PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 283-01",
+      "title": "Topics in Cryptography",
+      "instructor": "Monika Polak",
+      "time": "MW 11:50AM - 1:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 285-01",
+      "title": "Gems of Algorithms and Elections",
+      "instructor": "Lane Hemaspaandra",
+      "time": "MW 4:50PM - 6:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 288-01",
+      "title": "Analytic Methods in Computer Science",
+      "instructor": "Kaave Hosseini",
+      "time": "MW 4:50PM - 6:05PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 295-01",
+      "title": "Quantum Computing",
+      "instructor": "Ted Pawlicki",
+      "time": "TR 12:30PM - 1:45PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 299",
+      "title": "W- Social Implications of Computing",
+      "instructor": "Joseph Loporcaro",
+      "time": "MW 3:25PM - 4:40PM",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 386",
+      "title": "V- Undergrad Visiting Student",
+      "instructor": "Chenliang Xu",
+      "time": "TBA",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 390-01",
+      "title": "Supervised Teaching",
+      "instructor": "Joseph Loporcaro",
+      "time": "TBA",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 391-01",
+      "title": "Independent Study",
+      "instructor": "Lane Hemaspaandra",
+      "time": "TBA",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 391",
+      "title": "H- Independent Study-Honors",
+      "instructor": "Hangfeng He",
+      "time": "TBA",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 391",
+      "title": "W- Independent Study",
+      "instructor": "Jiebo Luo",
+      "time": "TBA",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 392-01",
+      "title": "",
+      "instructor": "Practicum",
+      "time": "TBA",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 394-02",
+      "title": "Internship",
+      "instructor": "Adam Purtee",
+      "time": "TBA",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 395-01",
+      "title": "Independent Research",
+      "instructor": "Ehsan Hoque",
+      "time": "TBA",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 395",
+      "title": "H- Independent Research Honors",
+      "instructor": "Aaron White",
+      "time": "TBA",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 395",
+      "title": "H- Independent Research Honors",
+      "instructor": "Lane Hemaspaandra",
+      "time": "TBA",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 395",
+      "title": "H- Independent Research Honors",
+      "instructor": "Jiebo Luo",
+      "time": "TBA",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 395",
+      "title": "W- Independent Research",
+      "instructor": "Lenhart Schubert",
+      "time": "TBA",
+      "term": "Spring 2026"
+    },
+    {
+      "code": "CSC 161",
+      "title": "S- Introduction to Programming",
+      "instructor": "Arthur Roolfs",
+      "time": "TWRF 5:00PM - 7:00PM",
+      "term": "Summer 2025"
+    },
+    {
+      "code": "CSC 162-1",
+      "title": "Data Structures & Algorithms in Python",
+      "instructor": "Andrea Cogliati",
+      "time": "TBA",
+      "term": "Summer 2025"
+    },
+    {
+      "code": "CSC 170-01",
+      "title": "Introduction to Web Development",
+      "instructor": "Eustrat Zhupa",
+      "time": "TBA",
+      "term": "Summer 2025"
+    },
+    {
+      "code": "CSC 170-2",
+      "title": "Introduction to Web Development",
+      "instructor": "Eustrat Zhupa",
+      "time": "TBA",
+      "term": "Summer 2025"
+    },
+    {
+      "code": "CSC 171-1",
+      "title": "Introduction to Computer Science",
+      "instructor": "Ted Pawlicki",
+      "time": "TBA",
+      "term": "Summer 2025"
+    },
+    {
+      "code": "CSC 171-2",
+      "title": "Introduction to Computer Science - Lab",
+      "instructor": "Ted Pawlicki",
+      "time": "TBA",
+      "term": "Summer 2025"
+    },
+    {
+      "code": "CSC 171-3",
+      "title": "Introduction to Computer Science - WKSHP",
+      "instructor": "Ted Pawlicki",
+      "time": "TBA",
+      "term": "Summer 2025"
+    },
+    {
+      "code": "CSC 172-1",
+      "title": "Data Structures & Algorithms",
+      "instructor": "Ted Pawlicki",
+      "time": "TBA",
+      "term": "Summer 2025"
+    },
+    {
+      "code": "CSC 172-2",
+      "title": "Data Structures & Algorithms - Lab",
+      "instructor": "Ted Pawlicki",
+      "time": "TBA",
+      "term": "Summer 2025"
+    },
+    {
+      "code": "CSC 172-3",
+      "title": "Data Structures & Algorithms - WKSHP",
+      "instructor": "Ted Pawlicki",
+      "time": "TBA",
+      "term": "Summer 2025"
+    },
+    {
+      "code": "CSC 214-1",
+      "title": "Mobile App Development",
+      "instructor": "Arthur Roolfs",
+      "time": "TWRF 5:00PM - 7:00PM",
+      "term": "Summer 2025"
+    },
+    {
+      "code": "CSC 242-01",
+      "title": "Artificial Intelligence",
+      "instructor": "Ted Pawlicki",
+      "time": "TBA",
+      "term": "Summer 2025"
+    },
+    {
+      "code": "CSC 261-01",
+      "title": "Database Systems",
+      "instructor": "Eustrat Zhupa",
+      "time": "TBA",
+      "term": "Summer 2025"
+    },
+    {
+      "code": "CSC 280-01",
+      "title": "Computer Models &Limitations",
+      "instructor": "Monika Polak",
+      "time": "TBA",
+      "term": "Summer 2025"
+    },
+    {
+      "code": "CSC 280-02",
+      "title": "Computer Models &Limitations",
+      "instructor": "Monika Polak",
+      "time": "TBA",
+      "term": "Summer 2025"
+    },
+    {
+      "code": "CSC 299",
+      "title": "W- Social Implications of Computing",
+      "instructor": "Joseph Loporcaro",
+      "time": "TBA",
+      "term": "Summer 2025"
+    }
+  ],
+  "people": [
+    {
+      "name": "Abdelkader, Abdelrahman Mohamed Ali",
+      "role": "MS Student",
+      "email": "a.abdelkader@rochester.edu",
+      "office": "N/A"
+    },
+    {
+      "name": "Web Address Website James Allen",
+      "role": "Professor Emeritus of Computer Science",
+      "email": "james@cs.rochester.edu",
+      "office": "N/A"
+    },
+    {
+      "name": "An, Hannah",
+      "role": "Professor Emeritus of Computer Science",
+      "email": "yan2@cs.rochester.edu",
+      "office": "N/A"
+    },
+    {
+      "name": "Telephone",
+      "role": "Professor Emeritus of Computer Science",
+      "email": "zbai@cs.rochester.edu",
+      "office": "3007 Wegmans Hall"
+    },
+    {
+      "name": "Web Address Website",
+      "role": "Assistant Professor of Computer Science",
+      "email": "tbalamur@ur.rochester.edu",
+      "office": "3007 Wegmans Hall"
+    },
+    {
+      "name": "Beadle, Alan",
+      "role": "Assistant Professor of Computer Science",
+      "email": "hbeadle@cs.rochester.edu",
+      "office": "3007 Wegmans Hall"
+    },
+    {
+      "name": "Bi, Jing",
+      "role": "Assistant Professor of Computer Science",
+      "email": "jbi5@cs.rochester.edu",
+      "office": "3007 Wegmans Hall"
+    },
+    {
+      "name": "Brohl, Adam",
+      "role": "Assistant Professor of Computer Science",
+      "email": "abrohl@ur.rochester.edu",
+      "office": "3007 Wegmans Hall"
+    },
+    {
+      "name": "Web Address Website Christopher M. Brown",
+      "role": "Professor Emeritus of Computer Science",
+      "email": "brown@cs.rochester.edu",
+      "office": "2601 Wegmans Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Professor Emeritus of Computer Science",
+      "email": "aburt11@ur.rochester.edu",
+      "office": "2601 Wegmans Hall"
+    },
+    {
+      "name": "Catania, James",
+      "role": "Professor Emeritus of Computer Science",
+      "email": "jcatani4@ur.rochester.edu",
+      "office": "2601 Wegmans Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Professor Emeritus of Computer Science",
+      "email": "mujdat.cetin@rochester.edu",
+      "office": "2601 Wegmans Hall"
+    },
+    {
+      "name": "Alina Chadwick",
+      "role": "Professor of Electrical and Computer Engineering",
+      "email": "achadwic@ur.rochester.edu",
+      "office": "1211 Wegmans Hall"
+    },
+    {
+      "name": "Web Address Website",
+      "role": "Professor of Computer Science",
+      "email": "jchang38@cs.rochester.edu",
+      "office": "1211 Wegmans Hall"
+    },
+    {
+      "name": "Chen, Ethan",
+      "role": "PhD Student",
+      "email": "echen48@cs.rochester.edu",
+      "office": "1211 Wegmans Hall"
+    },
+    {
+      "name": "Chen, Junyu",
+      "role": "PhD Student",
+      "email": "jchen175@cs.rochester.edu",
+      "office": "N/A"
+    },
+    {
+      "name": "Chowdhury, Zubaer Rahman",
+      "role": "PhD Student",
+      "email": "zchowdh4@ur.rochester.edu",
+      "office": "3311 Wegmans Hall"
+    },
+    {
+      "name": "Office Location",
+      "role": "PhD Student",
+      "email": "costello@cs.rochester.edu",
+      "office": "3311 Wegmans Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Associate Professor of Computer Science",
+      "email": "criswell@cs.rochester.edu",
+      "office": "3311 Wegmans Hall"
+    },
+    {
+      "name": "Postdoctoral Associate  Office Location",
+      "role": "Associate Professor of Computer Science",
+      "email": "tdang9@ur.rochester.edu",
+      "office": "3311 Wegmans Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Associate Professor of Computer Science",
+      "email": "chen.ding@rochester.edu",
+      "office": "3311 Wegmans Hall"
+    },
+    {
+      "name": "Dinh, Helia Linh",
+      "role": "Associate Professor of Computer Science",
+      "email": "ldinh@ur.rochester.edu",
+      "office": "3405 Wegmans Hall"
+    },
+    {
+      "name": "Dong, Rongcui",
+      "role": "Professor of Computer Science",
+      "email": "rdong3@cs.rochester.edu",
+      "office": "2511 Wegmans Hall"
+    },
+    {
+      "name": "Du, Mingzhe",
+      "role": "Professor of Computer Science",
+      "email": "mdu5@cs.rochester.edu",
+      "office": "2511 Wegmans Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Professor of Computer Science",
+      "email": "zhiyao.duan@rochester.edu",
+      "office": "3407 Wegmans Hall"
+    },
+    {
+      "name": "Sandhya Dwarkadas",
+      "role": "Professor of Electrical and Computer Engineering",
+      "email": "sandhya@cs.rochester.edu",
+      "office": "720 Computer Studies Building"
+    },
+    {
+      "name": "Sr Financial Analyst  Office Location",
+      "role": "Professor of Computer Science",
+      "email": "reckert5@cs.rochester.edu",
+      "office": "2505 Wegmans Hall"
+    },
+    {
+      "name": "Web Address Website Erfan Farhadi",
+      "role": "Professor of Computer Science",
+      "email": "efarhadi@ur.rochester.edu",
+      "office": "2505 Wegmans Hall"
+    },
+    {
+      "name": "Feng, Mingqian",
+      "role": "PhD Student",
+      "email": "mfeng7@cs.rochester.edu",
+      "office": "2505 Wegmans Hall"
+    },
+    {
+      "name": "Office Location",
+      "role": "Professor of Computer Science (Instruction) Co-Director Computer Science Undergraduate Program",
+      "email": "ferguson@cs.rochester.edu",
+      "office": "2505 Wegmans Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Assistant Professor of Electrical and Computer Engineering",
+      "email": "tong.geng@rochester.edu",
+      "office": "2103 Wegmans Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Assistant Professor of Electrical and Computer Engineering",
+      "email": "gghoshal@pas.rochester.edu",
+      "office": "723 Computer Studies Building"
+    },
+    {
+      "name": "Telephone",
+      "role": "Assistant Professor of Electrical and Computer Engineering",
+      "email": "gildea@cs.rochester.edu",
+      "office": "723 Computer Studies Building"
+    },
+    {
+      "name": "Office Location",
+      "role": "Assistant Professor of Computer Science",
+      "email": "yguo51@cs.rochester.edu",
+      "office": "464 Bausch & Lomb Hall"
+    },
+    {
+      "name": "Gupta, Sudhanshu",
+      "role": "Assistant Professor of Computer Science",
+      "email": "sgupta45@cs.rochester.edu",
+      "office": "3019 Wegmans Hall"
+    },
+    {
+      "name": "Haddad, Elias",
+      "role": "Assistant Professor of Computer Science",
+      "email": "ehaddad2@ur.rochester.edu",
+      "office": "3403 Wegmans Hall"
+    },
+    {
+      "name": "Hadjiyski, Nathan Ryan",
+      "role": "Assistant Professor of Computer Science",
+      "email": "nhadjiys@ur.rochester.edu",
+      "office": "3403 Wegmans Hall"
+    },
+    {
+      "name": "Office Location",
+      "role": "Assistant Professor of Computer Science",
+      "email": "rhaefne2@ur.rochester.edu",
+      "office": "3403 Wegmans Hall"
+    },
+    {
+      "name": "Hasan, Masum",
+      "role": "Associate Professor of Brain & Cognitive Sciences",
+      "email": "m.hasan@rochester.edu",
+      "office": "318 Meliora Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Assistant Professor of Computer Science and Data Science",
+      "email": "hhe15@cs.rochester.edu",
+      "office": "318 Meliora Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Assistant Professor of Computer Science and Data Science",
+      "email": "jhead4@cs.rochester.edu",
+      "office": "3009 Wegmans Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Assistant Professor of Computer Science and Data Science",
+      "email": "wendi.heinzelman@rochester.edu",
+      "office": "3009 Wegmans Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Associate Professor of English",
+      "email": "gregory.heyworth@rochester.edu",
+      "office": "2317 Wegmans Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Associate Professor of English",
+      "email": "ahoang7@cs.rochester.edu",
+      "office": "514 Morey Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Associate Professor of English",
+      "email": "mehoque@cs.rochester.edu",
+      "office": "514 Morey Hall"
+    },
+    {
+      "name": "Office Location",
+      "role": "Assistant Professor of Computer Science",
+      "email": "shossei2@ur.rochester.edu",
+      "office": "514 Morey Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Assistant Professor of Computer Science",
+      "email": "thoward@ece.rochester.edu",
+      "office": "3013 Wegmans Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Assistant Professor of Computer Science",
+      "email": "michael.huang@rochester.edu",
+      "office": "2507 Wegmans Hall"
+    },
+    {
+      "name": "Huang, Chao",
+      "role": "Associate Professor of Electrical and Computer Engineering",
+      "email": "chuang65@cs.rochester.edu",
+      "office": "732 Computer Studies Building"
+    },
+    {
+      "name": "Web Address Website",
+      "role": "Associate Professor of Electrical and Computer Engineering",
+      "email": "jhuang90@ur.rochester.edu",
+      "office": "732 Computer Studies Building"
+    },
+    {
+      "name": "Huang, Yuesong",
+      "role": "Associate Professor of Computer Science",
+      "email": "yhu116@ur.rochester.edu",
+      "office": "732 Computer Studies Building"
+    },
+    {
+      "name": "Islam, Saiful",
+      "role": "Professor of Electrical and Computer Engineering",
+      "email": "mislam6@ur.rochester.edu",
+      "office": "732 Computer Studies Building"
+    },
+    {
+      "name": "Jiang, Alvin",
+      "role": "Professor, Brain and Cognitive Sciences, Computer Science, and the Center for Visual Science",
+      "email": "yjiang54@simon.rochester.edu",
+      "office": "306 Meliora Hall"
+    },
+    {
+      "name": "Office Location",
+      "role": "Assistant Professor of Computer Science and Data Science",
+      "email": "akahng2@cs.rochester.edu",
+      "office": "306 Meliora Hall"
+    },
+    {
+      "name": "Office Location",
+      "role": "Assistant Professor of Computer Science and Data Science",
+      "email": "ckanan@cs.rochester.edu",
+      "office": "2401 Wegmans Hall"
+    },
+    {
+      "name": "Office Location",
+      "role": "Assistant Professor of Computer Science",
+      "email": "jian.kang@rochester.edu",
+      "office": "2401 Wegmans Hall"
+    },
+    {
+      "name": "Henry Kautz",
+      "role": "Professor Emeritus of Computer Science",
+      "email": "kautz@cs.rochester.edu",
+      "office": "3017 Wegmans Hall"
+    },
+    {
+      "name": "Khan, Tasin Tayeba",
+      "role": "Professor Emeritus of Computer Science",
+      "email": "tkhan17@ur.rochester.edu",
+      "office": "3017 Wegmans Hall"
+    },
+    {
+      "name": "Knoll, Samuel Jason",
+      "role": "Professor Emeritus of Computer Science",
+      "email": "sknoll@ur.rochester.edu",
+      "office": "3011 Wegmans Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Professor Emeritus of Computer Science",
+      "email": "kristi@cs.rochester.edu",
+      "office": "3011 Wegmans Hall"
+    },
+    {
+      "name": "Pavlo Kuchmiichuk",
+      "role": "Professor Emeritus of Computer Science",
+      "email": "pkuchmii@ur.rochester.edu",
+      "office": "3509 Wegmans Hall"
+    },
+    {
+      "name": "Office Location",
+      "role": "Assistant Professor of Computer Science and Data Science",
+      "email": "jliang31@cs.rochester.edu",
+      "office": "3509 Wegmans Hall"
+    },
+    {
+      "name": "Web Address Website Profile Photo",
+      "role": "Assistant Professor of Computer Science and Data Science",
+      "email": "jlin81@cs.rochester.edu",
+      "office": "3509 Wegmans Hall"
+    },
+    {
+      "name": "Web Address Website",
+      "role": "Assistant Professor of Computer Science and Data Science",
+      "email": "wlin33@cs.rochester.edu",
+      "office": "2403 Wegmans Hall"
+    },
+    {
+      "name": "Liu, Pai",
+      "role": "Assistant Professor of Computer Science and Data Science",
+      "email": "pliu29@cs.rochester.edu",
+      "office": "2403 Wegmans Hall"
+    },
+    {
+      "name": "Liu, Luke",
+      "role": "Assistant Professor of Computer Science and Data Science",
+      "email": "lliu88@ur.rochester.edu",
+      "office": "2403 Wegmans Hall"
+    },
+    {
+      "name": "Office Location",
+      "role": "Assistant Professor of Digital Media Studies and Computer Science (Instruction)",
+      "email": "j.loporcaro@rochester.edu",
+      "office": "2403 Wegmans Hall"
+    },
+    {
+      "name": "Visiting Student  Bear Lab",
+      "role": "Assistant Professor of Digital Media Studies and Computer Science (Instruction)",
+      "email": "ylu105@ur.rochester.edu",
+      "office": "206B Morey Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Assistant Professor of Digital Media Studies and Computer Science (Instruction)",
+      "email": "jluo@cs.rochester.edu",
+      "office": "206B Morey Hall"
+    },
+    {
+      "name": "Lyu, Hanjia",
+      "role": "Professor of Engineering",
+      "email": "hlyu5@ur.rochester.edu",
+      "office": "206B Morey Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Professor of Engineering",
+      "email": "gmateosb@ece.rochester.edu",
+      "office": "3101 Wegmans Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Professor of Electrical and Computer Engineering",
+      "email": "mrizzo6@ur.rochester.edu",
+      "office": "726 Computer Studies Building"
+    },
+    {
+      "name": "Telephone",
+      "role": "Professor of Electrical and Computer Engineering",
+      "email": "smills14@cs.rochester.edu",
+      "office": "726 Computer Studies Building"
+    },
+    {
+      "name": "Office Location",
+      "role": "Assistant Professor in the Department of Computer Science",
+      "email": "f.nargesian@rochester.edu",
+      "office": "3505 Wegmans Hall"
+    },
+    {
+      "name": "Nguyen, Minh Phan",
+      "role": "Assistant Professor in the Department of Computer Science",
+      "email": "mnguy31@ur.rochester.edu",
+      "office": "3015 Wegmans Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Associate Professor of Computer Science",
+      "email": "sree@cs.rochester.edu",
+      "office": "3409 Wegmans Hall"
+    },
+    {
+      "name": "Pate, Neeley",
+      "role": "Associate Professor of Computer Science",
+      "email": "npate@cs.rochester.edu",
+      "office": "3409 Wegmans Hall"
+    },
+    {
+      "name": "Office Location",
+      "role": "Associate Professor of Computer Science",
+      "email": "pawlicki@cs.rochester.edu",
+      "office": "3409 Wegmans Hall"
+    },
+    {
+      "name": "Office Location",
+      "role": "Associate Professor of Computer Science",
+      "email": "mpolak@cs.rochester.edu",
+      "office": "3409 Wegmans Hall"
+    },
+    {
+      "name": "Proma, Adiba",
+      "role": "Associate Professor of Computer Science (Instruction)",
+      "email": "aproma@cs.rochester.edu",
+      "office": "2101 Wegmans Hall"
+    },
+    {
+      "name": "Office Location",
+      "role": "Associate Professor of Computer Science (Instruction)",
+      "email": "apurtee@cs.rochester.edu",
+      "office": "2101 Wegmans Hall"
+    },
+    {
+      "name": "Qiu, Jingyu",
+      "role": "Associate Professor of Computer Science (Instruction)",
+      "email": "jqiu9@ur.rochester.edu",
+      "office": "2201 Wegmans Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Associate Professor of Computer Science (Instruction)",
+      "email": "nquattro@cs.rochester.edu",
+      "office": "2109 Wegmans Hall"
+    },
+    {
+      "name": "Office Location",
+      "role": "Assistant Professor of Computer Science (Instruction)",
+      "email": "areadmcf@cs.rochester.edu",
+      "office": "2109 Wegmans Hall"
+    },
+    {
+      "name": "Reber, Benjamin",
+      "role": "Assistant Professor of Computer Science (Instruction)",
+      "email": "breber@cs.rochester.edu",
+      "office": "2109 Wegmans Hall"
+    },
+    {
+      "name": "Saber, Joseph",
+      "role": "Assistant Professor of Computer Science (Instruction)",
+      "email": "jsaber@cs.rochester.edu",
+      "office": "3303 Wegmans Hall"
+    },
+    {
+      "name": "Web Address Website Rebecca Salganik",
+      "role": "Assistant Professor of Computer Science (Instruction)",
+      "email": "rsalgani@ur.rochester.edu",
+      "office": "3303 Wegmans Hall"
+    },
+    {
+      "name": "Web Address Website Lenhart K. Schubert",
+      "role": "Professor Emeritus of Computer Science",
+      "email": "schubert@cs.rochester.edu",
+      "office": "3303 Wegmans Hall"
+    },
+    {
+      "name": "Office Location",
+      "role": "Professor Emeritus of Computer Science",
+      "email": "scott@cs.rochester.edu",
+      "office": "3401 Wegmans Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Assistant Professor, Department of Mechanical Engineering",
+      "email": "asef@lle.rochester.edu",
+      "office": "3401 Wegmans Hall"
+    },
+    {
+      "name": "Web Address Website",
+      "role": "Professor Emeritus of Computer Science",
+      "email": "joel@cs.rochester.edu",
+      "office": "N/A"
+    },
+    {
+      "name": "Senturk, Ertugrul",
+      "role": "Professor Emeritus of Computer Science",
+      "email": "esenturk@ur.rochester.edu",
+      "office": "N/A"
+    },
+    {
+      "name": "Telephone",
+      "role": "Professor Emeritus of Computer Science",
+      "email": "gaurav.sharma@rochester.edu",
+      "office": "725 Computer Studies Building"
+    },
+    {
+      "name": "Sheng, Huanxin",
+      "role": "Professor Emeritus of Computer Science",
+      "email": "hsheng2@ur.rochester.edu",
+      "office": "725 Computer Studies Building"
+    },
+    {
+      "name": "Web Address Website Profile Photo",
+      "role": "Professor of Electrical and Computer Engineering",
+      "email": "lsong11@cs.rochester.edu",
+      "office": "725 Computer Studies Building"
+    },
+    {
+      "name": "Spann, James",
+      "role": "Professor of Electrical and Computer Engineering",
+      "email": "jspann2@ur.rochester.edu",
+      "office": "725 Computer Studies Building"
+    },
+    {
+      "name": "Srivastava, Shikhar",
+      "role": "Professor of Electrical and Computer Engineering",
+      "email": "ssrivas9@cs.rochester.edu",
+      "office": "725 Computer Studies Building"
+    },
+    {
+      "name": "Office Location",
+      "role": "Professor of Computer Science",
+      "email": "daniel.stefankovic@rochester.edu",
+      "office": "725 Computer Studies Building"
+    },
+    {
+      "name": "Taneja, Kshitij",
+      "role": "Professor of Computer Science",
+      "email": "ktaneja2@ur.rochester.edu",
+      "office": "2315 Wegmans Hall"
+    },
+    {
+      "name": "Yunlong Tang",
+      "role": "Professor of Computer Science",
+      "email": "ytang37@cs.rochester.edu",
+      "office": "2315 Wegmans Hall"
+    },
+    {
+      "name": "Tang, Yao",
+      "role": "Professor of Computer Science",
+      "email": "ytang49@ur.rochester.edu",
+      "office": "2315 Wegmans Hall"
+    },
+    {
+      "name": "Tao, Zhengbin",
+      "role": "Professor of Computer Science",
+      "email": "ztao6@cs.rochester.edu",
+      "office": "2315 Wegmans Hall"
+    },
+    {
+      "name": "Tyagi, Abhishek",
+      "role": "Professor of Computer Science",
+      "email": "atyagi2@cs.rochester.edu",
+      "office": "2315 Wegmans Hall"
+    },
+    {
+      "name": "Ujjainkar, Nisarg",
+      "role": "Professor of Computer Science",
+      "email": "nujjaink@ur.rochester.edu",
+      "office": "2315 Wegmans Hall"
+    },
+    {
+      "name": "Valpey, Benjamin",
+      "role": "PhD Student",
+      "email": "bvalpey@cs.rochester.edu",
+      "office": "N/A"
+    },
+    {
+      "name": "Waghanna, Pranav Suryakiran",
+      "role": "PhD Student",
+      "email": "pwaghann@ur.rochester.edu",
+      "office": "N/A"
+    },
+    {
+      "name": "Wang, Yiyang",
+      "role": "PhD Student",
+      "email": "ywang418@cs.rochester.edu",
+      "office": "N/A"
+    },
+    {
+      "name": "Web Address Website Youwei Wang",
+      "role": "PhD Student",
+      "email": "ywang464@ur.rochester.edu",
+      "office": "N/A"
+    },
+    {
+      "name": "Programmer Analyst  Office Location",
+      "role": "PhD Student",
+      "email": "iward3@cs.rochester.edu",
+      "office": "3309 Wegmans Hall"
+    },
+    {
+      "name": "Wasmosy, Erik",
+      "role": "PhD Student",
+      "email": "ewasmosy@ur.rochester.edu",
+      "office": "3309 Wegmans Hall"
+    },
+    {
+      "name": "Office Location",
+      "role": "Associate Professor of Linguistics",
+      "email": "aaron.white@rochester.edu",
+      "office": "3309 Wegmans Hall"
+    },
+    {
+      "name": "Wu, Yanghui",
+      "role": "Associate Professor of Linguistics",
+      "email": "ywu86@cs.rochester.edu",
+      "office": "3309 Wegmans Hall"
+    },
+    {
+      "name": "Web Address Website Shutong Wu",
+      "role": "Associate Professor of Linguistics",
+      "email": "swu85@ur.rochester.edu",
+      "office": "3309 Wegmans Hall"
+    },
+    {
+      "name": "Office Location",
+      "role": "Associate Professor of Linguistics",
+      "email": "chenliang.xu@rochester.edu",
+      "office": "3309 Wegmans Hall"
+    },
+    {
+      "name": "Office Location",
+      "role": "Assistant Professor of Computer Science",
+      "email": "xiangxiangxu@rochester.edu",
+      "office": "511A Lattimore Hall"
+    },
+    {
+      "name": "Xu, Xuanpei",
+      "role": "Assistant Professor of Computer Science",
+      "email": "xxu66@ur.rochester.edu",
+      "office": "3005 Wegmans Hall"
+    },
+    {
+      "name": "Office Location",
+      "role": "Assistant Professor of Computer Science",
+      "email": "yyan37@cs.rochester.edu",
+      "office": "3005 Wegmans Hall"
+    },
+    {
+      "name": "Yan, Han",
+      "role": "Assistant Professor of Computer Science",
+      "email": "hyan20@ur.rochester.edu",
+      "office": "3003 Wegmans Hall"
+    },
+    {
+      "name": "Yang, Lucy",
+      "role": "Assistant Professor of Computer Science",
+      "email": "lyang25@ur.rochester.edu",
+      "office": "3003 Wegmans Hall"
+    },
+    {
+      "name": "Yu, Yongsheng",
+      "role": "Assistant Professor of Computer Science",
+      "email": "yyu90@cs.rochester.edu",
+      "office": "3103 Wegmans Hall"
+    },
+    {
+      "name": "Zhai, Shuang",
+      "role": "Assistant Professor of Computer Science",
+      "email": "szhai2@cs.rochester.edu",
+      "office": "3103 Wegmans Hall"
+    },
+    {
+      "name": "Web Address Website Profile Photo",
+      "role": "Assistant Professor of Computer Science",
+      "email": "zzh136@cs.rochester.edu",
+      "office": "3103 Wegmans Hall"
+    },
+    {
+      "name": "Web Address Website Tianyu Zhang",
+      "role": "PhD Student",
+      "email": "tzhang71@ur.rochester.edu",
+      "office": "N/A"
+    },
+    {
+      "name": "Web Address Website Zhenghong Zhou",
+      "role": "PhD Student",
+      "email": "zzhou72@ur.rochester.edu",
+      "office": "3501 Wegmans Hall"
+    },
+    {
+      "name": "Office Location",
+      "role": "Associate Professor of Computer Science",
+      "email": "yzhu@rochester.edu",
+      "office": "3501 Wegmans Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Assistant Professor of Computer Science (Instruction)",
+      "email": "ezhupa@cs.rochester.edu",
+      "office": "3501 Wegmans Hall"
+    },
+    {
+      "name": "Telephone",
+      "role": "Assistant Professor of Computer Science (Instruction)",
+      "email": "szoeke@cs.rochester.edu",
+      "office": "3501 Wegmans Hall"
+    }
+  ],
+  "generated_at": "2025-12-03",
+  "source": "UR CS Department Website"
+}

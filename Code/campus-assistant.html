@@ -27,17 +27,22 @@
             align-items: center;
             justify-content: space-between;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 100;
         }
 
         .header-left {
             display: flex;
             align-items: center;
             gap: 30px;
+            min-width: 0;
+            flex-shrink: 0;
         }
 
         .logo {
             width: 50px;
             height: 50px;
+            min-width: 50px;
             background-color: #FF6B35;
             border-radius: 50%;
             display: flex;
@@ -46,6 +51,7 @@
             font-size: 24px;
             cursor: pointer;
             position: relative;
+            flex-shrink: 0;
         }
 
         .quick-links {
@@ -58,25 +64,46 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             text-decoration: none;
             color: #333;
             font-size: 12px;
+            min-width: 60px;
+            transition: transform 0.2s;
+        }
+
+        .quick-link:hover {
+            transform: translateY(-2px);
+        }
+
+        .gmail-icon,
+        .gradescope-icon {
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            margin-bottom: 4px;
         }
 
         .gmail-icon {
-            font-size: 24px;
             color: #EA4335;
         }
 
         .gradescope-icon {
-            font-size: 20px;
             color: #4285F4;
         }
 
         .search-bar {
             flex: 1;
             max-width: 500px;
+            min-width: 200px;
             margin: 0 30px;
+        }
+
+        .search-bar {
+            position: relative;
         }
 
         .search-bar input {
@@ -88,10 +115,94 @@
             font-size: 16px;
         }
 
+        .search-bar input:focus {
+            outline: none;
+            border-color: #4285F4;
+            background-color: white;
+        }
+
+        .search-results {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-top: 5px;
+            max-height: 400px;
+            overflow-y: auto;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 1000;
+        }
+
+        .search-results.show {
+            display: block;
+        }
+
+        .search-result-item {
+            padding: 12px 20px;
+            cursor: pointer;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background-color 0.2s;
+        }
+
+        .search-result-item:hover {
+            background-color: #f5f5f5;
+        }
+
+        .search-result-item:last-child {
+            border-bottom: none;
+        }
+
+        .search-result-type {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .search-result-type.course {
+            background-color: #e3f2fd;
+            color: #1976d2;
+        }
+
+        .search-result-type.contact {
+            background-color: #f3e5f5;
+            color: #7b1fa2;
+        }
+
+        .search-result-type.faculty {
+            background-color: #fff3e0;
+            color: #e65100;
+        }
+
+        .search-result-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 4px;
+        }
+
+        .search-result-desc {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .search-no-results {
+            padding: 20px;
+            text-align: center;
+            color: #999;
+        }
+
         .university-logo {
             height: 50px;
+            min-width: 300px;
             cursor: pointer;
             transition: opacity 0.3s;
+            flex-shrink: 0;
         }
 
         .university-logo:hover {
@@ -190,6 +301,42 @@
             color: white;
             padding: 30px 0;
             overflow-y: auto;
+            overflow-x: hidden;
+            transition: width 0.3s ease;
+            position: relative;
+        }
+
+        .sidebar.collapsed {
+            width: 80px;
+        }
+
+        .sidebar-toggle {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            z-index: 10;
+        }
+
+        .sidebar-toggle:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
+
+        .sidebar.collapsed .sidebar-toggle {
+            right: 50%;
+            transform: translateX(50%);
         }
 
         .menu-title {
@@ -198,6 +345,13 @@
             text-align: center;
             margin-bottom: 30px;
             letter-spacing: 2px;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+
+        .sidebar.collapsed .menu-title {
+            font-size: 24px;
+            letter-spacing: 0;
         }
 
         .menu-divider {
@@ -205,16 +359,36 @@
             height: 3px;
             background-color: white;
             margin: 0 auto 30px;
+            transition: all 0.3s;
+        }
+
+        .sidebar.collapsed .menu-divider {
+            width: 60%;
         }
 
         .menu-item {
             padding: 15px 40px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: all 0.3s;
             display: flex;
             justify-content: space-between;
             align-items: center;
             font-size: 18px;
+            white-space: nowrap;
+        }
+
+        .sidebar.collapsed .menu-item {
+            padding: 15px 10px;
+            font-size: 14px;
+            justify-content: center;
+        }
+
+        .sidebar.collapsed .menu-item span:first-child {
+            display: none;
+        }
+
+        .sidebar.collapsed .chevron {
+            display: none;
         }
 
         .menu-item:hover {
@@ -236,12 +410,17 @@
             max-height: 500px;
         }
 
+        .sidebar.collapsed .submenu {
+            display: none;
+        }
+
         .submenu-item {
             padding: 12px 60px;
             font-size: 16px;
             cursor: pointer;
             transition: background-color 0.3s;
             display: block;
+            white-space: nowrap;
         }
 
         .submenu-item:hover {
@@ -811,11 +990,166 @@
             align-self: flex-start;
             margin-right: auto; 
         }
-    
+
         .msg.user {
             background-color: #DCF8C6;
             align-self: flex-end;
-            margin-left: auto;    
+            margin-left: auto;
+        }
+
+        /* 响应式设计 - 适配手机和平板 */
+        @media screen and (max-width: 768px) {
+            /* Header 适配 */
+            .header {
+                padding: 10px 15px;
+                flex-wrap: wrap;
+            }
+
+            .header-left {
+                gap: 15px;
+                flex: 1;
+            }
+
+            .logo {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+            }
+
+            .quick-links {
+                gap: 15px;
+            }
+
+            .quick-link {
+                font-size: 10px;
+                min-width: 50px;
+            }
+
+            .gmail-icon,
+            .gradescope-icon {
+                font-size: 20px;
+                width: 28px;
+                height: 28px;
+            }
+
+            .search-bar {
+                order: 3;
+                width: 100%;
+                max-width: 100%;
+                margin: 10px 0 0 0;
+            }
+
+            .search-bar input {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+
+            .university-logo {
+                height: 40px;
+            }
+
+            /* Sidebar 适配 */
+            .sidebar {
+                width: 60px;
+                padding: 20px 5px;
+            }
+
+            .menu-item {
+                font-size: 11px;
+                padding: 10px 5px;
+            }
+
+            .menu-icon {
+                font-size: 18px;
+            }
+
+            /* Content 适配 */
+            .content {
+                margin-left: 60px;
+                padding: 15px;
+            }
+
+            .section-title {
+                font-size: 18px;
+                padding: 15px;
+            }
+
+            /* Cards 适配 */
+            .card-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            /* Modals 适配 */
+            .modal-content {
+                width: 95%;
+                margin: 10px;
+                padding: 20px;
+            }
+
+            /* Todo 列表 */
+            .task-item {
+                padding: 12px;
+                font-size: 14px;
+            }
+
+            /* Mailing List */
+            .category-item {
+                font-size: 13px;
+                padding: 8px;
+            }
+
+            /* Profile */
+            .tracker-header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .tracker-summary {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            /* 更小的手机屏幕 */
+            .header {
+                padding: 8px 10px;
+            }
+
+            .quick-links {
+                gap: 10px;
+            }
+
+            .quick-link {
+                font-size: 9px;
+                min-width: 45px;
+            }
+
+            .gmail-icon,
+            .gradescope-icon {
+                font-size: 18px;
+                width: 24px;
+                height: 24px;
+            }
+
+            .sidebar {
+                width: 50px;
+            }
+
+            .content {
+                margin-left: 50px;
+                padding: 10px;
+            }
+
+            .section-title {
+                font-size: 16px;
+                padding: 12px;
+            }
+
+            .modal-content {
+                width: 98%;
+                padding: 15px;
+            }
         }
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
@@ -824,9 +1158,7 @@
     <!-- Header -->
     <div class="header">
         <div class="header-left">
-            <div class="logo" onclick="toggleProfilePopup()" style="background-color: transparent; padding: 5px;">
-                <img src="./image/symbol_only.svg" style="width: 100%; height: 100%; object-fit: contain;" alt="UR">
-            </div>
+            <div class="logo" onclick="toggleProfilePopup()" data-user-avatar-header>🦊</div>
             <div class="quick-links">
                 <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank" class="quick-link">
                     <span class="gmail-icon">📧</span>
@@ -839,11 +1171,12 @@
             </div>
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="Search">
+            <input type="text" id="globalSearch" placeholder="Search courses, contacts..." autocomplete="off">
+            <div id="searchResults" class="search-results"></div>
         </div>
         <div>
             <a href="https://learn.rochester.edu/ultra/institution-page" target="_blank">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='10' y='35' font-family='Arial' font-size='20' font-weight='bold' fill='%23003B71'%3EUNIVERSITY of ROCHESTER%3C/text%3E%3C/svg%3E" alt="University of Rochester" class="university-logo">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 60'%3E%3Ctext x='50' y='35' font-family='Arial' font-size='20' font-weight='bold' fill='%23003B71'%3EUNIVERSITY of ROCHESTER%3C/text%3E%3C/svg%3E" alt="University of Rochester" class="university-logo">
             </a>
         </div>
     </div>
@@ -868,7 +1201,10 @@
     <!-- Main Container -->
     <div class="container">
         <!-- Sidebar Menu -->
-        <div class="sidebar">
+        <div class="sidebar" id="sidebar">
+            <button class="sidebar-toggle" onclick="toggleSidebar()" title="Toggle Sidebar">
+                ☰
+            </button>
             <div class="menu-title">MENU</div>
             <div class="menu-divider"></div>
 
@@ -1030,9 +1366,14 @@
             <div class="page" id="page-profile">
                 <div class="section-title">
                     Manage My Profile
-                    <button style="float: right; background-color: #4A63D9; color: white; border: none; padding: 8px 20px; border-radius: 5px; cursor: pointer; font-size: 14px;" onclick="openEditProfileModal()">
-                        ✏️ Edit Profile
-                    </button>
+                    <div style="float: right; display: flex; gap: 10px;">
+                        <button style="background-color: #28a745; color: white; border: none; padding: 8px 20px; border-radius: 5px; cursor: pointer; font-size: 14px;" onclick="downloadBackup()" title="Download backup of all your data">
+                            💾 Backup Data
+                        </button>
+                        <button style="background-color: #4A63D9; color: white; border: none; padding: 8px 20px; border-radius: 5px; cursor: pointer; font-size: 14px;" onclick="openEditProfileModal()">
+                            ✏️ Edit Profile
+                        </button>
+                    </div>
                 </div>
 
                 <div class="profile-header">
@@ -1288,7 +1629,7 @@
         <div class="modal-content">
             <div class="modal-title">Add a To-do Item:</div>
             <div class="form-group">
-                <input type="text" id="taskDate" placeholder="Select Date">
+                <input type="text" id="taskDate" placeholder="Select Date and Time" readonly>
             </div>
             <div class="form-group">
                 <input type="text" id="taskName" placeholder="Task Name">
@@ -1454,20 +1795,254 @@
         </div>
     </div>
 
-    <script src="users-database.js?v=8"></script>
-    <script src="api.js?v=8"></script>
-    <script src="app.js?v=8"></script>
-    <!-- Added -->
+    <script src="users-database.js?v=15"></script>
+    <script src="api.js?v=15"></script>
+    <script src="app.js?v=15"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
-        flatpickr("#taskDate", {
-            dateFormat: "Y-m-d",
-            locale: "en",
-            allowInput: false,
+        // CS Courses Database
+        const csCoursesDatabase = [
+            // Pre-major Requirements
+            { code: 'CSC 171', name: 'Introduction to Computer Science', type: 'Pre-major', credits: 4, description: 'Introduction to computer science. Required for CS major.' },
+            { code: 'CSC 172', name: 'Data Structures and Algorithms', type: 'Pre-major', credits: 4, description: 'Data structures and algorithms. Required for CS major.' },
+            { code: 'CSC 173', name: 'Computation and Formal Systems', type: 'Core', credits: 4, description: 'Computation and formal systems theory.' },
+            { code: 'MATH 150', name: 'Discrete Mathematics', type: 'Math Required', credits: 4, description: 'Discrete mathematics for computer science.' },
+            { code: 'MATH 165', name: 'Linear Algebra with Differential Equations', type: 'Math Required', credits: 4, description: 'Linear algebra and differential equations.' },
+            { code: 'MATH 173', name: 'Honors Calculus III', type: 'Math Required', credits: 4, description: 'Honors level multivariable calculus.' },
+
+            // Core Courses
+            { code: 'CSC 242', name: 'Introduction to Artificial Intelligence', type: 'Core', credits: 4, description: 'Fundamentals of artificial intelligence including search, knowledge representation, and machine learning.' },
+            { code: 'CSC 252', name: 'Computer Organization', type: 'Core', credits: 4, description: 'Computer architecture and organization.' },
+            { code: 'CSC 254', name: 'Programming Language Design and Implementation', type: 'Core', credits: 4, description: 'Design and implementation of programming languages.' },
+            { code: 'CSC 280', name: 'Computer Models and Limitations', type: 'Core', credits: 4, description: 'Theoretical foundations and computational limitations.' },
+            { code: 'CSC 282', name: 'Design and Analytics of Efficient Algorithms', type: 'Core', credits: 4, description: 'Algorithm design and analysis techniques.' },
+
+            // Statistics Requirements
+            { code: 'STAT 190', name: 'Introduction to Statistical Methodology', type: 'Math Required', credits: 4, description: 'Statistical methods and data analysis.' },
+            { code: 'STAT 180', name: 'Introduction to Applied Statistical Methodology', type: 'Math Required', credits: 4, description: 'Applied statistics methodology.' },
+            { code: 'ECON 230', name: 'Economic Statistics', type: 'Math Required', credits: 4, description: 'Statistics for economics.' },
+
+            // AI Concentration
+            { code: 'CSC 240', name: 'Data Mining', type: 'AI Concentration', credits: 4, description: 'Data mining techniques and applications.' },
+            { code: 'CSC 245', name: 'Deep Learning', type: 'AI Concentration', credits: 4, description: 'Deep learning architectures and applications.' },
+            { code: 'CSC 246', name: 'Machine Learning', type: 'AI Concentration', credits: 4, description: 'Machine learning algorithms and techniques.' },
+            { code: 'CSC 247', name: 'Natural Language Processing', type: 'AI Concentration', credits: 4, description: 'Natural language processing and computational linguistics.' },
+            { code: 'CSC 249', name: 'Machine Vision', type: 'AI Concentration', credits: 4, description: 'Computer vision and image understanding.' },
+            { code: 'CSC 266', name: 'Frontiers in Deep Learning', type: 'AI Concentration', credits: 4, description: 'Advanced topics in deep learning.' },
+            { code: 'CSC 277', name: 'End-to-End Deep Learning', type: 'AI Concentration', credits: 4, description: 'End-to-end deep learning systems.' },
+
+            // HCI Concentration
+            { code: 'CSC 211', name: 'Introduction to HCI', type: 'HCI Concentration', credits: 4, description: 'Introduction to human-computer interaction.' },
+            { code: 'CSC 212', name: 'Human Computer Interaction', type: 'HCI Concentration', credits: 4, description: 'Advanced human-computer interaction topics.' },
+            { code: 'CSC 216', name: 'AR/VR Design', type: 'HCI Concentration', credits: 4, description: 'Augmented and virtual reality design.' },
+            { code: 'CSC 229', name: 'Computer Models of Perception & Cognition', type: 'HCI Concentration', credits: 4, description: 'Computational models of human perception and cognition.' },
+            { code: 'CSC 259', name: 'Computer Imaging & Graphics', type: 'HCI Concentration', credits: 4, description: 'Computer graphics and image processing.' },
+
+            // Systems Concentration
+            { code: 'CSC 253', name: 'Collaborative Programming and Software Design', type: 'Systems Concentration', credits: 4, description: 'Software development and team collaboration.' },
+            { code: 'CSC 255', name: 'Software Analysis & Improvement', type: 'Systems Concentration', credits: 4, description: 'Software analysis and optimization.' },
+            { code: 'CSC 256', name: 'Operating Systems', type: 'Systems Concentration', credits: 4, description: 'Operating system design and implementation.' },
+            { code: 'CSC 257', name: 'Computer Networks', type: 'Systems Concentration', credits: 4, description: 'Computer networking protocols and architectures.' },
+            { code: 'CSC 258', name: 'Parallel & Distributed Systems', type: 'Systems Concentration', credits: 4, description: 'Parallel and distributed computing systems.' },
+            { code: 'CSC 263', name: 'Data Management Systems', type: 'Systems Concentration', credits: 4, description: 'Database systems and data management.' },
+            { code: 'CSC 276', name: 'Computer Architecture & Security', type: 'Systems Concentration', credits: 4, description: 'Computer architecture and security.' },
+            { code: 'CSC 290', name: 'Machine Learning Systems', type: 'Systems Concentration', credits: 4, description: 'Systems for machine learning.' },
+            { code: 'ECE 204', name: 'Multiprocessor Architecture', type: 'Systems Concentration', credits: 4, description: 'Multiprocessor and parallel architectures.' },
+
+            // Theory Concentration
+            { code: 'CSC 279', name: 'Computational Geometry', type: 'Theory Concentration', credits: 4, description: 'Geometric algorithms and data structures.' },
+            { code: 'CSC 281', name: 'Intro to Cryptography', type: 'Theory Concentration', credits: 4, description: 'Introduction to cryptography.' },
+            { code: 'CSC 283', name: 'Topics in Cryptography', type: 'Theory Concentration', credits: 4, description: 'Advanced cryptography topics.' },
+            { code: 'CSC 284', name: 'Advanced Algorithms', type: 'Theory Concentration', credits: 4, description: 'Advanced algorithm design and analysis.' },
+            { code: 'CSC 285', name: 'Gems of Algorithms and Elections', type: 'Theory Concentration', credits: 4, description: 'Selected algorithmic topics and computational social choice.' },
+            { code: 'CSC 286', name: 'Computational Complexity', type: 'Theory Concentration', credits: 4, description: 'Computational complexity theory.' },
+            { code: 'CSC 287', name: 'Sampling Algorithms', type: 'Theory Concentration', credits: 4, description: 'Sampling and randomized algorithms.' },
+            { code: 'CSC 288', name: 'Analytic Methods in CS', type: 'Theory Concentration', credits: 4, description: 'Mathematical analysis for computer science.' },
+            { code: 'CSC 289', name: 'Algorithmic Game Theory', type: 'Theory Concentration', credits: 4, description: 'Game theory and algorithmic applications.' },
+
+            // Honors and Special Courses
+            { code: 'CSC 200H', name: 'Undergraduate Problem Seminar', type: 'Honors', credits: 4, description: 'Problem-solving seminar for honors students.' },
+            { code: 'CSC 391H', name: 'Independent Study', type: 'Honors', credits: 4, description: 'Independent research study.' },
+            { code: 'CSC 395H', name: 'Senior Honors Thesis', type: 'Honors', credits: 4, description: 'Senior honors thesis research.' },
+
+            // Writing Courses
+            { code: 'CSC 273W', name: 'Writing in Computer Science', type: 'Writing', credits: 4, description: 'Technical writing for computer science.' },
+            { code: 'CSC 299W', name: 'Social Implications of Computing', type: 'Writing', credits: 4, description: 'Social and ethical implications of computing.' },
+            { code: 'CSC 391W', name: 'Independent Study Writing', type: 'Writing', credits: 4, description: 'Independent study with writing component.' },
+
+            // Other Courses
+            { code: 'CSC 160', name: 'Introduction to Programming', type: 'Intro', credits: 4, description: 'Basic programming concepts.' },
+            { code: 'CSC 161', name: 'Programming Fundamentals', type: 'Intro', credits: 4, description: 'Fundamental programming skills.' },
+            { code: 'CSC 162', name: 'Advanced Programming', type: 'Intro', credits: 4, description: 'Advanced programming techniques.' }
+        ];
+
+        // Global Search Functionality - 使用后端 API
+        async function performSearch(query) {
+            if (!query || query.trim().length < 2) {
+                return [];
+            }
+
+            try {
+                // 调用后端搜索 API
+                const response = await fetch(`/api/search?q=${encodeURIComponent(query)}`);
+                const data = await response.json();
+                return data.results || [];
+            } catch (error) {
+                console.error('Search error:', error);
+                return [];
+            }
+        }
+
+        function displaySearchResults(results) {
+            const searchResults = document.getElementById('searchResults');
+
+            if (results.length === 0) {
+                searchResults.innerHTML = '<div class="search-no-results">No results found</div>';
+                searchResults.classList.add('show');
+                return;
+            }
+
+            let html = '';
+            results.forEach(result => {
+                html += `
+                    <div class="search-result-item" onclick="handleSearchResultClick(${JSON.stringify(result).replace(/"/g, '&quot;')})">
+                        <div>
+                            <span class="search-result-type ${result.type}">${result.type.toUpperCase()}</span>
+                            <div class="search-result-title">${result.title}</div>
+                            <div class="search-result-desc">${result.description}</div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            searchResults.innerHTML = html;
+            searchResults.classList.add('show');
+        }
+
+        function handleSearchResultClick(result) {
+            const searchInput = document.getElementById('globalSearch');
+            const searchResults = document.getElementById('searchResults');
+
+            if (result.type === 'course') {
+                // Show course details
+                const course = result.data;
+                alert(`📚 Course: ${result.title}\n\n${result.description}`);
+            } else if (result.type === 'faculty') {
+                // Show faculty details
+                const person = result.data;
+                alert(`👤 ${person.name}\n\n${result.description}`);
+            } else if (result.type === 'contact') {
+                // Show contact details
+                alert(`📧 Contact: ${result.title}\nEmail: ${result.data.email}\nCategory: ${result.data.category}`);
+            }
+
+            searchInput.value = '';
+            searchResults.classList.remove('show');
+        }
+
+        console.log('Campus Assistant loaded - Version 15 (Data Backup)');
+
+        // 侧边栏收缩/展开功能
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('collapsed');
+
+            // 保存状态到 localStorage
+            const isCollapsed = sidebar.classList.contains('collapsed');
+            localStorage.setItem('sidebarCollapsed', isCollapsed);
+        }
+
+        // 页面加载时恢复侧边栏状态
+        document.addEventListener('DOMContentLoaded', function() {
+            // 恢复侧边栏状态
+            const sidebarCollapsed = localStorage.getItem('sidebarCollapsed') === 'true';
+            if (sidebarCollapsed) {
+                document.getElementById('sidebar').classList.add('collapsed');
+            }
+
+            // Setup global search
+            const searchInput = document.getElementById('globalSearch');
+            const searchResults = document.getElementById('searchResults');
+
+            if (searchInput) {
+                // Search on input
+                let searchTimeout;
+                searchInput.addEventListener('input', function(e) {
+                    clearTimeout(searchTimeout);
+                    const query = e.target.value;
+
+                    if (query.trim().length < 2) {
+                        searchResults.classList.remove('show');
+                        return;
+                    }
+
+                    searchTimeout = setTimeout(async () => {
+                        const results = await performSearch(query);
+                        displaySearchResults(results);
+                    }, 300); // Debounce 300ms
+                });
+
+                // Hide results when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+                        searchResults.classList.remove('show');
+                    }
+                });
+
+                // Clear on escape
+                searchInput.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape') {
+                        searchInput.value = '';
+                        searchResults.classList.remove('show');
+                    }
+                });
+            }
+
+            // 配置日期时间选择器为英文，支持时间选择
+            flatpickr("#taskDate", {
+                enableTime: true,
+                dateFormat: "Y-m-d H:i",
+                time_24hr: false,
+                locale: "en",
+                minuteIncrement: 1,
+                allowInput: true
+            });
+
+            // 定期自动保存（每30秒）
+            setInterval(function() {
+                if (typeof saveUserData === 'function' && currentUserData) {
+                    saveUserData();
+                    console.log('🔄 自动保存任务数据');
+                }
+            }, 30000); // 30秒
+
+            // 页面关闭前保存数据
+            window.addEventListener('beforeunload', function(e) {
+                if (typeof saveUserData === 'function' && currentUserData) {
+                    // 同步保存到 localStorage
+                    const storageKey = `campus_assistant_${currentUserNetId}`;
+                    localStorage.setItem(storageKey, JSON.stringify(currentUserData));
+
+                    // 尝试保存到服务器（使用 navigator.sendBeacon 确保在页面关闭时也能发送）
+                    const payload = JSON.stringify({
+                        netId: currentUserNetId,
+                        data: currentUserData
+                    });
+                    const blob = new Blob([payload], { type: 'application/json' });
+                    navigator.sendBeacon('/api/user/save', blob);
+                    console.log('💾 页面关闭前保存数据');
+                }
+            });
+
+            // 页面可见性变化时保存（例如切换标签页）
+            document.addEventListener('visibilitychange', function() {
+                if (document.hidden && typeof saveUserData === 'function' && currentUserData) {
+                    saveUserData();
+                    console.log('👁️ 标签页隐藏，保存数据');
+                }
+            });
         });
-    </script>
-    <script>
-        console.log('Campus Assistant loaded - Version 8 (Calendar with Time Span)');
+
         document.getElementById('contactCategory').addEventListener('change', function() {
             const courseField = document.getElementById('courseFieldGroup');
             if (this.value === 'professors') {

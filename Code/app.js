@@ -322,15 +322,52 @@ function addTask() {
     closeModal();
 }
 
-// 格式化日期为英文
+// 格式化日期为英文（支持日期和日期时间）
 function formatDate(dateString) {
-    // const date = new Date(dateString);
-    const parts = dateString.split('-');
-    const month = parseInt(parts[1]) - 1;
-    const day = parseInt(parts[2]);
+    if (!dateString) return '';
 
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    return `${months[month]} ${day}`;
+
+    // Flatpickr 格式: YYYY-MM-DD HH:MM (空格分隔)
+    if (dateString.includes(' ') && dateString.includes(':')) {
+        const [datePart, timePart] = dateString.split(' ');
+        const parts = datePart.split('-');
+        const month = parseInt(parts[1]) - 1;
+        const day = parseInt(parts[2]);
+
+        // 格式化时间为 12小时制
+        const [hour, minute] = timePart.split(':');
+        const hourNum = parseInt(hour);
+        const period = hourNum >= 12 ? 'PM' : 'AM';
+        const hour12 = hourNum % 12 || 12;
+
+        return `${months[month]} ${day} ${hour12}:${minute} ${period}`;
+    }
+    // datetime-local 格式: YYYY-MM-DDTHH:MM
+    else if (dateString.includes('T')) {
+        const [datePart, timePart] = dateString.split('T');
+        const parts = datePart.split('-');
+        const month = parseInt(parts[1]) - 1;
+        const day = parseInt(parts[2]);
+
+        // 格式化时间为 12小时制
+        const [hour, minute] = timePart.split(':');
+        const hourNum = parseInt(hour);
+        const period = hourNum >= 12 ? 'PM' : 'AM';
+        const hour12 = hourNum % 12 || 12;
+
+        return `${months[month]} ${day} ${hour12}:${minute} ${period}`;
+    }
+    // 只有日期（YYYY-MM-DD格式）
+    else {
+        const parts = dateString.split('-');
+        if (parts.length >= 3) {
+            const month = parseInt(parts[1]) - 1;
+            const day = parseInt(parts[2]);
+            return `${months[month]} ${day}`;
+        }
+        return dateString;
+    }
 }
 
 // ============================================
@@ -343,11 +380,16 @@ function loadUserMailingList() {
     const professorsContainer = document.querySelector('.mailing-category .category-items');
     if (professorsContainer && currentUserData.mailingList) {
         professorsContainer.innerHTML = '';
-        currentUserData.mailingList.professors.forEach(prof => {
+        const professors = currentUserData.mailingList.professors || [];
+        professors.forEach((prof, index) => {
             const item = document.createElement('div');
             item.className = 'category-item';
+            item.style.display = 'flex';
+            item.style.justifyContent = 'space-between';
+            item.style.alignItems = 'center';
             item.innerHTML = `
-                ${prof.course}&nbsp;&nbsp;&nbsp;&nbsp;${prof.name}&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:${prof.email}" class="email-link">${prof.email}</a>
+                <span>${prof.course || ''}&nbsp;&nbsp;&nbsp;&nbsp;${prof.name}&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:${prof.email}" class="email-link">${prof.email}</a></span>
+                <button onclick="deleteContact('professors', ${index})" style="background-color: #ff4444; color: white; border: none; border-radius: 3px; padding: 2px 8px; cursor: pointer; font-size: 12px;">Delete</button>
             `;
             professorsContainer.appendChild(item);
         });
@@ -369,11 +411,15 @@ function loadMailingCategory(category, contacts) {
     const itemsContainer = categoryElement.nextElementSibling;
     itemsContainer.innerHTML = '';
 
-    contacts.forEach(contact => {
+    contacts.forEach((contact, index) => {
         const item = document.createElement('div');
         item.className = 'category-item';
+        item.style.display = 'flex';
+        item.style.justifyContent = 'space-between';
+        item.style.alignItems = 'center';
         item.innerHTML = `
-            ${contact.name}&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:${contact.email}" class="email-link">${contact.email}</a>
+            <span>${contact.name}&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:${contact.email}" class="email-link">${contact.email}</a></span>
+            <button onclick="deleteContact('${category}', ${index})" style="background-color: #ff4444; color: white; border: none; border-radius: 3px; padding: 2px 8px; cursor: pointer; font-size: 12px;">Delete</button>
         `;
         itemsContainer.appendChild(item);
     });
@@ -420,6 +466,23 @@ function addContact() {
     saveUserData();
     loadUserMailingList();
     closeAddContactModal();
+}
+
+// 删除联系人
+function deleteContact(category, index) {
+    if (confirm('Are you sure you want to delete this contact?')) {
+        // 确保分类存在
+        if (!currentUserData.mailingList[category]) {
+            return;
+        }
+
+        // 删除联系人
+        currentUserData.mailingList[category].splice(index, 1);
+
+        // 保存并重新加载
+        saveUserData();
+        loadUserMailingList();
+    }
 }
 
 // ============================================
@@ -1176,4 +1239,49 @@ async function deleteCourse(courseId) {
 function loadCourses() {
     // 课程数据会在 loadUserDataFromStorage() 中自动加载
     renderCourseCalendar();
+}
+
+// ============================================
+// 数据备份和恢复功能
+// ============================================
+
+// 下载数据备份
+function downloadBackup() {
+    if (!currentUserData || !currentUserNetId) {
+        alert('No user data to backup');
+        return;
+    }
+
+    // 创建备份数据
+    const backup = {
+        netId: currentUserNetId,
+        exportDate: new Date().toISOString(),
+        version: '14',
+        data: currentUserData
+    };
+
+    // 转换为 JSON 字符串
+    const jsonString = JSON.stringify(backup, null, 2);
+
+    // 创建 Blob
+    const blob = new Blob([jsonString], { type: 'application/json' });
+
+    // 创建下载链接
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+
+    // 生成文件名：netId_backup_日期.json
+    const date = new Date().toISOString().split('T')[0];
+    link.download = `${currentUserNetId}_backup_${date}.json`;
+
+    // 触发下载
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // 释放 URL
+    URL.revokeObjectURL(url);
+
+    alert('✅ Backup downloaded successfully!\n\nFile: ' + link.download + '\n\nKeep this file safe to restore your data if needed.');
 }
